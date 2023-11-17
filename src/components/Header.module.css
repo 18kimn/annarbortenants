@@ -2,21 +2,21 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .site_title {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  align-self: end;
+  align-self: flex-end;
   font-size: 3rem;
 }
 
 .socials {
   display: flex;
-  place-content: end;
-  align-items: end;
+  place-content: flex-end;
+  align-items: flex-end;
   gap: 2rem;
   padding: 0 2rem;
 }

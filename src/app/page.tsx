@@ -33,12 +33,10 @@ export default function Home() {
           .
         </p>
         <iframe
+          className={styles.iframe}
           src="https://docs.google.com/forms/d/e/1FAIpQLSdXKxbS-OhBN23qZ7HOCtFbhAPaYgpqrif3amkResc2tdx-XQ/viewform?embedded=true"
           width="640"
           height="3000"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
         >
           Loading…
         </iframe>
