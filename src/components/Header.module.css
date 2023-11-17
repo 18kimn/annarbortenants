@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 1rem;
+}
+
+.site_title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  align-self: end;
+  font-size: 3rem;
+}
+
+.socials {
+  display: flex;
+  place-content: end;
+  align-items: end;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
