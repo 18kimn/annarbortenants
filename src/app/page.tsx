@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.container}>
         <div>
-          <Image src="/logo.png" height={500} width={500} />
+          <Image alt="AATU logo" src="/logo.png" height={500} width={500} />
         </div>
         <div className={styles.description}>
           <p>
