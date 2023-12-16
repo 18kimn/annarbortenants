@@ -1,21 +1,27 @@
+"use client";
 import styles from "./Header.module.css";
-import Image from "next/image";
+
+import Link from "next/link";
 import { OutboundLink } from "./OutboundLink";
+import Menu from "./Menu";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
 
 const socials = [
   {
     href: "https://twitter.com/AATUOfficial",
-    icon: "/icons/Twitter.svg",
+    Icon: TwitterIcon,
     alt: "Icon linking to AATU Twitter",
   },
   {
     href: "https://www.facebook.com/a2tenantsunion",
-    icon: "/icons/Facebook.svg",
+    Icon: FacebookIcon,
     alt: "Icon linking to AATU Facebook",
   },
   {
     href: "mailto:annarbortenantsunion@gmail.com",
-    icon: "/icons/Email.svg",
+    Icon: EmailIcon,
     alt: "Icon linking to AATU Email",
   },
   // {},
@@ -24,19 +30,16 @@ const socials = [
 export default function Header() {
   return (
     <div className={styles.container}>
-      <div className="placeholder"></div>
-      <h2 className={styles.site_title}>The Ann Arbor Tenants Union</h2>
+      <div className={styles.menuContainer}>
+        <Menu />
+      </div>
+      <Link href="/" style={{ textDecoration: "none", color: "black" }}>
+        <h2 className={styles.site_title}>The Ann Arbor Tenants Union</h2>
+      </Link>
       <div className={styles.socials}>
-        {socials.map(({ href, icon, alt }, i) => (
+        {socials.map(({ href, Icon }, i) => (
           <OutboundLink key={i} href={href}>
-            <Image
-              className={styles.icon}
-              priority
-              src={icon}
-              alt={alt}
-              width={32}
-              height={32}
-            />
+            <Icon className={styles.icon} />
           </OutboundLink>
         ))}
       </div>
