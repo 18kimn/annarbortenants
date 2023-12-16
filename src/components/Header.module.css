@@ -1,34 +1,56 @@
 .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 2rem;
 }
 
+/* Honest to god cannot figure out a good CSS grid wrap solution 
+ * so fuck it I'm just doing a media query
+*/
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container > * {
+  margin: 1rem 0;
+  min-width: min(200px, 100%);
+  max-width: 100%;
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container *:has(.site_title) {
+  flex: 1 1;
+  place-content: center;
+}
+
 .site_title {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
   align-self: flex-end;
-  font-size: 2rem;
+  font-size: min(2rem, 10vw);
 }
 
 .socials {
   display: flex;
-  place-content: flex-end;
-  align-items: flex-end;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 0 2rem;
+  justify-content: center;
 }
 
 .icon {
   height: 2rem;
   width: 2rem;
   color: black;
-}
-
-.menuContainer {
-  align-self: start;
 }
 
 .list {

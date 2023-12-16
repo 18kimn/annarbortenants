@@ -11,14 +11,35 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   place-items: center;
+  justify-content: space-around;
   width: 100%;
 }
 
 .container div {
-  max-width: 60ch;
+  flex: 1 1;
+  max-width: min(100vw, 60ch);
+  padding: 2rem;
+}
+
+.aatuImage {
+  width: 100%;
+  min-width: min(40ch, 80vw);
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.description {
+  min-width: 50ch;
+}
+
+.joinContainer {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
 }
 
 .join {
@@ -28,4 +49,5 @@
 
 .iframe {
   border: none;
+  max-width: 80vw;
 }

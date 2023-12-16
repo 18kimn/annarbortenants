@@ -7,7 +7,13 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.container}>
         <div>
-          <Image alt="AATU logo" src="/logo.png" height={500} width={500} />
+          <Image
+            className={styles.aatuImage}
+            alt="AATU logo"
+            src="/logo.png"
+            height={500}
+            width={500}
+          />
         </div>
         <div className={styles.description}>
           <p>
@@ -22,7 +28,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div>
+      <div className={styles.joinContainer}>
         <h2 className={styles.join}>Join your union!</h2>
         <p>You can join as a regular member or as a building organizer.</p>
         <p>

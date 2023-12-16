@@ -3,5 +3,5 @@
 }
 
 .content {
-    max-width: 80ch;
+    width: min(80ch, 80%);
 }
