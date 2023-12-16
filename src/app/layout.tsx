@@ -11,7 +11,8 @@ const pt_sans = PT_Sans({
 
 export const metadata: Metadata = {
   title: "Ann Arbor Tenants Union",
-  description: "The Ann Arbor Tenants Union will return soon.",
+  description:
+    "The Ann Arbor Tenants Union is a collective of tenants working together to improve rentership for all in the Ann Arbor area.",
 };
 
 export default function RootLayout({
