@@ -21,18 +21,18 @@
 .container div {
   flex: 1 1;
   max-width: min(100vw, 60ch);
+  min-width: min(80vw, 40ch);
   padding: 2rem;
 }
 
 .aatuImage {
   width: 100%;
-  min-width: min(40ch, 80vw);
   height: auto;
   aspect-ratio: 1 / 1;
 }
 
 .description {
-  min-width: 50ch;
+  min-width: min(80vw, 40ch);
 }
 
 .joinContainer {
