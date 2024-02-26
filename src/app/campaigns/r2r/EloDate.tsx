@@ -11,49 +11,58 @@ export default function EloDate(props: {
   const [ref, { height }] = useMeasure();
   return (
     <div className={styles.eloDate}>
-      <motion.div
-        animate={{ height: height || "auto" }}
-        style={{ position: "relative", overflow: "hidden" }}
-      >
-        <div
-          className={styles.eloContainer}
-          ref={ref}
-          style={{ position: height ? "absolute" : "relative" }}
+      <AnimatePresence initial={false}>
+        <motion.div
+          initial={{ height: "auto" }}
+          animate={{ height: height || "auto" }}
+          style={{ position: "relative", overflow: "hidden" }}
         >
-          <div className={styles.timelineContainer}>
-            <div className={styles.timeline} />
-            <div className={styles.circle} />
-          </div>
-          <div className={styles.eloContent}>
-            {leaseEndDate !== null ? (
-              <>
-                  <AnimatePresence mode="wait">
-                <motion.div
-                    key={`${eloDate.time} ${leaseEndDate.toString()}`}
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    exit={{opacity: 0}}
-                    transition={{duration: .3}}
-                >
+          <div
+            className={styles.eloContainer}
+            ref={ref}
+            style={{
+              position: height ? "absolute" : "relative",
+              opacity: height ? 1 : 0,
+              transition: "opacity 0s",
+              transitionDelay: "300ms",
+            }}
+          >
+            <div className={styles.timelineContainer}>
+              <div className={styles.timeline} />
+              <div className={styles.circle} />
+            </div>
+            <div className={styles.eloContent}>
+              {leaseEndDate !== null ? (
+                <>
+                  <AnimatePresence mode="wait" initial={false}>
+                    <motion.div
+                      key={`${eloDate.time} ${leaseEndDate.toString()}`}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <h3 className={styles.dateTitle}>
+                        {leaseEndDate
+                          ?.subtract(eloDate.time, "days")
+                          .format("MMMM D, YYYY")}
+                      </h3>
+                    </motion.div>
+                  </AnimatePresence>
+                  <h4 className={styles.dateSubtitle}>
+                    {eloDate.time} days before the end of your lease
+                  </h4>
+                </>
+              ) : (
                 <h3 className={styles.dateTitle}>
-                  {leaseEndDate
-                    ?.subtract(eloDate.time, "days")
-                    .format("MMMM D, YYYY")}
-                </h3>
-                </motion.div></AnimatePresence>
-                <h4 className={styles.dateSubtitle}>
                   {eloDate.time} days before the end of your lease
-                </h4>
-              </>
-            ) : (
-              <h3 className={styles.dateTitle}>
-                {eloDate.time} days before the end of your lease
-              </h3>
-            )}
-            {eloDate.text}
+                </h3>
+              )}
+              {eloDate.text}
+            </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }

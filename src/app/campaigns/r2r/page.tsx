@@ -44,6 +44,7 @@ export default function R2R() {
       ),
     },
   ];
+  console.log('page rerendering')
 
   return (
     <>
@@ -112,6 +113,7 @@ export default function R2R() {
                 },
               }}
               onChange={(newValue) => {
+                console.log('changing')
                 setLeaseEndDate(newValue);
               }}
             />
