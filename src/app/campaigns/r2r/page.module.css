@@ -1,7 +1,8 @@
-.datePicker {
+.menu {
     display: flex;
     place-content: center;
     margin: 1rem 0;
+    gap: 1rem;
 }
 
 .dateTitle {
