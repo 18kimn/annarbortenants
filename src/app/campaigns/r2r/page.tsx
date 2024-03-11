@@ -165,7 +165,7 @@ export default function R2R() {
           <Tabs value={value} onChange={(_, v) => setValue(v)}>
             <Tab label="ELO before March 2024" />
             <Tab
-              label={`Amended ELO (effective after ${eloAmendDateFormatted}`}
+              label={`Amended ELO (effective after ${eloAmendDateFormatted})`}
             />
           </Tabs>
         </div>
