@@ -20,6 +20,7 @@ type Route =
 const displayRoutes: Route[] = [
   { path: "/", display: "Home" },
   { path: "/resources", display: "Resources" },
+  { path: "/news", display: "News" },
   {
     display: "Campaigns",
     routes: [

@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+}
+
+.content {
+    width: min(80ch, 80%);
+}
+
+.articleTitle {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0rem;
+}

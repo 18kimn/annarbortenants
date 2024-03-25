@@ -10,3 +10,9 @@ export const OutboundLink = (props: OutboundLinkProps) => (
     {props.children}
   </a>
 );
+
+export const Email = () => (
+  <OutboundLink href="mailto:annarbortenantsunion@gmail.com">
+    AnnArborTenantsUnion@gmail.com
+  </OutboundLink>
+);
