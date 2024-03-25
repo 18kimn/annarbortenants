@@ -6,57 +6,18 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { useState } from "react";
 import dayjs, { Dayjs } from "dayjs";
 import EloDate from "./EloDate";
-import NewEloDate from "./NewEloDate";
 import styles from "./page.module.css";
-import { Tab, Tabs } from "@mui/material";
 import { AnimatePresence, motion } from "framer-motion";
 import useMeasure from "react-use-measure";
+import Image from "next/image";
 
 const eloAmendDate = dayjs("2024-03-04");
-const eloAmendDateFormatted = eloAmendDate
-  .add(10, "days")
-  .format("MMM D, YYYY");
 
 export default function R2R() {
-  const [leaseEndDate, setLeaseEndDate] = useState<Dayjs | null>(null);
   const [leaseStartDate, setLeaseStartDate] = useState<Dayjs | null>(null);
-  const [value, setValue] = useState(0);
   const [ref, { height }] = useMeasure();
 
   const eloDates = [
-    {
-      time: 240,
-      text: (
-        <p>
-          If your landlord attempts to renew before this date, they must provide
-          a second notice.
-        </p>
-      ),
-    },
-    {
-      time: 180,
-      text: (
-        <p>Your landlord must provide you with a renewal offer by this date.</p>
-      ),
-    },
-    {
-      time: 150,
-      text: (
-        <>
-          <p>
-            You have until this date to accept your landlord&apos;s renewal
-            offer.
-          </p>
-          <p>
-            Your landlord may begin showing your unit, and leasing your unit, to
-            other prospective tenants only after this date.
-          </p>
-        </>
-      ),
-    },
-  ];
-
-  const newEloDates = [
     {
       time: 180,
       text: "Renewals can only be offered starting this date or later.",
@@ -70,43 +31,89 @@ export default function R2R() {
   return (
     <>
       <section>
+        <h1 className={styles.title}>The Early Leasing Ordinance and the Right to Renew</h1>
+        <h2 className={styles.subtitle}>
+          What we won, and what you should know
+        </h2>
+        <em>March 24, 2023</em>
         <p>
-          Despite the existence of two Ann Arbor city ordinances aimed at
-          regulating early leasing (
-          <OutboundLink href="https://www.a2gov.org/departments/city-clerk/Documents/ELO%20Flyer%206-16-2023.pdf">
-            Early Leasing Ordinance
-          </OutboundLink>{" "}
-          and{" "}
-          <OutboundLink href="https://www.a2gov.org/departments/city-clerk/Documents/RTR%20Flyer%206-15-2023.pdf">
-            Right to Renew
+          In a major victory for Ann Arbor tenants, the Early Leasing Ordinance
+          and the Right to Renew were combined on March 4th into one stronger
+          ordinance (
+          <OutboundLink href="https://a2gov.legistar.com/View.ashx?M=F&ID=12668890&GUID=A4D18E0E-A281-4CFC-97C8-A9FE8EF2478B">
+            8:530
           </OutboundLink>
-          ), landlords across the city are again pressuring tenants to renew
-          leases extremely early. The AATU believes that many of these cases are
-          clear violations of city law and we are encouraging tenants to file
-          complaints with the city to halt this harmful practice.
-        </p>
-        <p
-          style={{
-            background: "#ffff00",
-            fontWeight: "bold",
-            width: "fit-content",
-          }}
-        >
-          Please fill out{" "}
-          <OutboundLink href="https://www.a2gov.org/departments/build-rent-inspect/housing/SiteAssets/Pages/Filing-Complaints/ELO%20and%20RTR%20Complaint%20Form%20fillable.pdf">
-            this City complaint form
-          </OutboundLink>{" "}
-          and email the completed form to JFarrell@a2gov.org.
+          ). The new Ordinance uses clarified language, puts forth a simplified
+          timeline, and most importantly, includes stronger protections for
+          tenants. The Ann Arbor Tenants Union played an instrumental role in
+          strengthening these important rules.
         </p>
         <p>
-          We encourage you to also report your situation to the AATU for our own
-          records through our{" "}
-          <OutboundLink href="http://bit.ly/joinAATU">
-            tenant organizer form.
-          </OutboundLink>{" "}
-          Please do not hesitate to contact us if you have any questions or
-          would like to join our organization.
+          The new Ordinance enshrines several rights that all tenants should
+          know:
         </p>
+        <ul>
+          <li>
+            Landlords must offer renewal to tenants or pay relocation assistance
+            (2 months rent) unless there is{" "}
+            <OutboundLink href="https://a2gov.legistar.com/View.ashx?M=F&ID=12668890&GUID=A4D18E0E-A281-4CFC-97C8-A9FE8EF2478B">
+              good cause
+            </OutboundLink>{" "}
+            to not renew.
+          </li>
+          <li>
+            Until 180 days into your lease, landlords cannot make renewal
+            offers.
+          </li>
+          <li>
+            Until 210 days into your lease, landlords cannot require a response
+            to renewals or show occupied units.
+          </li>
+          <li>
+            Landlords always need to give tenants at least 30 days to respond to
+            the offer.
+          </li>
+        </ul>
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.eloImage}
+            alt="Revised ELO Timeline"
+            src="/revised-elo-timeline.png"
+            width={640}
+            height={285}
+          />
+        </div>
+        <h2 className={styles.subtitle}>The road to tenant protections</h2>
+        <p>
+          <strong>How it used to work:</strong> Before the first amendment to
+          the Early Leasing Ordinance (ELO) in 2021, landlords were allowed to
+          demand renewal only 70 days after the start of a lease. Landlords also
+          were not required to offer renewal and frequently didn’t. The
+          situation left tenants with little stability and almost no bargaining
+          leverage.
+        </p>
+        <p>
+          <strong>2021:</strong>
+          Tenants organized to amend the ELO, to give tenants 210 days into the
+          lease before landlords could give a renewal ultimatum.
+        </p>
+        <p>
+          <strong>2022:</strong> Tenants again organized within{" "}
+          <OutboundLink href="https://www.geo3550.org/">GEO’s</OutboundLink>{" "}
+          Housing Caucus to win the Right to Renew Ordinance (R2R) which
+          requires that landlords offer renewal or pay relocation assistance (2
+          months of rent). At this point, landlords began pressuring tenants to
+          sign by threatening to raise rent if leases were not signed by an
+          early deadline.
+        </p>
+        <p>
+          <strong>2024:</strong> The revived AATU began organizing to make the
+          leasing process more just for all tenants and to close loopholes. The
+          AATU began organizing tenants in support of an amendment to the ELO
+          and the R2R Ordinances. This amendment was accepted by City Council on
+          March 4th and was made active on March 14th, 2024.
+        </p>
+
         <p>
           Contact us at{" "}
           <OutboundLink href="mailto:annarbortenantsunion@gmail.com">
@@ -115,10 +122,10 @@ export default function R2R() {
         </p>
       </section>
       <section>
-        <h2>Know your leasing rights: A timeline</h2>
+        <h2 className={styles.subtitle}>Find your dates</h2>
         <p>
-          Is your landlord respecting your rights? To find out, input your lease
-          end date in the picker below.
+          Use our date calculator to see when your landlord can offer renewal
+          and require a response:
         </p>
         <div className={styles.menu}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -133,41 +140,8 @@ export default function R2R() {
                   },
                 },
               }}
-              onChange={(newValue) => {
-                setLeaseStartDate(newValue);
-                const diff = newValue?.diff(eloAmendDate, "day");
-                if (!diff) return;
-                if (diff > 10) {
-                  setValue(1);
-                } else {
-                  setValue(0);
-                }
-              }}
-            />
-            <DatePicker
-              label="Your lease's end date"
-              value={leaseEndDate}
-              slotProps={{
-                field: {
-                  clearable: true,
-                  onClear: () => {
-                    setLeaseEndDate(null);
-                  },
-                },
-              }}
-              onChange={(newValue) => {
-                setLeaseEndDate(newValue);
-              }}
             />
           </LocalizationProvider>
-        </div>
-        <div className={styles.menu}>
-          <Tabs value={value} onChange={(_, v) => setValue(v)}>
-            <Tab label="ELO before March 2024" />
-            <Tab
-              label={`Amended ELO (effective after ${eloAmendDateFormatted})`}
-            />
-          </Tabs>
         </div>
         <div>
           <AnimatePresence mode="wait" initial={false}>
@@ -179,46 +153,26 @@ export default function R2R() {
               <div
                 ref={ref}
                 style={{
-                  width: '100%',
+                  width: "100%",
                   position: height ? "absolute" : "relative",
                   opacity: height ? 1 : 0,
                   transition: "opacity 0s",
                   transitionDelay: "300ms",
                 }}
               >
-                {value === 1 ? (
-                  <>
-                    <p>
-                      <em>
-                        For leases starting on or after{" "}
-                        {eloAmendDate.add(10, "day").format("MMMM D, YYYY")}.
-                      </em>
-                    </p>
-                    {newEloDates.map((eloDate, i) => (
-                      <NewEloDate
-                        eloDate={eloDate}
-                        leaseStartDate={leaseStartDate}
-                        key={i}
-                      />
-                    ))}
-                  </>
-                ) : (
-                  <>
-                    <p>
-                      <em>
-                        For leases starting before{" "}
-                        {eloAmendDate.add(10, "day").format("MMMM D, YYYY")}.
-                      </em>
-                    </p>
-                    {eloDates.map((eloDate, i) => (
-                      <EloDate
-                        eloDate={eloDate}
-                        leaseEndDate={leaseEndDate}
-                        key={i}
-                      />
-                    ))}
-                  </>
-                )}
+                <p>
+                  <em>
+                    For lease renewals negotiated on or after{" "}
+                    {eloAmendDate.add(10, "day").format("MMMM D, YYYY")}.
+                  </em>
+                </p>
+                {eloDates.map((eloDate, i) => (
+                  <EloDate
+                    eloDate={eloDate}
+                    leaseStartDate={leaseStartDate}
+                    key={i}
+                  />
+                ))}
               </div>
             </motion.div>
           </AnimatePresence>

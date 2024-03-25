@@ -5,9 +5,9 @@ import type { Dayjs } from "dayjs";
 
 export default function EloDate(props: {
   eloDate: { text: React.ReactNode; time: number };
-  leaseEndDate: Dayjs | null;
+  leaseStartDate: Dayjs | null;
 }) {
-  const { eloDate, leaseEndDate } = props;
+  const { eloDate, leaseStartDate} = props;
   const [ref, { height }] = useMeasure();
   return (
     <div className={styles.eloDate}>
@@ -32,30 +32,30 @@ export default function EloDate(props: {
               <div className={styles.circle} />
             </div>
             <div className={styles.eloContent}>
-              {leaseEndDate !== null ? (
+              {leaseStartDate !== null ? (
                 <>
                   <AnimatePresence mode="wait" initial={false}>
                     <motion.div
-                      key={`${eloDate.time} ${leaseEndDate.toString()}`}
+                      key={`${eloDate.time} ${leaseStartDate.toString()}`}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
                       <h3 className={styles.dateTitle}>
-                        {leaseEndDate
-                          ?.subtract(eloDate.time, "days")
+                        {leaseStartDate
+                          ?.add(eloDate.time, "days")
                           .format("MMMM D, YYYY")}
                       </h3>
                     </motion.div>
                   </AnimatePresence>
                   <h4 className={styles.dateSubtitle}>
-                    {eloDate.time} days before the end of your lease
+                    {eloDate.time} days after the start of your lease
                   </h4>
                 </>
               ) : (
                 <h3 className={styles.dateTitle}>
-                  {eloDate.time} days before the end of your lease
+                  {eloDate.time} days after the start of your lease
                 </h3>
               )}
               {eloDate.text}
