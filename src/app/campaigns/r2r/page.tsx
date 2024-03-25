@@ -31,7 +31,9 @@ export default function R2R() {
   return (
     <>
       <section>
-        <h1 className={styles.title}>The Early Leasing Ordinance and the Right to Renew</h1>
+        <h1 className={styles.title}>
+          The Early Leasing Ordinance and the Right to Renew
+        </h1>
         <h2 className={styles.subtitle}>
           What we won, and what you should know
         </h2>
@@ -93,9 +95,9 @@ export default function R2R() {
           leverage.
         </p>
         <p>
-          <strong>2021:</strong>
-          Tenants organized to amend the ELO, to give tenants 210 days into the
-          lease before landlords could give a renewal ultimatum.
+          <strong>2021:</strong> Tenants organized to amend the ELO, to give
+          tenants 210 days into the lease before landlords could give a renewal
+          ultimatum.
         </p>
         <p>
           <strong>2022:</strong> Tenants again organized within{" "}
@@ -118,7 +120,7 @@ export default function R2R() {
           Contact us at{" "}
           <OutboundLink href="mailto:annarbortenantsunion@gmail.com">
             AnnArborTenantsUnion@gmail.com
-          </OutboundLink>
+          </OutboundLink> for more information or to report a violation of the Early Leasing / Right to Renew Ordinance.
         </p>
       </section>
       <section>
