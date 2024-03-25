@@ -134,6 +134,9 @@ export default function R2R() {
             <DatePicker
               label="Your lease's start date"
               value={leaseStartDate}
+              onChange={(v) =>{
+                setLeaseStartDate(v)
+              }}
               slotProps={{
                 field: {
                   clearable: true,

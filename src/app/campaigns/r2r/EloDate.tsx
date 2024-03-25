@@ -7,6 +7,7 @@ export default function EloDate(props: {
   eloDate: { text: React.ReactNode; time: number };
   leaseStartDate: Dayjs | null;
 }) {
+  console.log(props)
   const { eloDate, leaseStartDate} = props;
   const [ref, { height }] = useMeasure();
   return (
