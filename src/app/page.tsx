@@ -33,16 +33,16 @@ export default function Home() {
         <p>You can join as a regular member or as a building organizer.</p>
         <p>
           Fill out the form below or visit{" "}
-          <OutboundLink href="https://bit.ly/joinAATU.">
-            bit.ly/joinAATU
+          <OutboundLink href="https://bit.ly/JoinAATU.">
+            bit.ly/JoinAATU
           </OutboundLink>
           .
         </p>
         <iframe
           className={styles.iframe}
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdXKxbS-OhBN23qZ7HOCtFbhAPaYgpqrif3amkResc2tdx-XQ/viewform?embedded=true"
+          src="https://bit.ly/JoinAATU"
           width="640"
-          height="3000"
+          height="3500"
         >
           Loading…
         </iframe>
