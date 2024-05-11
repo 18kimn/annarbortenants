@@ -41,17 +41,24 @@ export default function News() {
           story, or otherwise would like to contact the AATU, please email{" "}
           <Email />.
         </p>
-        <hr/>
+        <hr />
         {press.map((p) => {
           return (
-            <Grid container flexDirection='column' key={p.Title} margin='1rem 0'>
+            <Grid
+              container
+              flexDirection="column"
+              key={p.Title}
+              margin="1rem 0"
+            >
               <div className={styles.row}>
                 <h2 className={styles.articleTitle}>
                   <OutboundLink href={p.Link}>{p.Title}</OutboundLink>
                 </h2>
               </div>
               <Grid>
-                {[p.Author, p.Publication, printFormattedDate(p.Date)].filter(s => s).join('  ⋅  ')}
+                {[p.Author, p.Publication, printFormattedDate(p.Date)]
+                  .filter((s) => s)
+                  .join("  ⋅  ")}
               </Grid>
             </Grid>
           );
