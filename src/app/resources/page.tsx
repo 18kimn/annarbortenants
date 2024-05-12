@@ -9,12 +9,22 @@ type Resource = {
 };
 const resources: Resource[] = [
   {
-    display: "The Ann Arbor Renters Commission",
+    display: "The Ann Arbor Renter's Commission",
     href: "https://www.a2gov.org/departments/city-clerk/Boards-and-Commissions/renters/Pages/default.aspx",
-    description: `The Ann Arbor Renters Commission was established in 2021 to 
+    description: `The Ann Arbor Renter's Commission was established in 2021 to 
     advise the Ann Arbor City Council on renters' issues.
     Several members of the AATU Reboot Task Force hold seats
     on the Renters Commission.`,
+  },
+  {
+    display: "Renters Commission Resources",
+    href: "https://www.a2gov.org/departments/city-clerk/Boards-and-Commissions/renters/Pages/Resources-for-Renters.aspx",
+    description: "The Renters Commission maintains their own list of resources, including free legal services, for renters in and around Ann Arbor."
+  },
+  {
+      display: "Legal Services of South Central Michigan (LSSCM)",
+      href: "https://lsscm.org",
+      description: "LSSCM provides free legal advice and representation to low-income folks in South Central Michigan." 
   },
   {
     display: "The Washtenaw Housing Alliance",
@@ -47,6 +57,7 @@ const resources: Resource[] = [
     fighting for rent control, social housing, and renters' rights 
     at the state level.`,
   },
+  {
 ];
 
 export default function ResourcesPage() {
