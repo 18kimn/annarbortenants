@@ -1,0 +1,11 @@
+
+
+.container {
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.content {
+    max-width: 72ch;
+}

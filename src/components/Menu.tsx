@@ -2,10 +2,7 @@ import type { FC } from "react";
 import { useState } from "react";
 import styles from "./Header.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import Link from "next/link";
-
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import Button from "@mui/material/Button";
 import Collapse from "@mui/material/Collapse";
 import Drawer from "@mui/material/Drawer";
@@ -27,6 +24,15 @@ const displayRoutes: Route[] = [
       {
         path: "/campaigns/r2r",
         display: "The Early Leasing Ordinance and the Right to Renew",
+      },
+    ],
+  },
+  {
+    display: "Blog",
+    routes: [
+      {
+        path: "/blog/ten-reasons",
+        display: "10 Reasons to Start a Tenant Association",
       },
     ],
   },

@@ -19,12 +19,14 @@ const resources: Resource[] = [
   {
     display: "Renters Commission Resources",
     href: "https://www.a2gov.org/departments/city-clerk/Boards-and-Commissions/renters/Pages/Resources-for-Renters.aspx",
-    description: "The Renters Commission maintains their own list of resources, including free legal services, for renters in and around Ann Arbor."
+    description:
+      "The Renters Commission maintains their own list of resources, including free legal services, for renters in and around Ann Arbor.",
   },
   {
-      display: "Legal Services of South Central Michigan (LSSCM)",
-      href: "https://lsscm.org",
-      description: "LSSCM provides free legal advice and representation to low-income folks in South Central Michigan." 
+    display: "Legal Services of South Central Michigan (LSSCM)",
+    href: "https://lsscm.org",
+    description:
+      "LSSCM provides free legal advice and representation to low-income folks in South Central Michigan.",
   },
   {
     display: "The Washtenaw Housing Alliance",
@@ -58,6 +60,11 @@ const resources: Resource[] = [
     at the state level.`,
   },
   {
+    display: "Homelessness Resource Map",
+    href: "https://goo.gl/maps/QMhWCTWoNQsjZmpX6",
+    description:
+      "Resources for folks who are unhoused and need day-to-day assistance; curated by Yvonne Winer.",
+  },
 ];
 
 export default function ResourcesPage() {
