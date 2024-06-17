@@ -12,8 +12,8 @@ export default function Temp() {
         <strong>IMPORTANT NEWS: </strong>
         Our next general meeting will take place on{" "}
         <strong>Sunday, June 23 2-4pm</strong> at the{" "}
-        <strong>ICC Education Center</strong>. We're hosting a training on how
-        each of us can organize and build tenant associations with our
+        <strong>ICC Education Center</strong>. We&apos;re hosting a training on
+        how each of us can organize and build tenant associations with our
         neighbors.
       </p>
       <p>

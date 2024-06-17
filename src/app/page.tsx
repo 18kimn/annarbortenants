@@ -25,11 +25,11 @@ export default function Home() {
             <b>stable, just, and affordable housing for all of us.</b>
           </p>
           <p>
-            The housing crisis in Ann Arbor is out of control and it's up to us
-            to organize and stop it. We won't wait for politicians, service
-            providers, or landlord parasites to save us &mdash; we're organizing
-            to protect ourselves and create better housing for everyone in Ann
-            Arbor.
+            The housing crisis in Ann Arbor is out of control and it&apos;s up
+            to us to organize and stop it. We won&apos;t wait for politicians,
+            service providers, or landlord parasites to save us &mdash;
+            we&apos;re organizing to protect ourselves and create better housing
+            for everyone in Ann Arbor.
           </p>
         </div>
       </div>
