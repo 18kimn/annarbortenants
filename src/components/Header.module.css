@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem;
+  background: var(--red);
 }
 
 /* Honest to god cannot figure out a good CSS grid wrap solution 
@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+.menuContainer .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 .container *:has(.site_title) {
   flex: 1 1;
   place-content: center;
@@ -37,6 +42,7 @@
   margin: 0;
   align-self: flex-end;
   font-size: min(2rem, 10vw);
+  color: #ffffff;
 }
 
 .socials {
@@ -45,12 +51,13 @@
   gap: 2rem;
   padding: 0 2rem;
   justify-content: center;
+  align-items: center;
 }
 
 .icon {
   height: 2rem;
   width: 2rem;
-  color: black;
+  color: #ffffff;
 }
 
 .list {

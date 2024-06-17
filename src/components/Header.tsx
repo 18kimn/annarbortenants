@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 import Link from "next/link";
 import { OutboundLink } from "./OutboundLink";
 import Menu from "./Menu";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
@@ -15,6 +16,11 @@ const socials = [
     alt: "Icon linking to AATU Twitter",
   },
   {
+    href: "https://www.instagram.com/aatenantsunion/",
+    Icon: InstagramIcon,
+    alt: "Icon linking to AATU Instagram",
+  },
+  {
     href: "https://www.facebook.com/a2tenantsunion",
     Icon: FacebookIcon,
     alt: "Icon linking to AATU Facebook",
@@ -24,7 +30,6 @@ const socials = [
     Icon: EmailIcon,
     alt: "Icon linking to AATU Email",
   },
-  // {},
 ];
 
 export default function Header() {

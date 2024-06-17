@@ -1,3 +1,4 @@
+import Temp from "@/components/Temp";
 import { OutboundLink } from "../components/OutboundLink";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -6,13 +7,16 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <div>
+        <Temp />
+      </div>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
           <Image
             className={styles.aatuImage}
             alt="AATU logo"
-            src="/logo.png"
-            height={500}
-            width={500}
+            src="/circle_logo.png"
+            height={400}
+            width={400}
           />
         </div>
         <div className={styles.description}>
@@ -21,16 +25,22 @@ export default function Home() {
             <b>stable, just, and affordable housing for all of us.</b>
           </p>
           <p>
-            We’re excited to announce our efforts to rebuild the Ann Arbor
-            Tenants Union, which had a storied history of fighting for better
-            housing in Ann Arbor but which unfortunately ended its operations in
-            2004.
+            The housing crisis in Ann Arbor is out of control and it's up to us
+            to organize and stop it. We won't wait for politicians, service
+            providers, or landlord parasites to save us &mdash; we're organizing
+            to protect ourselves and create better housing for everyone in Ann
+            Arbor.
           </p>
         </div>
       </div>
       <div className={styles.joinContainer}>
         <h2 className={styles.join}>Join your union!</h2>
-        <p>You can join as a regular member or as a building organizer.</p>
+        <p>
+          Alone we are weak, but together we are strong. Join your neighbors in
+          your union <strong>today</strong> to ally yourself with other tenants
+          and to build power together.
+        </p>
+
         <p>
           Fill out the form below or visit{" "}
           <OutboundLink href="https://bit.ly/JoinAATU.">
@@ -38,14 +48,16 @@ export default function Home() {
           </OutboundLink>
           .
         </p>
-        <iframe
-          className={styles.iframe}
-          src="https://bit.ly/JoinAATU"
-          width="640"
-          height="3500"
-        >
-          Loading…
-        </iframe>
+        <div className={styles.iframeContainer}>
+          <iframe
+            className={styles.iframe}
+            src="https://bit.ly/JoinAATU"
+            width="640"
+            height="2200"
+          >
+            Loading…
+          </iframe>
+        </div>
       </div>
     </main>
   );

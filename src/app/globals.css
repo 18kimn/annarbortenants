@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-size: 14pt;
   font-family: PT Sans;
+  --red: #C1120D;
 }
 
 * {

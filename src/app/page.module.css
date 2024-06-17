@@ -20,13 +20,20 @@
 
 .container div {
   flex: 1 1;
-  max-width: min(100vw, 60ch);
   min-width: min(80vw, 40ch);
   padding: 2rem;
 }
 
-.aatuImage {
+.imageContainer {
   width: 100%;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
+.aatuImage {
+  width: 80%;
   height: auto;
   aspect-ratio: 1 / 1;
 }
@@ -40,11 +47,21 @@
   flex-direction: column;
   place-items: center;
   padding: 2rem;
+  height: fit-content;
+}
+
+.joinContainer p {
+  max-width: 62ch;
 }
 
 .join {
   text-align: center;
   font-size: 2rem;
+}
+
+.iframeContainer {
+  height: 100%;
+  overflow: hidden;
 }
 
 .iframe {
