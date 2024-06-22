@@ -6,3 +6,11 @@
 .content {
     max-width: 80ch;
 }
+
+.resourceSection {
+    margin: 3rem 0;
+}
+
+.resourceTitle {
+    margin: 1rem 0;
+}
