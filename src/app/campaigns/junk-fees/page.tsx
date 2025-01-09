@@ -46,7 +46,7 @@ export default function JunkFeesPage() {
           $7,000 for a single rental unit.
         </OutboundLink>{" "}
         Landlords allege that these are not waitlist fees but instead
-        &quot;options contracts&quot; that credit tenants' accounts after a
+        &quot;options contracts&quot; that credit tenants&apos; accounts after a
         lease is signed, but the reality is that landlords keep these fees and
         profit after showing a tenant an apartment not fit for living. Tenants
         are either forced to forfeit exorbitant amounts or are pressured into
@@ -88,17 +88,18 @@ export default function JunkFeesPage() {
         , beginning at around 58:48.
       </p>
       <p>
-        This is an important victory for tenants and a blow to landlords'
+        This is an important victory for tenants and a blow to landlords&apos;
         predatory leasing practices. However, the bill does not address fees
-        assessed during tenancy, and the state's lack of rent control means that
-        landlords could easily simply raise rent to extract more from tenants.
-        We consider this a win in transparency for renters, but ultimately
-        tenant unions to negotiate fair rents and statewide legislation for rent
-        stabilization are needed to ensure all tenants are protected.
+        assessed during tenancy, and the state&apos;s lack of rent control means
+        that landlords could easily simply raise rent to extract more from
+        tenants. We consider this a win in transparency for renters, but
+        ultimately tenant unions to negotiate fair rents and statewide
+        legislation for rent stabilization are needed to ensure all tenants are
+        protected.
       </p>
       <p>
-        Let's keep fighting for tenant power to build a just, affordable, and
-        dignified living experience in Ann Arbor!
+        Let&apos;s keep fighting for tenant power to build a just, affordable,
+        and dignified living experience in Ann Arbor!
       </p>
       <p>
         See{" "}
