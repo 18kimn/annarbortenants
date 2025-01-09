@@ -29,6 +29,7 @@
   display: flex;
   place-items: center;
   place-content: center;
+  margin: 2rem;
 }
 
 .aatuImage {
