@@ -25,6 +25,10 @@ const displayRoutes: Route[] = [
         path: "/campaigns/r2r",
         display: "The Early Leasing Ordinance and the Right to Renew",
       },
+      {
+        path: "/campaigns/junk-fees",
+        display: "Trash the Junk Fees!",
+      },
     ],
   },
   {
