@@ -54,14 +54,14 @@ export default function Home() {
               <OutboundLink href="/resources">
                 Resources page
               </OutboundLink>{' '}
-              -- we're only tenants like yourself that know a thing or
-              two about the law through our own experience with it. If
-              you want to talk to a tenant like yourself and
-              strategize around collective action to improve your
+              -- we&apos;re only tenants like yourself that know a
+              thing or two about the law through our own experience
+              with it. If you want to talk to a tenant like yourself
+              and strategize around collective action to improve your
               experience as a renter, please become a member of the
-              AATU with the form below. We will follow up as we're
-              able to -- and you can reach out to us at <Email /> for
-              a faster response.
+              AATU with the form below. We will follow up as
+              we&apos;re able to -- and you can reach out to us at{' '}
+              <Email /> for a faster response.
             </p>
           </div>
         </div>
