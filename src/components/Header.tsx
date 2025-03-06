@@ -25,11 +25,6 @@ const socials = [
     Icon: FacebookIcon,
     alt: "Icon linking to AATU Facebook",
   },
-  {
-    href: "mailto:annarbortenantsunion@gmail.com",
-    Icon: EmailIcon,
-    alt: "Icon linking to AATU Email",
-  },
 ];
 
 export default function Header() {

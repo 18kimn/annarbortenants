@@ -6,6 +6,7 @@
   place-items: center;
   place-content: center;
 }
+
 .main p {
   font-size: 1.3rem;
 }
@@ -20,7 +21,7 @@
 
 .container div {
   flex: 1 1;
-  min-width: min(80vw, 40ch);
+  min-width: min(80vw, 60ch);
 }
 
 .imageContainer {
@@ -39,13 +40,15 @@
 }
 
 .descriptionContainer {
+  min-width: 40ch;
   flex: 1;
-display: flex;
-place-content: center;
+  display: flex;
+  place-content: center;
 }
 
 .description {
-  max-width: min(80vw, 60ch);
+  max-width: min(80vw, 72ch);
+  margin: 3rem;
 }
 
 .joinContainer {
@@ -71,6 +74,8 @@ place-content: center;
 }
 
 .iframe {
+  height: 100%;
   border: none;
+  min-height: 1700px;
   max-width: 80vw;
 }
