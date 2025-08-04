@@ -15,14 +15,7 @@ const upIcon = `
 const downIcon = `
 <svg style="height: 0.8em;" viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg>
 `
-const filePath = path.join(
-  process.cwd(),
-  'src',
-  'app',
-  'campaigns',
-  'tbor',
-  'bor.html',
-)
+const filePath = path.join(process.cwd(), 'public', 'bor.txt')
 const content = fs.readFileSync(filePath, 'utf8')
 const cheerioDom = cheerio.load(content)
 const headings = cheerioDom('h2')
