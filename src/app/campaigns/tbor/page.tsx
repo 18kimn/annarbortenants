@@ -55,8 +55,14 @@ export default function TBOR() {
         </h2>
       </div>
       <div className={classes.logos}>
-        <img src="/circle_logo.png" />
-        <img src="/hvdsa.png" />
+        <img
+          alt="Ann Arbor Tenants Union logo"
+          src="/circle_logo.png"
+        />
+        <img
+          alt="Huron Valley Democratic Socialists of America logo"
+          src="/hvdsa.png"
+        />
       </div>
       <div>
         <h2>Table of contents</h2>
