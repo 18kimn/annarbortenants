@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import * as cheerio from 'cheerio'
 import classes from './page.module.css'
+import Image from 'next/image'
 
 const topIcon = `
 <svg style="height: 0.8em;" viewBox="0 0 24 24"><path d="M6 17.59 7.41 19 12 14.42 16.59 19 18 17.59l-6-6z"></path><path d="m6 11 1.41 1.41L12 7.83l4.59 4.58L18 11l-6-6z"></path></svg>
@@ -55,11 +56,15 @@ export default function TBOR() {
         </h2>
       </div>
       <div className={classes.logos}>
-        <img
+        <Image
+          width="400"
+          height="400"
           alt="Ann Arbor Tenants Union logo"
           src="/circle_logo.png"
         />
-        <img
+        <Image
+          width="400"
+          height="400"
           alt="Huron Valley Democratic Socialists of America logo"
           src="/hvdsa.png"
         />
@@ -68,7 +73,7 @@ export default function TBOR() {
         <h2>Table of contents</h2>
         <p>
           {headings.map((heading) => (
-            <>
+            <div key={heading.id}>
               <a
                 className={classes.headingLink}
                 key={heading.id}
@@ -76,8 +81,7 @@ export default function TBOR() {
               >
                 {heading.text}
               </a>
-              <br />
-            </>
+            </div>
           ))}
         </p>
       </div>
