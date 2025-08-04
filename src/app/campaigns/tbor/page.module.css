@@ -1,0 +1,39 @@
+.container {
+   display: flex;
+   flex-direction: row;
+}
+
+.main a {
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+}
+
+.headingLink {
+    color: black;
+    text-decoration: underline;
+}
+
+.headingLink:hover {
+    color: blue;
+}
+
+
+.main svg:hover {
+    
+    fill: blue;
+}
+
+.title {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 2rem;
+}
+
+.logos img {
+    height: 5rem;
+}

@@ -19,10 +19,11 @@
     "@mui/x-date-pickers": "^6.19.4",
     "@next/mdx": "^14.2.3",
     "@types/mdx": "^2.0.13",
+    "cheerio": "^1.1.2",
     "dayjs": "^1.11.10",
     "framer-motion": "^11.0.6",
     "loader": "link:@/mdx-js/loader",
-    "next": "13.5.4",
+    "next": "15.4.5",
     "react": "^18",
     "react-dom": "^18",
     "react-use-measure": "^2.1.1"
