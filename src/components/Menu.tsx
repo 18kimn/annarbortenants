@@ -1,50 +1,54 @@
-import type { FC } from "react";
-import { useState } from "react";
-import styles from "./Header.module.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import List from "@mui/material/List";
-import Button from "@mui/material/Button";
-import Collapse from "@mui/material/Collapse";
-import Drawer from "@mui/material/Drawer";
-import ListItemButton from "@mui/material/ListItemButton";
+import type {FC} from 'react'
+import {useState} from 'react'
+import styles from './Header.module.css'
+import MenuIcon from '@mui/icons-material/Menu'
+import List from '@mui/material/List'
+import Button from '@mui/material/Button'
+import Collapse from '@mui/material/Collapse'
+import Drawer from '@mui/material/Drawer'
+import ListItemButton from '@mui/material/ListItemButton'
 
 type Route =
   | {
-      display: string;
-      path: string;
+      display: string
+      path: string
     }
-  | { display: string; routes: Route[] };
+  | {display: string; routes: Route[]}
 const displayRoutes: Route[] = [
-  { path: "/", display: "Home" },
-  { path: "/resources", display: "Resources" },
-  { path: "/news", display: "News" },
+  {path: '/', display: 'Home'},
+  {path: '/resources', display: 'Resources'},
+  {path: '/news', display: 'News'},
   {
-    display: "Campaigns",
+    display: 'Campaigns',
     routes: [
       {
-        path: "/campaigns/r2r",
-        display: "The Early Leasing Ordinance and the Right to Renew",
+        path: '/campaigns/tenant-bill-of-rights',
+        display: 'The Ann Arbor Tenant Bill of Rights',
       },
       {
-        path: "/campaigns/junk-fees",
-        display: "Trash the Junk Fees!",
+        path: '/campaigns/junk-fees',
+        display: 'Trash the Junk Fees!',
+      },
+      {
+        path: '/campaigns/r2r',
+        display: 'The Early Leasing Ordinance and the Right to Renew',
       },
     ],
   },
   {
-    display: "Blog",
+    display: 'Blog',
     routes: [
       {
-        path: "/blog/ten-reasons",
-        display: "10 Reasons to Start a Tenant Association",
+        path: '/blog/ten-reasons',
+        display: '10 Reasons to Start a Tenant Association',
       },
     ],
   },
-];
+]
 
-const MenuItem: FC<{ route: Route }> = ({ route }) => {
-  const [isOpen, setIsOpen] = useState(true);
-  if ("routes" in route) {
+const MenuItem: FC<{route: Route}> = ({route}) => {
+  const [isOpen, setIsOpen] = useState(true)
+  if ('routes' in route) {
     return (
       <>
         <ListItemButton
@@ -54,28 +58,34 @@ const MenuItem: FC<{ route: Route }> = ({ route }) => {
           {route.display}
         </ListItemButton>
         <Collapse in={isOpen}>
-          <List sx={{ pl: 4 }}>
+          <List sx={{pl: 4}}>
             {route.routes.map((subroute, i) => (
               <MenuItem key={i} route={subroute} />
             ))}
           </List>
         </Collapse>
       </>
-    );
+    )
   }
 
   return (
-    <ListItemButton component="a" href={route.path} className={styles.listItem}>
+    <ListItemButton
+      component="a"
+      href={route.path}
+      className={styles.listItem}
+    >
       {route.display}
     </ListItemButton>
-  );
-};
+  )
+}
 
 export default function Menu() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <Button onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+      <Button
+        onClick={() => setIsMenuOpen((prevState) => !prevState)}
+      >
         <MenuIcon className={styles.icon} />
       </Button>
       <Drawer
@@ -90,5 +100,5 @@ export default function Menu() {
         </List>
       </Drawer>
     </>
-  );
+  )
 }
