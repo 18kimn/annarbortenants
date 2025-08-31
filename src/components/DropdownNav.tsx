@@ -21,7 +21,7 @@ export default function DropdownNav(props: {
   const anchorRef = useRef<HTMLDivElement>(null)
   const [selectedIndex, setSelectedIndex] = useState(1)
 
-  const handleClose = (event: Event) => {
+  const handleClose = (event: any) => {
     if (
       anchorRef.current &&
       anchorRef.current.contains(event.target as HTMLElement)
