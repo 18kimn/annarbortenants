@@ -23,12 +23,12 @@ export default function Home() {
         <div className={styles.descriptionContainer}>
           <div className={styles.description}>
             <p>
-              We are a group of tenants in Ann Arbor interested in
-              fighting for{' '}
-              <b>
-                stable, just, and affordable housing for all of us.
-              </b>{' '}
-              Become a member of your union today with the form below.
+              We are the <strong>Ann Arbor Tenants Union</strong>, a
+              group of tenants in Ann Arbor fighting for{' '}
+              <b>stable, just, and affordable housing</b> through
+              wielding our shared burden &mdash; and power &mdash; as
+              renters. Become a member of your union today with the
+              form below.
             </p>
             <p>
               The housing crisis in Ann Arbor is out of control and

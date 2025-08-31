@@ -1,0 +1,12 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    padding: 2rem;
+}
+
+.content {
+    max-width: 72ch;
+    
+}
