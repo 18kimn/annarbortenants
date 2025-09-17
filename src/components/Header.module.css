@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: var(--red);
 }
@@ -26,6 +26,7 @@
   height: 100%;
   max-width: 3rem;
   max-height: 3rem;
+  margin: 0.5rem 1rem;
 }
 
 .container *:has(.site_title) {
@@ -39,12 +40,22 @@
   margin: 0;
   align-self: flex-end;
   font-size: min(1.3rem, 10vw);
+  padding: 0;
   color: #ffffff;
   background: transparent;
   border: none;
   text-decoration: underline;
   cursor: pointer;
 }
+
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 .socials {
   display: flex;
@@ -65,10 +76,6 @@
   padding: 1rem;
 }
 
-.listItem {
-  text-decoration: none;
-  color: black;
-  max-width: 30ch;
-  flex: unset;
-  font-size: 1.3rem;
+.item {
+  margin: 0.2rem;
 }

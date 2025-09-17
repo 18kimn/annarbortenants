@@ -72,6 +72,7 @@ export default function DropdownNav(props: {
                       selected={index === selectedIndex}
                       component={Link}
                       href={link.href}
+                      style={{margin: '0.5rem'}}
                       onClick={handleClose}
                     >
                       {link.display}

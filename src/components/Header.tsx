@@ -1,13 +1,18 @@
 'use client'
+// overcomplicated as fuck for some reason
 import styles from './Header.module.css'
+import {useState} from 'react'
 
-import Link from 'next/link'
 import {OutboundLink} from './OutboundLink'
+import Link from 'next/link'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import Image from 'next/image'
-import DropdownNav from './DropdownNav'
+
+import {IconButton, Collapse, useMediaQuery} from '@mui/material'
+import MenuIcon from '@mui/icons-material/Menu'
+import NavLinks from './NavLinks'
 
 const socials = [
   {
@@ -28,9 +33,11 @@ const socials = [
 ]
 
 export default function Header() {
+  const [open, setOpen] = useState(false)
+  const isDesktop = useMediaQuery('(min-width:1000px)')
   return (
-    <div className={styles.container}>
-      <div className={styles.aatuImage}>
+    <header className={styles.container}>
+      <div>
         <Link href="/">
           <Image
             className={styles.aatuImage}
@@ -41,56 +48,23 @@ export default function Header() {
           />
         </Link>
       </div>
-      <div>
-        <DropdownNav
-          name="About"
-          links={[
-            {
-              href: '/about',
-              display: 'History',
-            },
-            {
-              href: '/about/faq',
-              display: 'Frequently Asked Questions',
-            },
-            {
-              href: '/about/directory',
-              display: 'Directory of tenant associations',
-            },
-            {
-              href: '/about/calendar',
-              display: 'Upcoming Meetings and Events',
-            },
-          ]}
-        />
-      </div>
-      <div>
-        <Link href="/membership">Membership</Link>
-      </div>
-      <div>
-        <Link href="/resources">Resources</Link>
-      </div>
-      <div>
-        <Link href="/news">News</Link>
-      </div>
-      <DropdownNav
-        name="Campaigns"
-        links={[
-          {
-            href: '/campaigns/tenant-bill-of-rights',
-            display: 'The Ann Arbor Tenant Bill of Rights',
-          },
-          {
-            href: '/campaigns/junk-fees',
-            display: 'Trash the Junk Fees!',
-          },
-          {
-            href: '/campaigns/r2r',
-            display:
-              'The Early Leasing Ordinance and the Right to Renew',
-          },
-        ]}
-      />
+      {isDesktop ? (
+        <NavLinks />
+      ) : (
+        <IconButton
+          onClick={() => setOpen((prev: any) => !prev)}
+          edge="end"
+        >
+          <MenuIcon style={{fill: '#ffffff'}} />
+        </IconButton>
+      )}
+
+      {!isDesktop && (
+        <Collapse in={open} timeout="auto" unmountOnExit>
+          <NavLinks />
+        </Collapse>
+      )}
+
       <div className={styles.socials}>
         {socials.map(({href, Icon}, i) => (
           <OutboundLink key={i} href={href}>
@@ -98,6 +72,6 @@ export default function Header() {
           </OutboundLink>
         ))}
       </div>
-    </div>
+    </header>
   )
 }
