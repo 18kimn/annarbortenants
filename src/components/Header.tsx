@@ -57,6 +57,10 @@ export default function Header() {
               href: '/about/directory',
               display: 'Directory of tenant associations',
             },
+            {
+              href: '/about/calendar',
+              display: 'Upcoming Meetings and Events',
+            },
           ]}
         />
       </div>

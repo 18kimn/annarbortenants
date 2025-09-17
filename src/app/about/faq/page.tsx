@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <>
+    <div style={{maxWidth: '72ch'}}>
       <h1 id="about-page-faq">FAQ</h1>
       <p>
         <strong>What is a tenants union?</strong>
@@ -128,6 +128,6 @@ export default function Page() {
         </a>
         .
       </p>
-    </>
+    </div>
   )
 }

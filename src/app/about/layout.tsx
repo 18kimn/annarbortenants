@@ -12,9 +12,7 @@ export default function CampaignLayout({
       justifyContent="center"
       className={styles.container}
     >
-      <Grid item className={styles.content}>
-        {children}
-      </Grid>
+      {children}
     </Grid>
   )
 }

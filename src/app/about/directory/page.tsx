@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <>
+    <div style={{maxWidth: '72ch'}}>
       <h1 id="about-page-directory-of-tenant-associations">
         Directory of tenant associations
       </h1>
@@ -82,6 +82,6 @@ export default function Page() {
           <p>Munger Graduate Residences</p>
         </li>
       </ul>
-    </>
+    </div>
   )
 }

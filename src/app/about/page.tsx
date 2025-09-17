@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <>
+    <div style={{maxWidth: '72ch'}}>
       <h1 id="about-page-about-the-ann-arbor-tenants-union">
         About the Ann Arbor Tenants Union
       </h1>
@@ -123,6 +123,6 @@ export default function Page() {
         we can win the dignity and affordability for tenants that we
         deserve.
       </p>
-    </>
+    </div>
   )
 }

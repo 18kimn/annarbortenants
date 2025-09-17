@@ -1,8 +1,7 @@
 :root,
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   font-size: 14pt;
   font-family: PT Sans;
