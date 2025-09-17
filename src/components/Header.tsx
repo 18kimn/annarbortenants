@@ -52,7 +52,7 @@ export default function Header() {
         <NavLinks />
       ) : (
         <IconButton
-          onClick={() => setOpen((prev: any) => !prev)}
+          onClick={() => setOpen((prev) => !prev)}
           edge="end"
         >
           <MenuIcon style={{fill: '#ffffff'}} />
