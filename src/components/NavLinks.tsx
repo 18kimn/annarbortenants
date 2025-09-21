@@ -8,7 +8,6 @@ export default function NavLinks() {
     <nav
       style={{
         flexDirection: isDesktop ? 'row' : 'column',
-        alignItems: isDesktop ? 'center' : 'unset',
       }}
       className={classes.navbar}
     >
@@ -19,6 +18,10 @@ export default function NavLinks() {
             {
               href: '/about',
               display: 'History',
+            },
+            {
+              href: '/about/resources',
+              display: 'Resources',
             },
             {
               href: '/about/faq',
@@ -39,7 +42,7 @@ export default function NavLinks() {
         <Link href="/membership">Membership</Link>
       </div>
       <div>
-        <Link href="/resources">Resources</Link>
+        <Link href="/summit">Tenant Union Summit</Link>
       </div>
       <div>
         <Link href="/news">News</Link>
