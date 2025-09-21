@@ -72,9 +72,7 @@ export default function Page() {
           participate and travel expenses can be covered. Breakfast
           and lunch will be provided, and if you sign up before
           September 20th you will also receive a free t-shirt during
-          the event. Following the Summit's conclusion there will also
-          be a social event hosted at Northern Lights Lounge until
-          7pm.
+          the event.
         </p>
         <h2>What will be discussed during the Summit?</h2>
         <p>
