@@ -8,6 +8,15 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/resources',
+        destination: '/about/resources',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 const withMDX = createMDX({
