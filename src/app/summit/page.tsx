@@ -30,7 +30,7 @@ export default function Page() {
           <a href="https://www.instagram.com/detroittenantsunion/">
             the Detroit Tenants Union,
           </a>{' '}
-          and
+          and{' '}
           <a href="https://mirentistoodamnhigh.com">
             Rent is too Damn High
           </a>{' '}
@@ -45,7 +45,7 @@ export default function Page() {
           <a href="https://bit.ly/TenantSummitRSVP">
             bit.ly/TenantSummitRSVP
           </a>
-          ! Event registration will be capped to 55 attendees.
+          !
         </p>
         <h2>What is the Michigan Tenants Union Summit?</h2>
         <p>
@@ -67,12 +67,11 @@ export default function Page() {
         </p>
         <p>
           We are looking to bring experienced and new organizers
-          together, as well as tenant union allies. While attendance
-          is limited, unions can bring anywhere from 2-11 people to
-          participate and travel expenses can be covered. Breakfast
-          and lunch will be provided, and if you sign up before
-          September 20th you will also receive a free t-shirt during
-          the event.
+          together, as well as tenant union allies. Travel expenses
+          can be covered; please reach out using the information below
+          for details around reimbursement. Breakfast and lunch will
+          be provided, and if you sign up before September 20th you
+          will also receive a free t-shirt during the event.
         </p>
         <h2>What will be discussed during the Summit?</h2>
         <p>
@@ -88,7 +87,7 @@ export default function Page() {
               11:00am: Skill-building - Doorknocking/"AHA"
               conversations for leader identification
             </li>
-            <li>12:00pm: Catered Lunch</li>
+            <li>12:00pm: Catered lunch</li>
             <li>1:00pm: Role playing exercise</li>
             <li>
               1:30pm: Building strong teams and running effective
@@ -99,7 +98,7 @@ export default function Page() {
               3:30pm: Statewide envisioning and a united front of
               organized tenants
             </li>
-            <li>5:00pm: social event</li>
+            <li>5:00pm: Social event</li>
           </ul>
         </p>
         <h2>Where can I direct questions regarding the Summit?</h2>
