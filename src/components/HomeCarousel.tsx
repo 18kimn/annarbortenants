@@ -2,13 +2,7 @@
 
 import {useState} from 'react'
 import Image from 'next/image'
-import {
-  Box,
-  IconButton,
-  MobileStepper,
-  Paper,
-  Typography,
-} from '@mui/material'
+import {Box, IconButton, MobileStepper, Paper} from '@mui/material'
 import {
   KeyboardArrowLeft,
   KeyboardArrowRight,
@@ -76,6 +70,16 @@ export default function ImageCarousel({images}: ImageCarouselProps) {
               fill
               style={{objectFit: 'cover', borderRadius: '12px'}}
             />
+            {images.map((img, index) =>
+              Math.abs(activeStep - index) <= 1 ? (
+                <link
+                  rel="preload"
+                  as="image"
+                  href={img.path}
+                  key={img.path}
+                />
+              ) : null,
+            )}
           </motion.div>
         </AnimatePresence>
       </Box>
