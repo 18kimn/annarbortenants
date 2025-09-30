@@ -1,31 +1,39 @@
+'use client'
+
 import Temp from '@/components/Temp'
 import {OutboundLink} from '../components/OutboundLink'
 import styles from './page.module.css'
 import Image from 'next/image'
 import {Email} from '../components/OutboundLink'
+import {useState, useEffect} from 'react'
+import HomeCarousel from '../components/HomeCarousel'
 
 export default function Home() {
+  const [images, setImages] = useState([])
+  useEffect(() => {
+    fetch('/home.json')
+      .then((res) => res.json())
+      .then((images) => setImages(images))
+  }, [])
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         <Temp />
       </div>
       <div className={styles.container}>
+        <h1>The Ann Arbor Tenants Union</h1>
+      </div>
+      <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image
-            className={styles.aatuImage}
-            alt="AATU logo"
-            src="/circle_logo.png"
-            height={400}
-            width={400}
-          />
+          <HomeCarousel images={images} />
         </div>
         <div className={styles.descriptionContainer}>
           <div className={styles.description}>
             <p>
               We are the <strong>Ann Arbor Tenants Union</strong>, a
-              group of tenants in Ann Arbor fighting for{' '}
-              <b>stable, just, and affordable housing</b> through
+              democratic collective of tenants in Ann Arbor fighting
+              for <b>stable, just, and affordable housing</b> through
               wielding our shared burden &mdash; and power &mdash; as
               renters. Become a member of your union today with the
               form below.
@@ -39,15 +47,15 @@ export default function Home() {
               housing for everyone in Ann Arbor.
             </p>
             <p>
-              We&apos;re a group of tenants that believe we can win
-              lower rent, timely maintenance, and stability through
-              the power we hold as renters paying for our
-              landlords&apos; mortgages. They depend on us, and we can
-              fight and <strong>win</strong> when we recognize that as
-              our power and use it as leverage. Crucially, we&apos;re{' '}
-              <strong>not</strong> a service-providing nonprofit, or a
-              legal aid group, or even an advocacy organization.
-              We&apos;re tenants like you.
+              We believe we can win lower rent, timely maintenance,
+              and stability through the power we hold as renters
+              paying for our landlords&apos; mortgages. They depend on
+              us, and we can fight and <strong>win</strong> when we
+              recognize that as our power and use it as leverage.
+              Crucially, we&apos;re <strong>not</strong> a
+              service-providing nonprofit, or a legal aid group, or
+              even an advocacy organization. We&apos;re tenants like
+              you.
             </p>
             <p>
               If you want to talk to a lawyer, you can check out our{' '}

@@ -42,7 +42,7 @@ export default function NavLinks() {
         <Link href="/membership">Membership</Link>
       </div>
       <div>
-        <Link href="/summit">Tenant Union Summit</Link>
+        <Link href="/summit">Tenants Union Summit</Link>
       </div>
       <div>
         <Link href="/news">News</Link>

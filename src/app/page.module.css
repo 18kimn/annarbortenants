@@ -19,28 +19,21 @@
   width: 100%;
 }
 
-.container div {
+.imageContainer, .descriptionContainer {
   flex: 1 1;
   min-width: min(80vw, 60ch);
 }
 
 .imageContainer {
-  width: 100%;
+  width: min(80%, 300px);
   height: 100%;
   display: flex;
   place-items: center;
   place-content: center;
-  margin: 2rem;
-}
-
-.aatuImage {
-  width: min(80%, 400px);
-  height: auto;
-  aspect-ratio: 1 / 1;
 }
 
 .descriptionContainer {
-  min-width: 40ch;
+  min-width: 56ch;
   flex: 1;
   display: flex;
   place-content: center;
