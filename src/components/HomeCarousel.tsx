@@ -75,7 +75,7 @@ export default function ImageCarousel({images}: ImageCarouselProps) {
                 <link
                   rel="preload"
                   as="image"
-                  href={img.path}
+                  href={'/home/' + images[activeStep].path}
                   key={img.path}
                 />
               ) : null,
