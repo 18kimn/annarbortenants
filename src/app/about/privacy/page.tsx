@@ -40,7 +40,9 @@ export default function PrivacyPage() {
         opt-out status. No further messages will be sent unless you
         re-enroll.
       </p>
+
       <h2>Data sharing and access</h2>
+
       <p>
         Your phone number and email will be available to AATU
         organizers that are coordinating General Meetings and other
@@ -50,6 +52,19 @@ export default function PrivacyPage() {
       <p>
         No other information will be shared about you to any other
         party unless required by law.
+      </p>
+
+      <p>
+        We will not sell, rent, or otherwise share your personal data
+        to third parties for promotional/marketing purposes. However,
+        we may share your information with service providers for
+        business operations and/or legal authorities when required by
+        law or to protect our rights.
+      </p>
+      <p>
+        You can opt out of receiving text messages at any time by
+        texting STOP to any text you receive from us. Mobile opt-ins
+        are excluded from third party sharing for marketing purposes.
       </p>
       <h2>Opt-out and consumer rights</h2>
       <p>You have the:</p>

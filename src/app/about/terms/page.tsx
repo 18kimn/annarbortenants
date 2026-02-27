@@ -11,11 +11,13 @@ export default function TermsPage() {
       <h1>Terms of Service</h1>
       <h2>Message rates and frequency</h2>
       <p>
-        By providing your phone number at the time of registration as
-        a member of the Ann Arbor Tenants Union, you agree to receive
-        text messages from the Ann Arbor Tenants Union, which may
-        include announcements about general meetings and events, as
-        well as ways to get involved.
+        By providing your cell phone number, you agree to receive
+        texts to your number from Ann Arbor Tenants Union. Texts will
+        include messages about inform tenant union membership of
+        general meetings and other important events. Msg frequency
+        varies. Reply STOP to opt-out. Reply HELP for help or more
+        information. Msg and data rates may apply. Privacy Policy can
+        be found here: https://annarbortenants.org/about/privacy.
       </p>
       <p>
         By providing your mobile number and opting in to receive SMS
