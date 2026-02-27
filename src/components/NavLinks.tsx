@@ -35,14 +35,19 @@ export default function NavLinks() {
               href: '/about/calendar',
               display: 'Upcoming Meetings and Events',
             },
+            {
+              href: '/about/terms',
+              display: 'Terms and Conditions',
+            },
+            {
+              href: '/about/privacy',
+              display: 'Privacy Policy',
+            },
           ]}
         />
       </div>
       <div>
         <Link href="/membership">Membership</Link>
-      </div>
-      <div>
-        <Link href="/summit">Tenants Union Summit</Link>
       </div>
       <div>
         <Link href="/news">News</Link>
@@ -62,6 +67,10 @@ export default function NavLinks() {
             href: '/campaigns/r2r',
             display:
               'The Early Leasing Ordinance and the Right to Renew',
+          },
+          {
+            href: '/summit',
+            display: 'The Michigan Tenants Union Summit',
           },
         ]}
       />

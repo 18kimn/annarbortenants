@@ -51,7 +51,7 @@ export default function ImageCarousel({images}: ImageCarouselProps) {
           overflow: 'hidden',
         }}
       >
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           <motion.div
             key={images[activeStep].path}
             initial={{opacity: 0, x: 50}}

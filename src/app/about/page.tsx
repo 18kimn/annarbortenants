@@ -9,7 +9,7 @@ export default function Page() {
         Students and community renters{' '}
         <a href="https://openyls.law.yale.edu/server/api/core/bitstreams/bb7e8b29-db9d-4ce5-b515-8bcca82592d1/content">
           <u>began</u>
-        </a>
+        </a>{' '}
         the Ann Arbor Tenants Union in 1968 with a fiery beginning in
         the form of a three-year long rent strike, which forced
         landlords to the table and showed that organized tenants could
@@ -59,16 +59,15 @@ export default function Page() {
         Michigan’s most expensive city for renters.{' '}
         <a href="https://a2gov.legistar.com/View.ashx?M=F&amp;ID=14275212&amp;GUID=04E2FEB8-9CAB-4CE7-8C41-445DB430848E">
           <u>Research</u>
-        </a>
-        from Ann Arbor City Planner Michelle Bennett has shown Ann
-        Arbor the median household income in the City of Ann Arbor
-        increased by only 27% since 2013, while the median apartment
-        rent grew by 54%, a pace that has left two-thirds of Ann Arbor
-        renters being cost-burdened, spending more than 30% of income
-        on rent. Meanwhile, landlords continue to{' '}
+        </a>{' '}
+        from Ann Arbor City Planner Michelle Bennett has shown that
+        the median household income in the City of Ann Arbor increased
+        by only 27% since 2013, while the median apartment rent grew
+        by 54%, a pace that has left two-thirds of Ann Arbor renters
+        being cost-burdened. Meanwhile, landlords continue to{' '}
         <a href="https://www.wemu.org/wemu-news/2023-04-25/ann-arbor-woman-files-lawsuit-claiming-source-of-income-discrimination-by-landlord">
           <u>push</u>
-        </a>
+        </a>{' '}
         illegal practices,{' '}
         <a href="https://a2independent.com/2023/11/03/one-ann-arbor-landlords-blatant-attempt-to-thwart-the-early-leasing-ordinance/">
           <u>exploit loopholes</u>
@@ -101,8 +100,8 @@ export default function Page() {
         tenants formed in 2023 to forge that mass culture through
         no-shortcuts organizing, building by building. We’ve already
         notched important victories against landlords like Campus
-        Management and Redwood Communities at the building level, and,
-        at the city level, have won a ban on pre-tenancy junk fees and
+        Management and Redwood Communities at the building level. At
+        the city level, we've won a ban on pre-tenancy junk fees and
         stronger versions of the Early Leasing Ordinance and Right to
         Renew (
         <a href="https://www.mlive.com/news/ann-arbor/2022/10/ann-arbor-renters-applaud-new-law-but-landlords-arent-celebrating.html">
@@ -114,14 +113,12 @@ export default function Page() {
       <p>
         Today, members are drafting a Tenants’ Bill of Rights to close
         loopholes and establish real penalties for landlords who break
-        the law. At the time of writing, the union boasts more than
-        250 members, with multiple active tenant associations across
-        the city. We invite you to join your fellow unionized tenants
-        in the Ann Arbor Tenants Union, not only so that we may
-        protect each other from predatory landlord parasitism that
-        easily exploits us as individuals, but also so that together,
-        we can win the dignity and affordability for tenants that we
-        deserve.
+        the law. At the time of writing in December 2025, the union
+        boasts has than 250 members, with multiple active tenant
+        associations across the city. We invite you to join your
+        fellow unionized tenants in the Ann Arbor Tenants Union.
+        Together, we can win the dignity and affordability for tenants
+        that we deserve.
       </p>
     </div>
   )
