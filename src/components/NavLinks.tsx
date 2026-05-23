@@ -24,6 +24,10 @@ export default function NavLinks() {
               display: 'Resources',
             },
             {
+              href: '/donations',
+              display: 'Donations',
+            },
+            {
               href: '/about/faq',
               display: 'Frequently Asked Questions',
             },

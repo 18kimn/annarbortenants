@@ -146,10 +146,20 @@ export default function MembershipPage() {
           importantly, as an AATU member your active participation in
           our organizing work will shape the direction and capacity of
           our union as we work together to build tenant power in Ann
-          Arbor. Lastly, we plan to begin collecting dues from members
-          but strictly on a voluntary basis— we believe this is
-          important for maintaining our independence. 
+          Arbor.
         </p>
+        <p>
+          Lastly, members are asked to make regular donations via our
+          Paypal
+          <a href="https://bit.ly/AATUDonate">here</a>. Our power as a
+          tenants union comes from bringing our talents, resources,
+          and leverage as individuals into formations together --
+          donations are one way to do so. Read more on our
+          <a href="/donations">Donations Page</a>
+        </p>
+        Lastly, we plan to begin collecting dues from members but
+        strictly on a voluntary basis— we believe this is important
+        for maintaining our independence. 
       </div>
     </div>
   )

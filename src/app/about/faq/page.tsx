@@ -110,7 +110,8 @@ export default function Page() {
         We believe it’s important for union members to be tenants
         (that’s what we consider a tenants union to be). If you’re a
         homeowner that simply wants to show support or organize with
-        us, you can offer solidarity dues or  
+        us, you can offer
+        <a href="https://bit.ly/AATUDonation">solidarity dues.</a>
       </p>
       <p>
         <strong>
