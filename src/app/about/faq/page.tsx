@@ -100,9 +100,9 @@ export default function Page() {
         If you’re asking this question because you are unsure if
         you’re a tenant, we invite you to join one of our regular
         meetings (our calendar can be seen on the home page, and
-        logistics are sent into our shared Signal group at{' '}
-        <a href="http://bit.ly/AATUSignal">
-          <u>bit.ly/AATUSignal</u>
+        logistics are sent into our Discord at{' '}
+        <a href="https://bit.ly/AATUDiscord">
+          <u>bit.ly/AATUDiscord</u>
         </a>
         ) or email us to talk further.
       </p>
@@ -122,9 +122,9 @@ export default function Page() {
         <a href="mailto:annarbortenantsunion@gmail.com">
           <u>annarbortenantsunion@gmail.com</u>
         </a>
-        , or ask it in the AATU Signal group chat at{' '}
-        <a href="http://bit.ly/AATUSignal">
-          <u>bit.ly/AATUSignal</u>
+        , or ask it in the AATU Discord
+        <a href="http://bit.ly/AATUDiscord">
+          <u>bit.ly/AATUDiscord</u>
         </a>
         .
       </p>

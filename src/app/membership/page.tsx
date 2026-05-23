@@ -55,9 +55,9 @@ export default function MembershipPage() {
           </em>
         </p>
         <p>
-          First, join our primary Signal group:{' '}
-          <a href="http://bit.ly/AATUSignal">
-            <u>bit.ly/AATUSignal</u>
+          First, join the AATU Discord:
+          <a href="http://bit.ly/AATUDiscord">
+            <u>bit.ly/AATUDiscord</u>
           </a>{' '}
           (our membership form should direct you to this after you
           fill it out). This group chat is our primary home for
