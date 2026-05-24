@@ -1,18 +1,13 @@
-import styles from './layout.module.css'
-import Grid from '@mui/material/Grid'
+import { Section, Container } from "@/components/Layout";
 
-export default function CampaignLayout({
+export default function DonationsLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <Grid
-      container
-      justifyContent="center"
-      className={styles.container}
-    >
-      {children}
-    </Grid>
-  )
+    <Section size="spacious">
+      <Container width="prose">{children}</Container>
+    </Section>
+  );
 }

@@ -1,6 +1,11 @@
-# The Ann Arbor Tenants Union endorses Dave Zeglen for Ward 4 Councilmember, Yousef Rabhi for Mayor
+---
+title:
+  The Ann Arbor Tenants Union endorses Dave Zeglen for Ward 4
+  Councilmember, Yousef Rabhi for Mayor
+date: 2026-03-03
+---
 
-## March 3, 2026
+# The Ann Arbor Tenants Union endorses Dave Zeglen for Ward 4 Councilmember, Yousef Rabhi for Mayor
 
 The Ann Arbor Tenants Union proudly endorses Yousef Rabhi for Mayor of
 Ann Arbor and Dave Zeglen for Ward 4 Councilmember.

@@ -1,18 +1,9 @@
-import styles from './layout.module.css'
-import Grid from '@mui/material/Grid'
+import { Section } from "@/components/Layout";
 
-export default function CampaignLayout({
+export default function AboutLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <Grid
-      container
-      justifyContent="center"
-      className={styles.container}
-    >
-      {children}
-    </Grid>
-  )
+  return <Section size="spacious">{children}</Section>;
 }

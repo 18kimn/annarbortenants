@@ -36,10 +36,12 @@ export default function R2R() {
         <h1 className={styles.title}>
           The Early Leasing Ordinance and the Right to Renew
         </h1>
-        <h2 className={styles.subtitle}>
+        <p className={styles.subtitle}>
           What you won, and what you should know
-        </h2>
-        <em>March 24, 2024</em>
+        </p>
+        <p className={styles.timestamp}>
+          <em>March 24, 2024</em>
+        </p>
         <p>
           In a major victory for Ann Arbor tenants, the Early Leasing
           Ordinance and the Right to Renew were combined on March 4th
@@ -87,9 +89,7 @@ export default function R2R() {
             height={285}
           />
         </div>
-        <h2 className={styles.subtitle}>
-          The road to tenant protections
-        </h2>
+        <h2>The road to tenant protections</h2>
         <p>
           <strong>How it used to work:</strong> Before the first
           amendment to the Early Leasing Ordinance (ELO) in 2021,
@@ -134,7 +134,7 @@ export default function R2R() {
         </p>
       </section>
       <section>
-        <h2 className={styles.subtitle}>Find your renewal dates</h2>
+        <h2>Find your renewal dates</h2>
         <p>
           Use our date calculator to see when your landlord can offer
           renewal and require a response:

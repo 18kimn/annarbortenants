@@ -1,77 +1,170 @@
 'use client'
-// overcomplicated as fuck for some reason
 import styles from './Header.module.css'
 import {useState} from 'react'
 
 import {OutboundLink} from './OutboundLink'
 import Link from 'next/link'
+import MailIcon from '@mui/icons-material/Mail'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
-import Image from 'next/image'
-
-import {IconButton, Collapse, useMediaQuery} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import NavLinks from './NavLinks'
+import CloseIcon from '@mui/icons-material/Close'
+import Image from 'next/image'
+import {Drawer, IconButton} from '@mui/material'
+import NavLinks, {aboutLinks, campaignLinks} from './NavLinks'
 
 const socials = [
   {
-    href: 'https://twitter.com/AATUOfficial',
-    Icon: TwitterIcon,
-    alt: 'Icon linking to AATU Twitter',
-  },
-  {
     href: 'https://www.instagram.com/aatenantsunion/',
     Icon: InstagramIcon,
-    alt: 'Icon linking to AATU Instagram',
+    alt: 'AATU Instagram',
   },
   {
     href: 'https://www.facebook.com/a2tenantsunion',
     Icon: FacebookIcon,
-    alt: 'Icon linking to AATU Facebook',
+    alt: 'AATU Facebook',
+  },
+  {
+    href: 'mailto:annarbortenantsunion@gmail.com',
+    Icon: MailIcon,
+    alt: 'AATU email',
   },
 ]
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
-  const isDesktop = useMediaQuery('(min-width:1000px)')
+  const [drawerOpen, setDrawerOpen] = useState(false)
+
   return (
-    <header className={styles.container}>
-      <div>
-        <Link href="/">
+    <header className={styles.header}>
+      <div className={styles.inner}>
+        <Link href="/" className={styles.brand}>
           <Image
-            className={styles.aatuImage}
+            className={styles.brandLogo}
             alt="AATU logo"
             src="/circle_logo.png"
-            height={400}
-            width={400}
+            height={88}
+            width={88}
           />
+          <span className={styles.brandText}>
+            Ann Arbor Tenants Union
+          </span>
         </Link>
-      </div>
-      {isDesktop ? (
+
         <NavLinks />
-      ) : (
-        <IconButton
-          onClick={() => setOpen((prev) => !prev)}
-          edge="end"
+
+        <div className={styles.socials}>
+          {socials.map(({href, Icon, alt}) => (
+            <OutboundLink
+              key={href}
+              href={href}
+              className={styles.socialLink}
+              aria-label={alt}
+            >
+              <Icon className={styles.socialIcon} />
+            </OutboundLink>
+          ))}
+        </div>
+
+        <button
+          className={styles.menuButton}
+          onClick={() => setDrawerOpen(true)}
+          aria-label="Open menu"
         >
-          <MenuIcon style={{fill: '#ffffff'}} />
-        </IconButton>
-      )}
-
-      {!isDesktop && (
-        <Collapse in={open} timeout="auto" unmountOnExit>
-          <NavLinks />
-        </Collapse>
-      )}
-
-      <div className={styles.socials}>
-        {socials.map(({href, Icon}, i) => (
-          <OutboundLink key={i} href={href}>
-            <Icon className={styles.icon} />
-          </OutboundLink>
-        ))}
+          <MenuIcon />
+        </button>
       </div>
+
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        PaperProps={{sx: {background: 'var(--red)'}}}
+      >
+        <div className={styles.mobileDrawer}>
+          <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+            <IconButton
+              onClick={() => setDrawerOpen(false)}
+              aria-label="Close menu"
+              sx={{color: '#fff'}}
+            >
+              <CloseIcon />
+            </IconButton>
+          </div>
+
+          <Link
+            href="/"
+            className={styles.mobileLink}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Home
+          </Link>
+
+          <div className={styles.mobileSection}>
+            <span className={styles.mobileSectionLabel}>About</span>
+            {aboutLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={styles.mobileSubLink}
+                onClick={() => setDrawerOpen(false)}
+              >
+                {l.display}
+              </Link>
+            ))}
+          </div>
+
+          <Link
+            href="/membership"
+            className={styles.mobileLink}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Membership
+          </Link>
+          <Link
+            href="/news"
+            className={styles.mobileLink}
+            onClick={() => setDrawerOpen(false)}
+          >
+            News
+          </Link>
+          <Link
+            href="/blog"
+            className={styles.mobileLink}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Blog
+          </Link>
+
+          <div className={styles.mobileSection}>
+            <span className={styles.mobileSectionLabel}>
+              Campaigns
+            </span>
+            {campaignLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={styles.mobileSubLink}
+                onClick={() => setDrawerOpen(false)}
+              >
+                {l.display}
+              </Link>
+            ))}
+          </div>
+
+          <div className={styles.mobileSocials}>
+            {socials.map(({href, Icon, alt}) => (
+              <OutboundLink
+                key={href}
+                href={href}
+                className={styles.socialLink}
+                aria-label={alt}
+              >
+                <Icon className={styles.socialIcon} />
+              </OutboundLink>
+            ))}
+          </div>
+        </div>
+      </Drawer>
     </header>
   )
 }

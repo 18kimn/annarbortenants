@@ -1,6 +1,9 @@
-# 10 Reasons to Start a Tenant Association
+---
+title: Ten reasons to start a tenants association
+date: 2024-05-12
+---
 
-## May 12, 2024
+# 10 Reasons to Start a Tenant Association
 
 **_1. STRENGTH IN NUMBERS_**
 

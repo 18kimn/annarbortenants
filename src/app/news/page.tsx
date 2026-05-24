@@ -1,9 +1,9 @@
 "use client";
 import { Email, OutboundLink } from "@/components/OutboundLink";
 import { useEffect, useState } from "react";
-import { Grid } from "@mui/material";
 import styles from "./page.module.css";
 import { printFormattedDate } from "@/utils/date";
+import { Section, Container } from "@/components/Layout";
 
 interface Press {
   Date: Date;
@@ -28,8 +28,8 @@ export default function News() {
   }, [setPress]);
 
   return (
-    <Grid container justifyContent="center" className={styles.container}>
-      <Grid item className={styles.content}>
+    <Section size="spacious">
+      <Container width="prose">
         <h1>News and Media</h1>
         <p>
           We&apos;re grateful for local reporting highlighting our work,
@@ -41,29 +41,21 @@ export default function News() {
           story, or otherwise would like to contact the AATU, please email{" "}
           <Email />.
         </p>
-        <hr />
-        {press.map((p) => {
-          return (
-            <Grid
-              container
-              flexDirection="column"
-              key={p.Title}
-              margin="1rem 0"
-            >
-              <div className={styles.row}>
-                <h2 className={styles.articleTitle}>
-                  <OutboundLink href={p.Link}>{p.Title}</OutboundLink>
-                </h2>
-              </div>
-              <Grid>
+        <div className={styles.cardList}>
+          {press.map((p) => (
+            <article key={p.Title} className={styles.card}>
+              <h2 className={styles.articleTitle}>
+                <OutboundLink href={p.Link}>{p.Title}</OutboundLink>
+              </h2>
+              <div className={styles.meta}>
                 {[p.Author, p.Publication, printFormattedDate(p.Date)]
                   .filter((s) => s)
-                  .join("  ⋅  ")}
-              </Grid>
-            </Grid>
-          );
-        })}
-      </Grid>
-    </Grid>
+                  .join("  ·  ")}
+              </div>
+            </article>
+          ))}
+        </div>
+      </Container>
+    </Section>
   );
 }

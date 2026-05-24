@@ -12,22 +12,20 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mdx-js/loader": "^3.0.1",
-    "@mdx-js/react": "^3.0.1",
     "@mui/icons-material": "^5.15.0",
     "@mui/material": "^5.15.0",
     "@mui/x-date-pickers": "^6.19.4",
-    "@next/mdx": "^14.2.3",
     "@paypal/react-paypal-js": "^9.1.1",
-    "@types/mdx": "^2.0.13",
     "cheerio": "^1.1.2",
     "dayjs": "^1.11.10",
     "framer-motion": "^11.0.6",
-    "loader": "link:@/mdx-js/loader",
+    "gray-matter": "^4.0.3",
     "next": "15.4.10",
     "react": "^18",
     "react-dom": "^18",
-    "react-use-measure": "^2.1.1"
+    "react-markdown": "^10.1.0",
+    "react-use-measure": "^2.1.1",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.12.0",

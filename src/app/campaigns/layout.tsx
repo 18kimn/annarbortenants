@@ -1,5 +1,4 @@
-import styles from "./Campaigns.module.css";
-import Grid from "@mui/material/Grid";
+import { Section, Container } from "@/components/Layout";
 
 export default function CampaignLayout({
   children,
@@ -7,10 +6,8 @@ export default function CampaignLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Grid container justifyContent="center" className={styles.container}>
-      <Grid item className={styles.content}>
-        {children}
-      </Grid>
-    </Grid>
+    <Section size="spacious">
+      <Container width="prose">{children}</Container>
+    </Section>
   );
 }

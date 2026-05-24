@@ -1,89 +1,72 @@
-import Button from '@mui/material/Button'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-import {useState, useRef} from 'react'
-import Popper from '@mui/material/Popper'
-import ClickAwayListener from '@mui/material/ClickAwayListener'
-import MenuItem from '@mui/material/MenuItem'
-import MenuList from '@mui/material/MenuList'
-import Grow from '@mui/material/Grow'
-import Paper from '@mui/material/Paper'
-import Link from 'next/link'
-import classes from './Header.module.css'
+"use client";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { useState, useRef } from "react";
+import Popper from "@mui/material/Popper";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Grow from "@mui/material/Grow";
+import Link from "next/link";
+import classes from "./Header.module.css";
 
 export default function DropdownNav(props: {
-  name: string
-  links: {display: string; href: string}[]
+  name: string;
+  links: { display: string; href: string }[];
 }) {
-  const [open, setOpen] = useState(false)
-  const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen)
-  }
-  const anchorRef = useRef<HTMLDivElement>(null)
-  const [selectedIndex, setSelectedIndex] = useState(1)
+  const [open, setOpen] = useState(false);
+  const anchorRef = useRef<HTMLButtonElement>(null);
 
-  const handleClose = (event: any) => {
+  const handleToggle = () => setOpen((prev) => !prev);
+  const handleClose = (event: MouseEvent | TouchEvent) => {
     if (
       anchorRef.current &&
-      anchorRef.current.contains(event.target as HTMLElement)
+      anchorRef.current.contains(event.target as Node)
     ) {
-      return
+      return;
     }
+    setOpen(false);
+  };
 
-    setOpen(false)
-  }
   return (
     <>
-      <div ref={anchorRef}>
-        <button
-          aria-controls={open ? 'split-button-menu' : undefined}
-          aria-expanded={open ? 'true' : undefined}
-          aria-label={`select page from ${props.name}`}
-          aria-haspopup="menu"
-          onClick={handleToggle}
-          className={classes.button}
-        >
-          {props.name} <ArrowDropDownIcon />
-        </button>
-      </div>
+      <button
+        ref={anchorRef}
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={handleToggle}
+        className={classes.navButton}
+      >
+        {props.name}
+        <ArrowDropDownIcon fontSize="small" />
+      </button>
       <Popper
-        sx={{zIndex: 1}}
+        sx={{ zIndex: 60 }}
         open={open}
         anchorEl={anchorRef.current}
-        role={undefined}
+        placement="bottom-start"
         transition
         disablePortal
       >
-        {({TransitionProps, placement}) => (
-          <Grow
-            {...TransitionProps}
-            style={{
-              transformOrigin:
-                placement === 'bottom'
-                  ? 'center top'
-                  : 'center bottom',
-            }}
-          >
-            <div style={{background: 'var(--red)'}}>
+        {({ TransitionProps }) => (
+          <Grow {...TransitionProps} style={{ transformOrigin: "top left" }}>
+            <div className={classes.dropdownPaper}>
               <ClickAwayListener onClickAway={handleClose}>
-                <MenuList id="split-button-menu" autoFocusItem>
-                  {props.links.map((link, index) => (
-                    <MenuItem
+                <div role="menu">
+                  {props.links.map((link) => (
+                    <Link
                       key={link.href}
-                      selected={index === selectedIndex}
-                      component={Link}
                       href={link.href}
-                      style={{margin: '0.5rem'}}
-                      onClick={handleClose}
+                      role="menuitem"
+                      className={classes.dropdownItem}
+                      onClick={() => setOpen(false)}
                     >
                       {link.display}
-                    </MenuItem>
+                    </Link>
                   ))}
-                </MenuList>
+                </div>
               </ClickAwayListener>
             </div>
           </Grow>
         )}
       </Popper>
     </>
-  )
+  );
 }

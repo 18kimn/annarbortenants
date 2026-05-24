@@ -1,13 +1,46 @@
-.container {
-    width: 100%;
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
 }
 
-.content {
-    width: min(80ch, 80%);
+.card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
 }
 
 .articleTitle {
-    font-weight: normal;
-    font-size: 1rem;
-    margin: 0rem;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+  margin: 0 0 var(--space-2);
+}
+
+.articleTitle a {
+  color: var(--ink);
+  text-decoration: none;
+  text-decoration-color: transparent;
+}
+
+.articleTitle a:hover {
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+}
+
+.meta {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
 }

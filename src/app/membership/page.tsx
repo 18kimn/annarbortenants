@@ -1,82 +1,104 @@
 import classes from './page.module.css'
+import {Section, Prose} from '@/components/Layout'
+import {Button} from '@/components/Button'
+import {OutboundLink} from '@/components/OutboundLink'
 
 export default function MembershipPage() {
   return (
-    <div className={classes.container}>
-      <div className={classes.content}>
-        <h1>Become a member today!</h1>
+    <Section size="spacious">
+      <Prose>
+        <h1>Become a member today</h1>
         <p>
           Stand with your fellow tenants by filling out the membership
-          form at{' '}
-          <a href="http://bit.ly/JoinAATU">
-            <u>bit.ly/JoinAATU</u>
-          </a>
-          ! 
+          form.
+        </p>
+
+        <div className={classes.cta}>
+          <p className={classes.ctaTitle}>Ready to join?</p>
+          <Button
+            href="https://bit.ly/JoinAATU"
+            external
+            size="large"
+          >
+            Join at bit.ly/JoinAATU
+          </Button>
+        </div>
+
+        <h2>Why should I be a member?</h2>
+
+        <p>
+          The housing crisis in Ann Arbor is out of control. We
+          believe that only a mass movement of organized tenants can
+          win lower rents and dignified living conditions. We cannot
+          sit back and wait for nonprofits, government agencies,
+          developers, or landlords to act; tenants must organize
+          ourselves.
         </p>
         <p>
-          <em>
-            <strong>Why should I be a member?</strong>
-          </em>
+          As a member, you won't face your landlord alone. When pests
+          go ignored, roofs drip, rents jump, or leases get cut early
+          — fellow AATU members will be there to yell alongside you,
+          help you find legal support, and mobilize your neighbors so
+          your landlord <em>never</em> gets away with doing this
+          again.
         </p>
         <p>
-          Unfortunately, the past fifty years has shown that no
-          nonprofit, government agency, developer, or (God forbid)
-          landlord can save us — only tenants can, by assembling and
-          wielding our collective power. Alone, our rents are a
-          burden, but together those rents are our leverage into
-          ensuring each landlord will never exploit tenants again.
-          Becoming a member of your tenants union is the first step to
-          winning that power.
+          A collective of tenants that act together in this way can
+          wield real power. Each of us pays rent each month, which
+          constitutes a major burden to us and is a major way
+          landlords hold power over tenants. But that's the source of
+          our power too -- landlords need our rent, and they need it
+          badly. Thus, just as the organized workplace can wield the
+          power and threat of the labor strike, so too can we as
+          tenants organize around a rent strike. Landlords have
+          conceded and will continue to concede to the demands of
+          tenants when they know that the consequence may be
+          economically disastrous for them.
         </p>
         <p>
-          As a member, you’ll be supported by other members of the Ann
-          Arbor Tenants Union, with everything in our power to support
-          you, in every struggle you have as a tenant. When your
-          landlord ignores pests in your house, lets your roof drip,
-          raises your rent, or cuts your lease early — your fellow
-          members of the AATU will be there to yell alongside you, to
-          recruit legal help with you, and to mobilize your fellow
-          residents so your landlord will <em>never</em> be able to do
-          this to you or other tenants again.
+          Crucially, that leverage only exists if tenants can act
+          collectively around a set of shared demands. A single
+          renter's actions may be seen as a rounding error, but
+          landlords have to answer to an entire building of tenants
+          threatening to withhold rent together.
         </p>
+
+        <figure className={classes.testimonial}>
+          <p className={classes.testimonialQuote}>
+            &ldquo;I joined the AATU because I wanted to stop being
+            just being informed about what was going on in the world
+            and begin doing something about it. This is collective
+            praxis and a great way to create community!&rdquo;
+          </p>
+          <figcaption className={classes.testimonialAttribution}>
+            — Elijah S.
+          </figcaption>
+        </figure>
+
+        <h2>What should I do once I become a member?</h2>
         <p>
-          “
-          <em>
-            I joined the AATU because I wanted to stop being just
-            being informed about what was going on in the world and
-            begin doing something about it. This is collective praxis
-            and a great way to create community!”
-          </em>
-        </p>
-        <p>~ Elijah S.</p>
-        <p>
-          <em>
-            <strong>What should I do once I become a member?</strong>
-          </em>
-        </p>
-        <p>
-          First, join the AATU Discord:
-          <a href="http://bit.ly/AATUDiscord">
-            <u>bit.ly/AATUDiscord</u>
-          </a>{' '}
+          First, join the AATU Discord:{' '}
+          <OutboundLink href="http://bit.ly/AATUDiscord">
+            bit.ly/AATUDiscord
+          </OutboundLink>{' '}
           (our membership form should direct you to this after you
           fill it out). This group chat is our primary home for
           day-to-day conversations and updates. If you prefer not to
-          download a new app or join a new chat, that’s okay, there
-          are other ways to keep up and get caught up that are listed
-          here.
+          download a new app or join a new chat, that&rsquo;s okay,
+          there are other ways to keep up and get caught up that are
+          listed here.
         </p>
         <p>
           Second, meet with an AATU organizer to talk about your
-          experience as a renter and what you’re interested in
+          experience as a renter and what you&rsquo;re interested in
           organizing around with your fellow renters. We try to reach
           out to everyone that fills out the form proactively, but if
-          you haven’t heard from us in a few weeks or would like to
-          meet sooner, please send us a message at{' '}
+          you haven&rsquo;t heard from us in a few weeks or would like
+          to meet sooner, please send us a message at{' '}
           <a href="mailto:annarbortenantsunion@gmail.com">
-            <u>annarbortenantsunion@gmail.com</u>
+            annarbortenantsunion@gmail.com
           </a>
-          . 
+          .
         </p>
         <p>
           That conversation with an existing organizer should
@@ -86,59 +108,47 @@ export default function MembershipPage() {
         </p>
         <ul>
           <li>
-            <p>
-              <strong>Get to know other members of the AATU</strong> —
-              it’s most important for us as tenants seeking to effect
-              change to create a strong and tight-knit community of
-              organizers that can support each other in the fight.
-            </p>
+            <strong>Get to know other members of the AATU</strong> —
+            it&rsquo;s most important for us as tenants seeking to
+            effect change to create a strong and tight-knit community
+            of organizers that can support each other in the fight.
           </li>
           <li>
-            <p>
-              <strong>Talk with your immediate neighbors.</strong> For
-              the most part, we’re isolated in our own complexes, and
-              need to rebuild the social bonds that have been robbed
-              from us by parasites (landlords) in order to build
-              effective unions.
-            </p>
+            <strong>Talk with your immediate neighbors.</strong> For
+            the most part, we&rsquo;re isolated in our own complexes,
+            and need to rebuild the social bonds that have been robbed
+            from us by parasites (landlords) in order to build
+            effective unions.
           </li>
           <li>
-            <p>
-              <strong>Join the AATU organizing committee.</strong> As
-              a coordinating group within AATU generally, we share
-              strategies across complexes and work together on
-              citywide campaigns. This group is our most important
-              formation for expanding the AATU and building tenant
-              power.
-            </p>
+            <strong>Join the AATU organizing committee.</strong> As a
+            coordinating group within AATU generally, we share
+            strategies across complexes and work together on citywide
+            campaigns. This group is our most important formation for
+            expanding the AATU and building tenant power.
           </li>
           <li>
-            <p>
-              <strong>Join a different subcommittee.</strong> AATU’s
-              bread and butter is complex-level organizing that
-              requires folks to simply talk to each other and to their
-              neighbors, but we are an ambitious org with many needs —
-              we need social media content, people knowledgeable with
-              finance, people who are willing to lead legislative
-              priorities, people to build strong relationships with
-              other organizations, and so on. 
-            </p>
+            <strong>Join a different subcommittee.</strong>{' '}
+            AATU&rsquo;s bread and butter is complex-level organizing
+            that requires folks to simply talk to each other and to
+            their neighbors, but we are an ambitious org with many
+            needs — we need social media content, people knowledgeable
+            with finance, people who are willing to lead legislative
+            priorities, people to build strong relationships with
+            other organizations, and so on.
           </li>
         </ul>
-        <p>
-          <em>
-            <strong>What are my duties as part of the union?</strong>
-          </em>
-        </p>
+
+        <h2>What are my duties as part of the union?</h2>
         <p>
           Becoming a member fundamentally is a commitment to your
           fellow tenants of Ann Arbor that you stand alongside them in
           our fight for a dignified home and community, and against
           the bad actor landlords that exploit tenants for personal
-          gain. It’s a recognition that as tenants, we share
+          gain. It&rsquo;s a recognition that as tenants, we share
           interests; we all want dignified and affordable housing, and
-          we’re all dealing with landlords who use the same tactics to
-          deny us the housing we deserve. 
+          we&rsquo;re all dealing with landlords who use the same
+          tactics to deny us the housing we deserve.
         </p>
         <p>
           AATU strives to be a democratic, member run organization.
@@ -149,18 +159,17 @@ export default function MembershipPage() {
           Arbor.
         </p>
         <p>
-          Lastly, members are asked to make regular donations via our
-          Paypal
-          <a href="https://bit.ly/AATUDonate">here</a>. Our power as a
-          tenants union comes from bringing our talents, resources,
-          and leverage as individuals into formations together --
-          donations are one way to do so. Read more on our
-          <a href="/donations">Donations Page</a>
+          Lastly, members are encouraged to make regular donations via
+          our{' '}
+          <OutboundLink href="https://bit.ly/AATUDonate">
+            PayPal
+          </OutboundLink>
+          . Our power as a tenants union comes from bringing our
+          talents, resources, and leverage as individuals into
+          formations together. Donations are one way to do so. Read
+          more on our <a href="/donations">Donations Page</a>.
         </p>
-        Lastly, we plan to begin collecting dues from members but
-        strictly on a voluntary basis— we believe this is important
-        for maintaining our independence. 
-      </div>
-    </div>
+      </Prose>
+    </Section>
   )
 }

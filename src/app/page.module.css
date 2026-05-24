@@ -1,74 +1,87 @@
-.main {
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  place-content: center;
-}
-
-.main p {
-  font-size: 1.3rem;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  place-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.imageContainer, .descriptionContainer {
-  flex: 1 1;
-  min-width: min(80vw, 60ch);
-}
-
-.imageContainer {
-  width: min(80%, 300px);
-  height: 100%;
-  display: flex;
-  place-items: center;
-  place-content: center;
-}
-
-.descriptionContainer {
-  min-width: 56ch;
-  flex: 1;
-  display: flex;
-  place-content: center;
-}
-
-.description {
-  max-width: min(80vw, 72ch);
-  margin: 3rem;
-}
-
-.joinContainer {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  padding: 2rem;
-  height: fit-content;
-}
-
-.joinContainer p {
-  max-width: 62ch;
-}
-
-.join {
+.hero {
   text-align: center;
-  font-size: 2rem;
 }
 
-.iframeContainer {
-  height: 100%;
+.heroTitle {
+  font-size: clamp(2.25rem, 4vw + 1rem, 4rem);
+  margin: 0 0 var(--space-5);
+  letter-spacing: -0.03em;
+}
+
+.heroSubtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--ink-muted);
+  max-width: 56ch;
+  margin: 0 auto var(--space-6);
+  line-height: 1.45;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(0, 1.4fr);
+  gap: var(--space-8);
+  align-items: start;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+}
+
+.aboutImage {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-5));
+}
+
+.aboutDescription {
+  font-size: var(--text-base);
+}
+
+.aboutDescription p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 0.85;
+  float: left;
+  margin: 0.1em 0.12em 0 0;
+  color: var(--red);
+}
+
+.joinCard {
+  max-width: var(--container-prose);
+  margin: var(--space-6) auto 0;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-3);
   overflow: hidden;
 }
 
 .iframe {
-  height: 100%;
-  border: none;
+  width: 100%;
   min-height: 1700px;
-  max-width: 80vw;
+  border: 0;
+  display: block;
+}
+
+.joinIntro {
+  max-width: 56ch;
+  margin: 0 auto var(--space-6);
+  text-align: center;
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+  .aboutImage {
+    position: static;
+  }
 }
