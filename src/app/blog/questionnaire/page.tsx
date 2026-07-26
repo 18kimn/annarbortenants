@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Questionnaire from './Questionnaire'
 import {Section, Container} from '@/components/Layout'
 import styles from './page.module.css'
@@ -17,10 +18,29 @@ export default function QuestionnairePage() {
         </header>
         <Questionnaire>
           <div className={styles.intro}>
+            <div className={styles.logos}>
+              <Image
+                width={400}
+                height={400}
+                alt="Ann Arbor Tenants Union logo"
+                src="/circle_logo.png"
+              />
+              <Image
+                width={400}
+                height={400}
+                alt="Huron Valley Democratic Socialists of America logo"
+                src="/hvdsa.png"
+              />
+            </div>
+
             <p>
               In July 2026, organizers from the Ann Arbor Tenants
               Union and the Huron Valley Democratic Socialists of
-              America distributed a candidate questionnaire ahead of
+              America's{' '}
+              <OutboundLink href="/campaigns/tenant-bill-of-rights">
+                Tenant Bill of Rights
+              </OutboundLink>{' '}
+              campaign distributed a candidate questionnaire ahead of
               this year&rsquo;s Democratic primary race in Ann Arbor,
               inspired by other surveys like those run by{' '}
               <OutboundLink href="https://annarborccl.org/index.php/2026/06/25/climate-policy-questionnaire/">
@@ -36,7 +56,6 @@ export default function QuestionnairePage() {
               </OutboundLink>
               .
             </p>
-
             <p>The questions were as follows:</p>
             <ol>
               <li>
