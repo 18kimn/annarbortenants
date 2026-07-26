@@ -12,7 +12,7 @@ export type BlogPostMeta = {
 const standalonePosts: BlogPostMeta[] = [
   {
     slug: 'questionnaire',
-    title: '2026 city council candidate questionnaire',
+    title: '2026 City Council candidate questionnaire',
     date: '2026-07-26',
     href: '/blog/questionnaire',
   },
