@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import {OutboundLink} from '@/components/OutboundLink'
 
 export const metadata = {
-  title: '2026 City Council candidate questionnaire',
+  title: "2026 City Council Tenants' Questionnaire",
 }
 
 export default function QuestionnairePage() {
