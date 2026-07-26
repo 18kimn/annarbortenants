@@ -47,6 +47,10 @@ const campaignLinks = [
   {href: '/campaigns/junk-fees', display: 'Trash the Junk Fees'},
   {href: '/campaigns/r2r', display: 'Early Leasing & Right to Renew'},
   {href: '/summit', display: 'MI Tenants Union Summit'},
+  {
+    href: '/blog/questionnaire',
+    display: '2026 Candidate Questionnaire',
+  },
 ]
 
 export default function Footer() {

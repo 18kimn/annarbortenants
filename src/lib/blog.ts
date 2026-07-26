@@ -6,7 +6,17 @@ export type BlogPostMeta = {
   slug: string
   title: string
   date: string
+  href?: string
 }
+
+const standalonePosts: BlogPostMeta[] = [
+  {
+    slug: 'questionnaire',
+    title: '2026 city council candidate questionnaire',
+    date: '2026-07-26',
+    href: '/blog/questionnaire',
+  },
+]
 
 export type BlogPost = BlogPostMeta & {
   content: string
@@ -49,6 +59,7 @@ export function getAllPosts(): BlogPostMeta[] {
       const {content: _content, ...meta} = readPost(slug)
       return meta
     })
+    .concat(standalonePosts)
     .sort((a, b) => (a.date < b.date ? 1 : -1))
 }
 

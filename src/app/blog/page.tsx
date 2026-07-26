@@ -1,10 +1,10 @@
-import Link from "next/link";
-import styles from "./page.module.css";
-import { Section, Container } from "@/components/Layout";
-import { formatPostDate, getAllPosts } from "@/lib/blog";
+import Link from 'next/link'
+import styles from './page.module.css'
+import {Section, Container} from '@/components/Layout'
+import {formatPostDate, getAllPosts} from '@/lib/blog'
 
 export default function Blog() {
-  const posts = getAllPosts();
+  const posts = getAllPosts()
 
   return (
     <Section size="spacious">
@@ -14,13 +14,17 @@ export default function Blog() {
           {posts.map((post) => (
             <article key={post.slug} className={styles.card}>
               <h2 className={styles.articleTitle}>
-                <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                <Link href={post.href ?? `/blog/${post.slug}`}>
+                  {post.title}
+                </Link>
               </h2>
-              <div className={styles.meta}>{formatPostDate(post.date)}</div>
+              <div className={styles.meta}>
+                {formatPostDate(post.date)}
+              </div>
             </article>
           ))}
         </div>
       </Container>
     </Section>
-  );
+  )
 }

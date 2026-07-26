@@ -10,7 +10,10 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: var(--space-5);
-  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
 }
 
 .card:hover {

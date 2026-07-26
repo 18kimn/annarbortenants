@@ -16,7 +16,7 @@
 
   --text-xs: 0.8125rem;
   --text-sm: 0.9375rem;
-  --text-base: 1.0625rem;
+  --text-base: 12pt;
   --text-lg: 1.1875rem;
   --text-xl: 1.5rem;
   --text-2xl: 1.875rem;
@@ -45,8 +45,9 @@
   --shadow-lg: 0 12px 28px -6px rgba(20, 14, 8, 0.12), 0 6px 10px -4px rgba(20, 14, 8, 0.06);
 
   --container-narrow: 56ch;
-  --container-prose: 68ch;
-  --container-wide: 1120px;
+  --container-prose: 76ch;
+  --container-wide: min(calc(70vw - 5pt), 120ch);
+  --container-expanded: min(calc(90vw - 5pt), 160ch);
 
   --header-height: 72px;
 

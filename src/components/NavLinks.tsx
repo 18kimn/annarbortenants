@@ -29,6 +29,10 @@ export const campaignLinks = [
     display: 'The Early Leasing Ordinance and the Right to Renew',
   },
   {href: '/summit', display: 'The Michigan Tenants Union Summit'},
+  {
+    href: '/blog/questionnaire',
+    display: '2026 City Council Questionnaire',
+  },
 ]
 
 export default function NavLinks() {
