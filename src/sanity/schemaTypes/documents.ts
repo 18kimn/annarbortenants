@@ -1,10 +1,40 @@
+import {required} from './validation'
+
+const titleAndSlug = [
+  {
+    name: 'title',
+    title: 'Title',
+    type: 'string',
+    validation: required,
+  },
+  {
+    name: 'slug',
+    title: 'Slug',
+    type: 'slug',
+    options: {source: 'title'},
+    validation: required,
+  },
+]
+
+const newestFirst = [
+  {
+    title: 'Newest first',
+    name: 'dateDesc',
+    by: [{field: 'date', direction: 'desc'}],
+  },
+]
+
 export const siteSettings = {
   name: 'siteSettings',
   title: 'Site settings',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Site title', type: 'string'},
-    {name: 'shortName', title: 'Short name', type: 'string'},
+    {
+      name: 'title',
+      title: 'Site title',
+      type: 'string',
+      validation: required,
+    },
     {
       name: 'description',
       title: 'Meta description',
@@ -58,7 +88,12 @@ export const homePage = {
   title: 'Home page',
   type: 'document',
   fields: [
-    {name: 'heroTitle', title: 'Hero title', type: 'string'},
+    {
+      name: 'heroTitle',
+      title: 'Hero title',
+      type: 'string',
+      validation: required,
+    },
     {
       name: 'heroSubtitle',
       title: 'Hero subtitle',
@@ -108,24 +143,29 @@ export const page = {
   title: 'Page',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title'},
-    },
+    ...titleAndSlug,
     {name: 'subtitle', title: 'Subtitle', type: 'string'},
     {
-      name: 'layout',
-      title: 'Layout',
+      name: 'width',
+      title: 'Content width',
       type: 'string',
+      initialValue: 'prose',
       options: {
         list: [
+          {title: 'Narrow', value: 'narrow'},
           {title: 'Prose', value: 'prose'},
-          {title: 'Container', value: 'container'},
+          {title: 'Wide', value: 'wide'},
+          {title: 'Expanded', value: 'expanded'},
         ],
       },
+    },
+    {
+      name: 'prose',
+      title: 'Use article typography',
+      description:
+        'Tightens spacing and indents lists for pages that read as an article rather than a list or index.',
+      type: 'boolean',
+      initialValue: true,
     },
     {name: 'body', title: 'Body', type: 'blockContent'},
     {
@@ -143,23 +183,11 @@ export const campaign = {
   title: 'Campaign',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title'},
-    },
+    ...titleAndSlug,
     {name: 'subtitle', title: 'Subtitle', type: 'text', rows: 3},
     {name: 'updatedAt', title: 'Last updated', type: 'date'},
-    {
-      name: 'updatedLabel',
-      title: 'Last updated, as displayed',
-      type: 'string',
-    },
     {name: 'lede', title: 'Lede', type: 'simpleBlockContent'},
     {name: 'body', title: 'Body', type: 'blockContent'},
-    {name: 'order', title: 'Order', type: 'number'},
   ],
   preview: {select: {title: 'title', subtitle: 'slug.current'}},
 }
@@ -169,23 +197,28 @@ export const post = {
   title: 'Blog post',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
+    ...titleAndSlug,
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title'},
+      name: 'date',
+      title: 'Publication date',
+      type: 'date',
+      validation: required,
     },
-    {name: 'date', title: 'Publication date', type: 'date'},
+    {
+      name: 'template',
+      title: 'Template',
+      description:
+        'Renders the post through a purpose-built React template instead of the default article.',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Candidate questionnaire', value: 'questionnaire'},
+        ],
+      },
+    },
     {name: 'body', title: 'Body', type: 'blockContent'},
   ],
-  orderings: [
-    {
-      title: 'Newest first',
-      name: 'dateDesc',
-      by: [{field: 'date', direction: 'desc'}],
-    },
-  ],
+  orderings: newestFirst,
   preview: {select: {title: 'title', subtitle: 'date'}},
 }
 
@@ -194,19 +227,28 @@ export const pressMention = {
   title: 'Press mention',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Headline', type: 'string'},
+    {
+      name: 'title',
+      title: 'Headline',
+      type: 'string',
+      validation: required,
+    },
     {name: 'publication', title: 'Publication', type: 'string'},
     {name: 'author', title: 'Author', type: 'string'},
-    {name: 'date', title: 'Date', type: 'date'},
-    {name: 'link', title: 'Link', type: 'url'},
-  ],
-  orderings: [
     {
-      title: 'Newest first',
-      name: 'dateDesc',
-      by: [{field: 'date', direction: 'desc'}],
+      name: 'date',
+      title: 'Date',
+      type: 'date',
+      validation: required,
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+      validation: required,
     },
   ],
+  orderings: newestFirst,
   preview: {select: {title: 'title', subtitle: 'publication'}},
 }
 
@@ -215,13 +257,7 @@ export const resourceCategory = {
   title: 'Resource category',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title'},
-    },
+    ...titleAndSlug,
     {name: 'order', title: 'Order', type: 'number'},
   ],
   preview: {select: {title: 'title', subtitle: 'order'}},
@@ -232,8 +268,18 @@ export const resource = {
   title: 'Resource',
   type: 'document',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
-    {name: 'href', title: 'Link', type: 'url'},
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'href',
+      title: 'Link',
+      type: 'url',
+      validation: required,
+    },
     {
       name: 'description',
       title: 'Description',
@@ -260,7 +306,12 @@ export const tenantAssociation = {
   title: 'Tenant association',
   type: 'document',
   fields: [
-    {name: 'name', title: 'Name', type: 'string'},
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+      validation: required,
+    },
     {name: 'contactName', title: 'Contact name', type: 'string'},
     {name: 'contactEmail', title: 'Contact email', type: 'string'},
     {
@@ -273,6 +324,7 @@ export const tenantAssociation = {
           {title: 'Inactive or sunsetted', value: 'inactive'},
         ],
       },
+      validation: required,
     },
     {name: 'order', title: 'Order', type: 'number'},
   ],
@@ -284,8 +336,18 @@ export const faqItem = {
   title: 'FAQ entry',
   type: 'document',
   fields: [
-    {name: 'question', title: 'Question', type: 'string'},
-    {name: 'answer', title: 'Answer', type: 'blockContent'},
+    {
+      name: 'question',
+      title: 'Question',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'answer',
+      title: 'Answer',
+      type: 'blockContent',
+      validation: required,
+    },
     {name: 'order', title: 'Order', type: 'number'},
   ],
   preview: {select: {title: 'question', subtitle: 'order'}},

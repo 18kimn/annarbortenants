@@ -1,15 +1,28 @@
 import styles from './page.module.css'
-import HomeCarousel from '@/components/HomeCarousel'
+import HomeCarousel from './HomeCarousel'
 import {Section, Container} from '@/components/Layout'
 import {Button} from '@/components/Button'
 import ContentBody from '@/components/content/ContentBody'
 import {OutboundLink} from '@/components/OutboundLink'
-import {sanityFetch} from '@/sanity/fetch'
-import {homePageQuery} from '@/sanity/queries'
-import type {HomePage} from '@/sanity/types'
+import {defineQuery} from 'next-sanity'
+import {client} from '@/sanity/client'
+
+const homePageQuery =
+  defineQuery(`*[_type == "homePage" && _id == "homePage"][0]{
+  heroTitle,
+  heroSubtitle,
+  heroActions,
+  aboutBody,
+  carousel,
+  joinHeading,
+  joinBody,
+  joinFormUrl,
+  joinFormTitle,
+  joinFormLinkLabel
+}`)
 
 export default async function Home() {
-  const home = await sanityFetch<HomePage | null>(homePageQuery)
+  const home = await client.fetch(homePageQuery)
   if (!home) return null
 
   return (
@@ -61,7 +74,7 @@ export default async function Home() {
               <iframe
                 className={styles.iframe}
                 src={home.joinFormUrl}
-                title={home.joinFormTitle}
+                title={home.joinFormTitle ?? undefined}
               >
                 Loading…
               </iframe>

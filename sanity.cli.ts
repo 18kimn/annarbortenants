@@ -4,4 +4,9 @@ import {dataset, projectId} from './src/sanity/env'
 export default defineCliConfig({
   api: {projectId, dataset},
   autoUpdates: true,
+  typegen: {
+    path: './src/**/*.{ts,tsx}',
+    schema: './schema.json',
+    generates: './src/sanity/sanity.types.ts',
+  },
 })

@@ -1,15 +1,115 @@
 'use client'
 import styles from './Header.module.css'
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import {usePathname} from 'next/navigation'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
-import Image from 'next/image'
-import {Drawer, IconButton} from '@mui/material'
-import NavLinks from './NavLinks'
-import SocialIcons from './SocialIcons'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
+import {
+  Drawer,
+  IconButton,
+  Popper,
+  ClickAwayListener,
+  Grow,
+} from '@mui/material'
+import {SocialIcons} from './SocialIcons'
 import {imageSrc} from '@/sanity/image'
-import type {SiteSettings} from '@/sanity/types'
+import type {NavGroup, NavLink, SiteSettings} from '@/sanity/types'
+
+function NavDropdown({
+  name,
+  links,
+}: {
+  name: string
+  links: NavLink[]
+}) {
+  const [open, setOpen] = useState(false)
+  const anchorRef = useRef<HTMLButtonElement>(null)
+
+  const closeOnClickAway = (event: MouseEvent | TouchEvent) => {
+    if (anchorRef.current?.contains(event.target as Node)) return
+    setOpen(false)
+  }
+
+  return (
+    <>
+      <button
+        ref={anchorRef}
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={() => setOpen((prev) => !prev)}
+        className={styles.navButton}
+      >
+        {name}
+        <ArrowDropDownIcon fontSize="small" />
+      </button>
+      <Popper
+        sx={{zIndex: 60}}
+        open={open}
+        anchorEl={anchorRef.current}
+        placement="bottom-start"
+        transition
+        disablePortal
+      >
+        {({TransitionProps}) => (
+          <Grow
+            {...TransitionProps}
+            style={{transformOrigin: 'top left'}}
+          >
+            <div className={styles.dropdownPaper}>
+              <ClickAwayListener onClickAway={closeOnClickAway}>
+                <div role="menu">
+                  {links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      role="menuitem"
+                      className={styles.dropdownItem}
+                      onClick={() => setOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </ClickAwayListener>
+            </div>
+          </Grow>
+        )}
+      </Popper>
+    </>
+  )
+}
+
+function DesktopNav({entries}: {entries: NavGroup[]}) {
+  const pathname = usePathname()
+  const isActive = (href: string) =>
+    pathname === href || pathname?.startsWith(href + '/')
+
+  return (
+    <nav className={styles.navDesktop} aria-label="Primary">
+      {entries.map((entry) =>
+        entry.links?.length ? (
+          <NavDropdown
+            key={entry.label}
+            name={entry.label}
+            links={entry.links}
+          />
+        ) : (
+          <Link
+            key={entry.label}
+            href={entry.href}
+            className={styles.navLink}
+            data-active={isActive(entry.href)}
+          >
+            {entry.label}
+          </Link>
+        ),
+      )}
+    </nav>
+  )
+}
 
 export default function Header({
   settings,
@@ -39,7 +139,7 @@ export default function Header({
           <span className={styles.brandText}>{settings?.title}</span>
         </Link>
 
-        <NavLinks entries={primaryNav} />
+        <DesktopNav entries={primaryNav} />
 
         <div className={styles.socials}>
           <SocialIcons

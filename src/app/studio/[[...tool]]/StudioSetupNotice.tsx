@@ -11,10 +11,10 @@ export default function StudioSetupNotice() {
     >
       <h1>Sanity Studio is not connected yet</h1>
       <p>
-        The schemas, queries, and migrated content are all in place,
-        but this deployment has no Sanity project attached. Create a
-        project at sanity.io/manage, then set the environment
-        variables below and redeploy.
+        The schemas and queries are all in place, but this deployment
+        has no Sanity project attached. Create a project at
+        sanity.io/manage, then set the environment variables below and
+        redeploy.
       </p>
       <pre
         style={{
@@ -30,17 +30,8 @@ export default function StudioSetupNotice() {
         ].join('\n')}
       </pre>
       <p>
-        Then import the migrated content with{' '}
-        <code>
-          pnpm sanity dataset import content/aatu-content.ndjson
-          production
-        </code>
-        .
-      </p>
-      <p>
-        Until then the site reads the same content from
-        <code> content/aatu-content.ndjson</code> using the same GROQ
-        queries, evaluated locally.
+        Content lives in the dataset itself. Until a project is
+        attached, every page will render empty.
       </p>
     </div>
   )

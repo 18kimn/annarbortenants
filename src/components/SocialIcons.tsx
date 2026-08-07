@@ -1,16 +1,20 @@
+'use client'
 import MailIcon from '@mui/icons-material/Mail'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import {OutboundLink} from './OutboundLink'
 import type {SocialLink} from '@/sanity/types'
 
-const icons = {
+const platformIcons: Record<
+  NonNullable<SocialLink['platform']>,
+  typeof MailIcon
+> = {
   instagram: InstagramIcon,
   facebook: FacebookIcon,
   email: MailIcon,
 }
 
-export default function SocialIcons({
+export function SocialIcons({
   socials,
   linkClassName,
   iconClassName,
@@ -22,7 +26,7 @@ export default function SocialIcons({
   return (
     <>
       {socials.map((social) => {
-        const Icon = icons[social.platform] ?? MailIcon
+        const Icon = platformIcons[social.platform] ?? MailIcon
         return (
           <OutboundLink
             key={social.href}

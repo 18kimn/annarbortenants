@@ -1,0 +1,716 @@
+{
+  "questions": [
+    {
+      "id": "obstacle",
+      "label": "The primary obstacle",
+      "prompt": "What do you view as the primary obstacle to solving Ann Arbor's affordability crisis?",
+      "context": ""
+    },
+    {
+      "id": "four-year-agenda",
+      "label": "Affordability solutions",
+      "prompt": "During your term as councilmember [4 years], what would you as councilmember propose to increase housing affordability in Ann Arbor?",
+      "context": ""
+    },
+    {
+      "id": "tenant-power",
+      "label": "Helping tenants advocate",
+      "prompt": "What steps do you propose to help tenants advocate for themselves to improve their living conditions?",
+      "context": "AATU has witnessed that in apartment complexes with livability and security issues around the city (such as Island Drive and Courthouse Square), tenants united to compel management to provide improved security or air duct cleaning for a livable complex."
+    },
+    {
+      "id": "supply",
+      "label": "Incentivizing low-cost supply",
+      "prompt": "How should the city incentivize increasing the supply of more low-cost housing?",
+      "context": ""
+    },
+    {
+      "id": "legacy",
+      "label": "Vacant 'affordable' units",
+      "prompt": "Spaces that have been marketed as “affordable” have also sat vacant for long periods of time such as Legacy Apartments owned by Landmark. What would you do differently with Legacy and how can you prevent that from happening again?",
+      "context": "The Legacy Apartments had 19 units priced below the market rate, specifically set aside for people with 60 & 80% of the Area Median Income (AMI) which the City denoted at $58,000 & $74,800. The affordable housing units were priced at around $1275 to $1701 per month which is between the average 1 bed-room cost of $1500. Despite being marked as “affordable” they still were more expensive and some still sit vacant."
+    }
+  ],
+  "responses": {
+    "aidan-sova": {
+      "submitted": "7/16/2026 13:42:50",
+      "answers": {
+        "obstacle": [
+          [
+            "I was raised in poverty by my single mother on the Southside of Jackson, Michigan. Through those decades of renting and struggle, we both learned firsthand what housing insecurity feels like. This lived experience makes it clear that the primary obstacle to solving Ann Arbor's affordability crisis is a persistent, structural supply deficit that drives up housing costs and disproportionately displaces our working-class residents and student communities. I am refusing all PAC dollars in this election because we need to implement bold policies to address this without outside influence. We must aggressively leverage public land for mixed-income developments—a progressive, mixed-use planning approach I have already championed as President of the Library Board—while implementing robust tenant protection ordinances and fighting state-level preemption to establish real rent-stabilization frameworks. Grounding our housing policy in the lived reality of working families rather than developer profits, enables us to build a transparent, equitable community where housing is treated as a fundamental human right."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "Over my four-year term, my legislative agenda will focus on empowering tenants, funding affordable housing, and keeping residents in their homes. First, this includes introducing a local Right to Counsel ordinance to guarantee free legal representation for any Ann Arbor tenant facing eviction, along with a mandate requiring landlords to provide at least 180 days’ notice before significant rent increases. Second, I propose aggressively leveraging our voter-approved Affordable Housing Millage to maximize municipal land and build permanently affordable, public, and cooperative housing for our working-class neighbors. Finally, my agenda prioritizes zoning reforms that eliminate barriers to more diverse, transit-connected housing options while aggressively expanding our local tenant protection ordinances to outlaw predatory landlord practices."
+          ],
+          [
+            "I am deeply invested in these spaces because I have personally survived abusive landlord conditions. This lived reality directly informed my advocacy as an Ann Arbor Human Rights Commissioner, during which we actively investigated cases in which tenants had their human rights challenged by predatory landlords. It is this same commitment that drives my national work as a member of the Legal Services Corporation's Emerging Leaders Council and my collaboration with the Michigan Advocacy Program as a Board Director to expand civil legal aid. On City Council, I will bring this exact combination of professional advocacy and lived experience to fight for the dignity, safety, and rights of every renter in our community."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "To empower tenants to collectively bargain for better living conditions, I propose enacting a robust local Right to Organize ordinance that penalizes landlords who interfere with tenant unions or retaliate against organizers. We must also establish a city-funded Tenant Advocacy Fund to support groups like Ann Arbor Tenants Union, and empower our Renters Commission to fast-track code inspections for building-wide safety issues. Backing collective action requires real municipal teeth. As the youngest Black person elected in Ann Arbor’s history, I know what it means to fight for a voice at tables where our communities have historically been shut out—the exact same barrier our working-class renters face every day. On City Council, I will bring that lived perspective to ensure renters have the structural power to hold predatory management accountable. It is personal."
+          ]
+        ],
+        "supply": [
+          [
+            "To scale our low-cost housing, Ann Arbor must leverage city-owned land for public housing while modernizing our zoning to support walkable, neighborhood-scale homes near transit corridors. I also believe in using local capturing mechanisms like Tax Increment Financing to make deeply affordable housing projects financially viable on complex sites. While this means partnering with private developers, we must aggressively negotiate these agreements to ensure any public investment is strictly tied to legally binding, long-term affordability guarantees. By utilizing every financial tool at our disposal with a firm focus on public accountability, we can protect our working-class neighbors and expand our housing supply."
+          ]
+        ],
+        "legacy": [
+          [
+            "It is crucial to first note that these mismatched ‘affordable’ rents are calculated using Area Median Income (AMI) formulas set rigidly at the federal level by the Department of Housing and Urban Development (HUD), which often fail to reflect the actual wages of local working-class families and students. To prevent empty units like those at The Legacy, we must use our local zoning powers and leveraging authorities to encourage developers to target HUD's much lower income brackets wherever feasible—like 30% to 50% AMI—rather than letting them default to the absolute maximum limits. Additionally, the city must mandate that developers partner with our local housing commission or non-profits to manage and lease these units, ensuring they are actively filled by neighbors who actually need them. Designing our local policies around real community wages instead of inflexible federal formulas will be necessary to turn vacant ‘affordable’ units into actual, accessible homes."
+          ]
+        ]
+      }
+    },
+    "rebecca-arends": {
+      "submitted": "7/16/2026 17:58:05",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle is that Ann Arbor has not treated affordability as the total cost of remaining in the city. Residents face high rents and home prices, but they also face high property taxes, utility charges, fees, and other costs that make it increasingly difficult to stay here. These expenses affect homeowners directly and are often reflected in rents."
+          ],
+          [
+            "City Council cannot control every part of a resident’s property-tax bill or every force in the housing market, but it does control the city’s levy and spending priorities. I believe the city has expanded administrative programs, consulting contracts, climate initiatives, and DDA commitments without consistently demonstrating that these expenditures reduce residents’ costs or improve essential services."
+          ],
+          [
+            "I would begin with a line-by-line review of recurring city spending. I would protect police, fire, roads, water, parks, rental inspections, and permanently affordable housing while reducing expenditures that are duplicative, weakly measured, or outside core municipal responsibilities. Verified recurring savings should be used to lower the city millage and support housing that is genuinely affordable."
+          ],
+          [
+            "Approving more high-rent apartments while continuing to increase the overall cost of living is not an adequate affordability strategy."
+          ]
+        ],
+        "four-year-agenda": [
+          ["I would prioritize the following:"],
+          [
+            "• Create a housing acquisition and preservation strategy to protect older apartment buildings and naturally lower-cost housing before they are converted, demolished, or repriced"
+          ],
+          [
+            "• Direct public land, affordable housing millage funds, grants, and appropriate proceeds from public property toward permanently affordable housing rather than using those resources to support luxury-oriented development or unrelated operating expenses"
+          ],
+          [
+            "• Expand partnerships with nonprofit housing providers, community land trusts, and limited-equity housing cooperatives"
+          ],
+          [
+            "• Establish at least one city-supported cooperative or community land trust pilot, with long-term affordability protections"
+          ],
+          [
+            "• Require stronger affordability transparency when developers receive public land, tax benefits, density bonuses, infrastructure assistance, or other public benefits"
+          ],
+          [
+            "• Pursue a serious housing agreement with the University of Michigan addressing student housing, workforce housing, enrollment growth, and the pressure University expansion places on the local housing market"
+          ],
+          [
+            "• Publish an annual housing accountability report showing units completed, rent levels, income restrictions, public subsidy, occupancy, and the length of affordability requirements"
+          ],
+          [
+            "I have lived in cooperative housing for approximately eighteen years between three cooperatives. Affordable cooperative housing allowed me to continue my education, raise my son, build my career, and remain in Ann Arbor. I know from experience that permanently affordable housing changes lives."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I support a right-to-organize ordinance protecting tenants from retaliation, intimidation, lease nonrdenewal, or management interference when they form or participate in a tenant association."
+          ],
+          [
+            "I would also support a landlord-tenant ombudsperson who could help tenants understand their rights, document problems, navigate city departments, and coordinate complaints involving an entire building. When multiple tenants report the same mold, ventilation, security, heating, pest, or maintenance problem, the city should investigate it as a building-wide issue rather than requiring every tenant to fight the same battle separately."
+          ],
+          [
+            "The city should establish clear response deadlines, allow tenants to track complaints, conduct proactive inspections at properties with repeated violations, and publish enforcement outcomes. Tenant-rights information should be provided in plain language, in multiple languages, at lease signing and in apartment common areas."
+          ],
+          [
+            "I would also support funding for tenant education, legal assistance, and community organizations that help renters organize. The experiences at Island Drive and Courthouse Square show that tenants working collectively can secure changes that individuals may not be able to obtain alone."
+          ]
+        ],
+        "supply": [
+          [
+            "The city should incentivize preservation. Acquiring and rehabilitating an existing apartment building may sometimes create affordable housing more quickly and inexpensively than constructing a new building. Cooperatives, community land trusts, nonprofit developers, public housing, and conversions of existing buildings should receive greater attention."
+          ],
+          [
+            "The city should not award incentives merely for promising affordable units. It should evaluate whether those units are appropriately priced, occupied, and meeting an identified community need. I do not believe integration of units in luxury developments promotes social cohesion and long-term affordability."
+          ]
+        ],
+        "legacy": [
+          [
+            "The Legacy illustrates the difference between labeling a unit affordable and designing housing that people can actually use. A unit can satisfy an AMI formula while still being poorly matched to the intended population because of its rent, fees, size, location, building culture, application process, or income requirements."
+          ],
+          [
+            "At Legacy, the city should request a public accounting of how long each affordable unit has been vacant, how many people applied, why applicants were rejected or withdrew, what additional fees are charged, and what outreach has been conducted. The city should work with the owner and the Office of Community and Economic Development to simplify applications, provide application assistance, waive unnecessary fees, reach local workers and voucher holders directly, and market the apartments beyond the student-housing population."
+          ],
+          [
+            "If units continue to sit vacant, the city should seek a negotiated reduction in rents or additional subsidy rather than continuing to count empty units as an affordable housing success. I recognize that council cannot simply rewrite an existing signed agreement, but it can demand transparency, use compliance reviews, and press the owner to correct a program that is not working."
+          ],
+          [
+            "For future developments, I would require an affordability and demand analysis before approving an agreement. That analysis should examine the complete monthly housing cost, including rent, utilities and mandatory fees; the number and size of units; the intended population; and demonstrated demand at each proposed income level."
+          ],
+          [
+            "Agreements should also include occupancy reporting and corrective-action provisions. When an affordable unit remains vacant beyond a reasonable period, that should trigger additional outreach, application assistance, fee reductions, deeper subsidy, or renegotiation of the rent structure. Affordable housing policy should be judged by whether people are successfully housed, not simply by how many units appear in a development agreement."
+          ]
+        ]
+      }
+    },
+    "ashley-hall": {
+      "submitted": "7/19/2026 7:12:32",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle is that Ann Arbor has not built enough housing to keep pace with demand. As a result, prices have continued to rise, making it increasingly difficult for renters, first-time homebuyers, working families, seniors, and young professionals to afford to live here.I rented for most of my adult life and I understand firsthand how difficult it can be to put down roots in this community. I believe solving our affordability crisis requires an all-of-the-above approach: building more affordable, workforce, missing-middle, supportive, and market-rate housing while also strengthening protections and resources for current renters so people can remain in and access the homes and neighborhoods they love."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "During my first term, I would prioritize strengthening the Ann Arbor Housing Commission so it has the resources and support needed to preserve existing affordable housing, expand permanently affordable housing opportunities, and continue serving residents with the greatest housing needs."
+          ],
+          [
+            "I also believe we have a responsibility to protect and expand the rights of tenants who already call Ann Arbor home. That includes supporting policies that promote safe, healthy housing, ensuring renters understand their rights and have access to available resources, and continuing to strengthen protections that help prevent unnecessary displacement."
+          ],
+          [
+            "Finally, I believe we must continue increasing the supply of housing across the affordability spectrum. Preserving affordability and protecting tenants must go hand-in-hand with creating more housing opportunities. We cannot solve our affordability crisis by relying on any single strategy."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I believe tenants have the right to organize and advocate for safe, healthy, and dignified living conditions. When residents come together to raise concerns about building maintenance, safety, or code violations, change should happen."
+          ],
+          [
+            "Ann Arbor has already taken important steps to protect renters through policies like the Right to Renew and Fair Access to Housing ordinances, which provide strong protections for renters and help promote greater housing stability and equity. As a councilmember, I would support continued education and outreach so tenants understand these protections and know how to access the resources available to them."
+          ]
+        ],
+        "supply": [
+          [
+            "I believe the City should use every tool available to increase the supply of low-cost housing. That starts with continuing to strengthen the Ann Arbor Housing Commission and expanding partnerships with nonprofit housing developers that are committed to creating permanently affordable homes."
+          ],
+          [
+            "The City should also look for opportunities to leverage publicly owned land, pursue additional state and federal housing resources, and streamline permitting and approval processes for projects that include affordable housing. Reducing unnecessary delays and regulatory barriers can lower development costs and help affordable projects move forward more quickly."
+          ]
+        ],
+        "legacy": [
+          [
+            "If affordable units remain vacant while many residents are struggling to find housing, that signals we should evaluate whether those units are truly meeting the needs of the people they were intended to serve. Affordability should be measured not only by AMI formulas, but also by whether working families, seniors, and other residents can realistically afford the rent and successfully navigate the application process."
+          ],
+          [
+            "As a councilmember, I would support reviewing outcomes from developments like Legacy to better understand what barriers contributed to vacancies. Were income thresholds or rent levels mismatched? Was outreach effective? Were application requirements too burdensome? Those are important questions that should inform future projects."
+          ]
+        ]
+      }
+    },
+    "christopher-taylor": {
+      "submitted": "7/20/2026 11:01:19",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle to solving Ann Arbor’s affordability crisis is the lack of available supply. Inadequate housing supply arises from anti-growth zoning, land shortage in Ann Arbor, and construction cost."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "My goals include continuing the realistic and progressive work Ann Arbor has been doing under my leadership. Ann Arbor is making transformational and unprecedented investments in affordable housing, road repairs, and the core services residents use every day."
+          ],
+          [
+            "A combination of publicly owned affordable housing and market-rate housing are critical to address our supply shortage and address our affordability crisis. I support Ann Arbor’s Community Land Trust, incentives for affordable and mixed-income housing developments, and zoning changes downtown and along our transit corridors to support growth and end Ann Arbor’s housing shortage. I will continue to employ all of these tools to make Ann Arbor more affordable."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I’m proud of the significant strides Ann Arbor has made to protect tenants from predatory landlords, expand renters’ rights, and improve the safety and energy efficiency of all rental units. About half of Ann Arbor residents rent - we’re doing everything we can to make sure these units are affordable and safe, and renters’ rights are protected."
+          ],
+          [
+            "We have taken meaningful actions to improve the quality of life for tenants, including:"
+          ],
+          [
+            "Eliminating junk fees, such as waitlist, holding, and excessive application fees.",
+            "Requiring cost transparency, so renters know what they’re paying for.",
+            "Providing stability by creating a right to renew.",
+            "Enhancing safety by expanding rental unit inspections to over 6,000 annually.",
+            "Advancing the Green Rental Housing Ordinance to promote health, comfort, and savings through energy efficiency."
+          ],
+          [
+            "Despite all of our progress, I will not stop working to protect our renters. I look forward to continued work with our Renters Commission to identify areas for improvement."
+          ]
+        ],
+        "supply": [
+          [
+            "We’re in the middle of a housing crisis, and we can’t afford to take half measures."
+          ],
+          [
+            "Public housing is pivotal to allow our service workers, low-income residents, and seniors to remain in Ann Arbor. We need to build public housing, but we must also build more housing of all types. Teachers, nurses, firefighters, and other middle income workers making more than $58,000 per year do not qualify for public housing, and so focusing exclusively on public housing ignores these workers, shrinks our tax base, and forces us to contemplate tax increases or cuts to city services."
+          ],
+          [
+            "Public-private partnerships and market-rate housing are critical to address our supply shortage and to fill our gap in missing middle units, necessary to make Ann Arbor more affordable for all who wish to live here. I support Ann Arbor’s Community Land Trust, incentives for affordable and mixed-income housing developments, and zoning changes along our transit corridors to support growth and end Ann Arbor’s housing shortage."
+          ]
+        ],
+        "legacy": [
+          [
+            "Most private property owners/managers are neither experienced nor interested in operating affordable housing. Our Housing Commission has recommended that we cease the practice of co-locating non-City operated units in private developments. We look instead going forward to accept Payments in Lieu from developers to the AHTF so as to enable us to leverage the dollars and maximize affordable housing."
+          ]
+        ]
+      }
+    },
+    "greg-monroe": {
+      "submitted": "7/23/2026 23:49:33",
+      "answers": {
+        "obstacle": [
+          [
+            "We can and should build more housing, but the obstacle to solving affordability is the direction we’ve chosen that fails to grapple with the realities of the market and fails to counterbalance it with anywhere close to enough direct affordability measures."
+          ],
+          [
+            "Faced with an influx of high-end development that everyday residents can't afford, the City's response has been to make that development easier to build and to ask less of it in return."
+          ],
+          [
+            "Affordability is treated as a byproduct that will eventually filter down, rather than an outcome we require and measure."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "I am a proponent of community land trusts, where homes are kept affordable permanently and are sold at a price to qualified buyers at below market rates based on their income—not the market value. Owners are able to participate in equity growth as the house appreciates, providing them an opportunity to build generational wealth. Some of the growth is capped so the savings can be passed on to the next owner if and when they decide to sell."
+          ],
+          [
+            "As a city we could play a role in helping fund the purchase of new land for the Ann Arbor Community Land Trust (AACLT), which provides housing for City workers, AA public school teachers, hospital and University staff and even early childhood education providers. Or start the City’s own land trust eligible to other people who work in our community."
+          ],
+          [
+            "Cooperatives are another housing vehicle that I would like to see revisited. The City can play a role in helping to secure financing for a new cooperative. We no longer see co-ops like Arrowwood, Colonial Square, Forest Hills built today because these projects were driven by somewhat unconventional financing methods that the Federal government and HUD used to assist with. Essentially, a new co-op would require an entity to serve as a backstop for a big blanket mortgage, that then residents agree to purchase a portion of. The result is that residents’ monthly payments are not made to a separate owner charging them rent, but for a stake in something they share in ownership with their neighbors. Co-op costs track the actual cost of operating and maintaining the building, not what the market will bear. The housing stays affordable structurally rather than by subsidy."
+          ],
+          [
+            "Backstopping the big blanket mortgage is where I think the city using its bonding capacity could step in to help as well as potentially engaging the state as well. We could also use this capacity to help fund an investment in a land trust. Ann Arbor has municipal bonds (currently we're at less than 10% of our bonding capacity) and revenue bonds available to us. The Ann Arbor Housing Commission also recently used a new 501(c)3 bond structure to purchase a hotel to convert to affordable housing.  We have options."
+          ],
+          [
+            "Of course in order to build more affordable housing, whether that’s through land trusts, cooperatives or other, we need land."
+          ],
+          [
+            "The City is selling the Klines lot to a private developer for upwards of $17M. I would have designated this as affordable housing rather than selling it to a private developer. The proceeds are over $17M, but less than a quarter will be designated as going towards affordable housing. The public land could have been a head start for land trust housing, a cooperative or other directly affordable housing."
+          ],
+          [
+            "I acknowledge that not everyone in Ann Arbor is ready or at a stage in life to put down roots and buy into a land trust or housing cooperative. And so we must create more and protect existing affordable rental options."
+          ],
+          [
+            "We can and should do our part to address the housing shortage. I want the City to be a better negotiator with developers and create the right incentives to ensure that the housing that gets built meets clearly defined needs. I think we have opportunities to do both those things better—define the exact need and push for developers to deliver on it."
+          ],
+          [
+            "Development historically has taken the form of a community benefit agreement, where in order to build denser or taller, a developer had to meet affordability or sustainable building requirements—those still exist; however, we’ve made it much easier to build more without those requirements being met."
+          ],
+          [
+            "Finally, we are already experiencing a push of new development targeting some of the already existing affordable rental stock in Ann Arbor. I will push to protect those areas through anti-displacement policy and consideration to the impact of drastic upzoning areas with naturally occurring affordable housing as a means and incentive for redevelopment and displacement."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I am a renter. I recall, years ago now, when my landlord kept my security deposit under the blatantly false pretense that I did not provide a forwarding address within four days (even though I had provided it, this is not a legal reason to have kept my money; and there were no damages to the property). It wasn’t until over a year later when a friend who is an attorney filed suit that I got my money back. I was in a privileged position to have someone in my network who was an attorney, but I’ll never forget how powerless I was in the situation and the dynamic with my landlord."
+          ],
+          [
+            "More recently, my partner’s landlord sold the two-family flat she was renting in. The new owner gave her and her downstairs neighbors less than three months to vacate and attempted to begin demolition of the property while they were still living there. This continued until I advised her on the proper legal language to communicate to the new owner to get them to stand down."
+          ],
+          [
+            "I say this to emphasize the importance of providing renters access to legitimate legal counsel and my belief that the City should offer this as a resource to all tenants in Ann Arbor.  Funding legal aid and counsel is at the top of my list."
+          ],
+          [
+            "The City can also assist in creating city-held escrow accounts where tenants can place their rent in transparent good faith when landlords chronically fail to uphold their end of the lease."
+          ],
+          [
+            "I am a proponent of tenants’ rights to organize, canvass and hold meetings without interference. I support prohibiting landlords from evicting or not renewing leases without a legitimate, documented reason to prevent retaliation against organizing."
+          ],
+          [
+            "In the example of Island Drive, the City can also do a better job of proactively inspecting rentals—especially mid-to-large complexes—for living conditions and safety as opposed to waiting for things to get so bad or relying on tenants to self report."
+          ]
+        ],
+        "supply": [
+          [
+            "It’s worth noting that incentivizing supply and incentivizing low-cost supply are not the same thing.  It’s also worth noting that the administration’s current approach to increase the supply of market rate housing treats affordability as a byproduct that will filter down over time—instead of an outcome that is prioritized directly and measured on a meaningful timeline."
+          ],
+          [
+            "In order to increase low-cost housing, we need to align on terms and define what we mean when we say low-cost or “affordable.” It’s a term that has come up so much in this election cycle, and I think it means different things to different people."
+          ],
+          [
+            "We should define and state clearly what types of housing we are short of, how many bedrooms, at what price points and at what quantity. Define, quantify and prioritize our needs. Then direct our incentives to projects that expressly deliver on those needs, whether that’s expedited permitting, waiving fees or other mechanisms."
+          ],
+          [
+            "Development has historically taken the form of a community benefit agreement. If a developer sought to build more dense or taller than allowable limits, then they would make a contribution to the greater good, in the form of affordable set asides in the building or sustainable elements. We have made it easier now to build denser and taller without requiring the developer to engage in this type of community benefit agreement."
+          ],
+          [
+            "If we are an expensive community as a result of high demand, we can ask more from development to meet our needs and push for projects that deliver real outcomes."
+          ]
+        ],
+        "legacy": [
+          [
+            "I think this question touches on things I’ve stated in previous answers. We’re building towards a formula rather than an outcome. And we’re not measuring the results of our choices or holding developers accountable if they skirt the rules, mislead or exploit loopholes."
+          ],
+          [
+            "The City is negotiating for “affordability” on paper but not in practice. I acknowledge that the challenge here is that affordable housing is derived from Federal and/or State mechanisms that rely on AMI. And as we can see it’s clearly a clumsy instrument given the way these units at $1,701 are priced compared to the average 1 bedroom of $1,500 (if I’m reading this correctly). An affordably designated unit costs more than the market average."
+          ],
+          [
+            "This also plays into my idea of defining our need and incentivizing and negotiating for it. There doesn’t seem to be a lot of forethought with regard to who this “affordable” housing is built for: does an individual who makes 80% of AMI want to live in a student luxury building? In a furnished unit? Priced above the average cost of 1 bedroom?"
+          ],
+          [
+            "AnnArborWaitlist.com is a portal hosted by Washtenaw County Office of Community Economic Development (OCED) to sign up for affordable housing units required as part of private developments like the Legacy. These quotes from that portal convey the problem:"
+          ],
+          [
+            "“Due to the rental amount and the limited unit size of these rentals, they are most suitable for smaller 1-2 person households whose income is $30K-50K per year.”"
+          ],
+          [
+            "“None of the A2 Affordable Housing Waitlist properties come with vouchers, are considered public housing, or will calculate your rent based on your income.”"
+          ],
+          [
+            "They don’t support a broad spectrum of housing needs (1-2 person households only—we need these units, don’t get me wrong, but we need units for other-sized households too). They are not public or permanently affordable, nor will they set your rent to your income."
+          ],
+          [
+            "I stand by my previous statements that we need to define our needs and be better negotiators for developments like the Legacy and think through the real implications of what we’re getting in return for these contributions for development."
+          ],
+          [
+            "But this also underscores the limits of the market and Federal and State affordable rent programs and the need for the city to intervene directly in solving housing affordability."
+          ]
+        ]
+      }
+    },
+    "dave-zeglen": {
+      "submitted": "7/24/2026 12:27:41",
+      "answers": {
+        "obstacle": [
+          [
+            "The dominance of “abundance” thinking amongst our elected officials. This thinking abdicates the city’s responsibility since it diminishes what the government should do about the affordability crisis. For abundance advocates, private developers and the rich will save us while the power of the public to regulate and invest is minimized. The abundance position holds that the main role of government is to provide fiscal support and deference to private capital in the naive hope that the free market will provide so-called abundance to the people."
+          ],
+          [
+            "The abundance approach to housing asserts that the affordability crisis is about the limited supply of housing. This problem can only be solved with tools that maximize supply, such as upzoning, deregulation, market-rate housing, public-private partnerships, and some public housing. All new housing is good housing since it increases the housing supply since meeting demand with supply is Economics 101. But if you think all housing is good housing, you end up prioritizing private developers who want to move fast to build luxury and market rate housing to maximize profit. This leaves less land in the city for public housing and makes nearby properties more expensive for the city to acquire for public housing. We lose another opportunity to build affordable housing every time we decide to step back and let the market run rampant."
+          ],
+          [
+            "This position is unquestioned doctrine in the Taylor administration and among his endorsed candidates in this election cycle. They might as well just come out and say “there is no alternative”.  However, there are many detailed criticisms of the abundance approach to housing. The problem is that abundance is Economics 101. There’s more to housing beyond the narrow supply argument. It’s time to graduate from that 101 class and revise our thinking to understand that the supply of housing under capitalism is situated in the broader power dynamic between the private and public sector and influences what kind of housing supply is being built."
+          ],
+          [
+            "Take the example of upzoning of single-family neighborhoods to include duplexes and triplexes, known as “missing middle” housing. I support this upzoning in principle, as we need more density in the city. But due to uncapped property taxes and private developer greed, missing middle duplexes and triplexes may get built, but they won’t be missing middle prices. Consequently, individual duplex and triplex units will be much more expensive than the single-family residential unit they replaced, worsening the housing crisis. We need public intervention with community land trusts to ensure duplexes and triplexes are actually affordable."
+          ],
+          [
+            "Or look at public-private partnerships and agreements that abundance enthusiasts advocate for, such as Arbor South in Ward 4 on Eisenhower and South State. City council approved $350 million dollars in tax credits to Oxford to build three parking decks that the city won’t even own. The city is capitalizing more than 50% of the entire project to support 1000 units of market-rate housing. This is money that won’t go to the city’s general fund, only to supporting a corporate developer’s individual project. Oxford is promising to build 200 units of affordable housing, but they can decide not to by paying $19 million to the city. What do you think they’re going to do as a profit-driven company? Developers lie all the time about what they promise they are going to do, so why do we keep trusting them? I should also mention that many current city council members, including the mayor, have also taken money from corporate developers like the CEO of Oxford, and have had fundraisers on their properties."
+          ],
+          [
+            "Let’s look at another abundance favorite, the deregulation of the housing market for private developers. Ward 4 is a good example of what I’m talking about:",
+            "The Harlan - new luxury apartments near Briarwood Mall that now has a grocery store next to it that is more expensive than the nearby Whole Foods",
+            "Southtown - currently an empty lot on South State and Stimson where older, less expensive housing used to be. The developer is building luxury and market-rate housing with short-term rentals and no affordable housing units. This is capital “G” gentrification.",
+            "The Crescent - an in-fill development beside Whole Foods off of Ann-Arbor Saline that is luxury and market-rate housing with no affordable housing units.",
+            "Robertson Homes - an in-fill on Scio Church that will be townhouses all starting at 600k!"
+          ],
+          [
+            "The city has given away so much to developers with little to show for it in affordable housing because the belief is that all housing is good housing. When you graduate from Economics 101 and go on to Economics 102, you learn that the housing market is segmented, not unified. Building more luxury and market-rate housing lowers the price of housing in the market-rate segment, but only marginally lowers prices, if at all, in other segments. What ends up happening is that the rich buy more housing for various purposes, such as game-day crash pads, second homes, or investment properties to flip later. Not to mention that rent prices change for a variety of reasons, not just because of supply in new housing. Landlords also collude with each other to price-fix. So you need a wider vision beyond “abundance” supply arguments to understand the housing crisis."
+          ],
+          [
+            "Mayor Taylor often talks about solving the problem of “late-stage capitalism” but he doesn’t know what the term actually means since the abundance position is ongoing late-stage capitalism. Abundance is advocating that more free market capitalism is the solution to the problem of free market capitalism that caused the affordability crisis in the first place. It’s time for a new housing approach that prioritizes the needs of the people, not the wants of private developers."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "I will ensure that public land is used for public housing, rather than sold to private developers. The city approved the sale of the Kline’s Lot, a publicly owned surface lot downtown that had been assessed over six years ago by a prior city council as being an ideal site for public housing. Instead, the city sold it to a private developer to build luxury housing. So ensuring that the city’s land doesn’t continue to get sold off to private developers is a top priority. We need that land for public housing. And we need to acquire more properties in the city whenever possible for the same purpose. We could buy Woodbury Gardens and turn it into a co-op rather than subsidizing parking decks for a private developer at Arbor South."
+          ],
+          [
+            "I fully support community land trusts to ensure that duplexes and triplexes that are built will be below market-rate to ensure workers in the city can afford to live here. Moreover, if the goal is to end the legacy of exclusionary mandates with duplexes and triplexes, then they have to be actually affordable. With land trusts, the homeowner owns the building, but the land stays in the trust. The home is permanently affordable even when resold because the price is set at the deed level by the land trust. A2CLT’s Townie Homes project is a worthwhile project that prioritizes housing essential workers, and I will help more of these projects come online. The city also has revenue bond capacity to utilize. The city can set up its own city-run land trust with the cost of land purchase and development paid off over time through rents by the occupant."
+          ],
+          [
+            "Ann Arbor also needs more cooperative housing such as Arrowwood. Cooperatives operate like corporations. You buy a share into the cooperative, and you are part owner of it, which confers voting rights to you with other residents about the direction and rules of the cooperative. In exchange, you live in one of the units in the cooperative that is priced significantly below market. I recommend everyone visit a cooperative and take a tour. They are racially diverse, mixed-income, and actually affordable. They also have a vibrant sense of community amongst their residents. If we use city land, or buy more land, we can establish co-ops that are permanently affordable for residents. We can finance more cooperatives through revenue bonds, which uses co-op dues from residents to pay back the bonds over time. We can also support more student cooperatives in the city. I’ve spoken to the ICC about this, and they have a list of suggestions for helping student co-ops thrive in Ann Arbor."
+          ],
+          [
+            "Obviously, the University of Michigan is the elephant in the city. They have a massive endowment, can claim eminent domain, and don’t pay property tax on the land they acquire. However, this doesn’t mean we can’t work with the university as partners. I propose a payment-in-lieu of taxes program (PILOT) that is similar to what a lot of other universities in the United States do. U-M and the city work out an agreement whereby U-M pays some amount back to the city, albeit below what they would pay in property tax, in exchange for the services the city provides back to the university. Skeptics will say that no public university in the United States does this, and this is true. But that’s not an excuse. We should take the lead as a college town with a public university  in addressing the housing crisis. I’ve already talked to a regent candidate about a PILOT and he was quite receptive, so we need to lay the groundwork with regents to make this happen. Also, residents in Ann Arbor don’t usually know who the regents are, or that we elect them. So we can actually use the ballot box to support regents that advocate for PILOT programs."
+          ],
+          [
+            "I fully support banning non-principal resident short-term rentals. They take much needed housing stock that could be used for affordable housing off the market for gameday crash pads. The city ordinance banning them grandfathered in already existing short-term rentals when they should have been sunsetted. Now we have a transition zone category in the comprehensive land use plan that will move a lot of residential areas where short term rentals are banned into a category where they will be allowed. This is why I am calling for an enforcement of the original ban in areas previously designated as residential that are now in transitional zones. I fully support principal resident rentals. We need to make it easier for people to build accessory dwelling units (ADUs). There is a large elderly population in Ann Arbor that are locked into their homes due to the uncapped property tax, but have extra space they would like to make available to supplement their fixed incomes."
+          ],
+          [
+            "Finally, as I’ve indicated above, the abundance position narrowly sees housing affordability as a supply problem. My perspective on housing affordability is based on the whole-worker approach that comes out of labor organizing. What this means is that we have to look at the worker/resident in a broader social context. Even if the city builds affordable housing, workers are still going to struggle because of the wider cost of living crisis. This is why I support public power. We need utility rates to be cheaper for working class ratepayers in the city instead of getting gouged by DTE. We also need to ensure that city services are protected from privatization so that our tax dollars are ensuring that city work is done by city workers, who are currently without a contract right now. If city council gave themselves a raise last year, but city employees are still without a contract, are they going to be able to live in the city that they work for? If they can’t, this is not only going to lead to a decline in quality of city services, but also a decline in community. The whole worker model also sees housing as a union issue, which is why I want to establish an advisory labor council in City Hall, so that the representatives and rank-and-file members of the city’s unions can come together to discuss ideas for how to best address the housing affordability crisis."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "The Taylor administration and their supporters frequently cite Minneapolis and Austin’s abundance approach to housing as models for Ann Arbor to follow. However, I have spoken to Twin Cities Tenants and they told me that the city’s prioritization of building luxury and market-rate housing has made the rental market much worse for tenants who have few tenant rights as it is. BASTA, the tenants union in Austin, is experiencing identical issues in their housing market as well."
+          ],
+          [
+            "Even with more housing built, landlords can still require higher rents, neglect maintenance, or behave abusively towards tenants. But the housing crisis can be directly addressed by tenants themselves through organizing. This is why I fully support the Ann Arbor Tenants Union (AATU). If you look at the history of the AATU it has engaged in several incredible actions on behalf of tenants in the city including rent strikes to build support for the 1978 Truth in Renting and Fair Rental Information legislation and to revise and enforce the building code, coalition-building with environmental groups to add weatherization guidelines into the city building code, women’s groups to fight housing-related privacy violations and sexual harassment, and disabled and elderly groups to address code violations."
+          ],
+          [
+            "More recently, the AATU has organized a tenants association for tenants renting from the landlord CMB, Courthouse Square, Island Drive, and Ann Arbor Woods. They organized to establish the Renters’ Commission, have major revisions made to the Early Leasing Ordinance, secure the Right to Renew, and ban specific junk fees. To win more organizing victories, the AATU is asking city council members to support the Tenant Bill of Rights, which is a platform for just and dignified housing conditions for tenants in Ann Arbor. I have enthusiastically endorsed the Bill of Rights as a candidate, and strongly encourage current electeds and other candidates to do so as well."
+          ],
+          [
+            "Currently, the AATU is requesting the right to organize, which is the right for tenants to come together, talk, and organize for their own protections. This is an essential right and it is not protected at the moment. Instead, tenants attempting to organize on renter issues have been banned from knocking on each other's doors, threatened with eviction, issued cease and desist orders, surveilled by the police, and banned from common spaces to share information and coordinate action. The right to organize is a foundational right that is necessary to make progress on other issues, which is why I have given public comment asking city council to pass an ordinance for it. For instance, look at the Kansas City Tenant Union, which is modeled on labor unions, and see what can be done when tenants organize each other when they have the right to organize."
+          ],
+          [
+            "However, it is also important that city council engage the AATU, and other community groups in the city with a bottom-up, rather than a top-down, approach. This is important because the city’s job is not to solve all the tenant problems for renters, but to empower them to advocate for themselves and develop the organizing skills necessary for long-term success. Not only is this more democratic, but it actually helps equalize the power imbalance between tenants and landlords by strengthening their collective competencies."
+          ],
+          [
+            "This is why I was disheartened by the city council’s recent process for introducing an ordinance for the right to organize. While I support the ordinance, the way that city council approached it did not empower tenants to advocate for themselves. As several members of the AATU noted in public comment, the AATU sent a draft ordinance for the right to organize to the renter’s commission in March and were promised feedback from city council, which they never received despite asking for months about it. Instead, city council introduced the ordinance with none of the language that AATU wrote, and did not inform them or the renters commission that the ordinance was going to be introduced. This demonstrates a lack of community engagement that deprives grassroots organizations of the vital participation necessary for meaningful change."
+          ],
+          [
+            "This is about democratic process. There are no tenants on city council, and the majority of the city’s residents are renters. I am the only tenant, labor organizer, and social justice activist running in my race that understands the necessity of collectively bargaining from the grassroots for more dignified housing conditions."
+          ]
+        ],
+        "supply": [
+          [
+            "The city needs to position a public investment fund as a public developer and financier of housing projects. This is how a public investment fund (PIF) works. Developers need to raise capital to fund a new development project. They usually take out a bank loan and a private equity loan to fund the project. Private equity wants a high return on their investment, so they charge high interest rates to fund the project, which raises the overall cost to the developer. But with a PIF, the city can raise capital on the municipal bond market, then loan the raised capital to a developer at an interest rate much lower than a private equity loan. This discount on interest rates is attractive to developers as it lowers the cost of the project. In exchange, the PIF gets two things: an ownership stake in the building so the city actually owns it, and permanently affordable housing units in the project, usually 30% of the total units. The initial interest rates on the bonds the city took out get paid off over time with rent revenue earned through the public housing units. That’s actually how you get middle and low-income housing. This model is very successful in Montgomery County, Maryland."
+          ],
+          [
+            "The city also needs to implement community benefits agreements (CBA) that tightly regulate private developers. A CBA works like this. If there is any public support for a private developer in the form of a subsidy, tax abatement, or below-market priced land, an ad-hoc citizens committee is formed to negotiate directly with the developer. This committee is made up of volunteers that live near the proposed development and around the city. The committee discusses with the developer about what proportional community benefits should be. This could include investments in infrastructure, preserving natural elements on the site, local hiring, or low-income housing in exchange for public support. Ypsilanti is a good example of how a CBA can increase the supply of more low-cost housing. For instance, take Dorsey Estates, which was the result of a CBA. The developer, Renovare, got a brownfield tax credit which triggered the formation of a citizens committee. This citizens committee negotiated an agreement with Renovare to ensure that Dorsey Estates would have permanently affordable low-income housing units in the development project."
+          ],
+          [
+            "The city also needs to reinstitute building premiums. Building premiums were actually an idea that was developed by students at the Roosevelt Institute at the University of Michigan, demonstrating that the city doesn’t need to hire private consultants, it needs to use the community. Building premiums work like this. Let’s say a developer wants to build in an area that is zoned to allow for up to five stories. But the developer wants to build beyond what is allowed to be zoned, like 7 stories. A building premium can be offered to the developer that says “if you want to build beyond the current zoning with 7 stories, one of those additional stories needs to be low-income housing.” Or better, the number of units added by one additional story for low-income must be mixed with the rest of the market-rate housing on the other stories. This ensures there isn’t a concentration of low-income housing, and it’s spread out to make the floors income diverse. And building premiums are a way to ensure that. The city actually implemented building premiums before and then repealed them during COVID as evidence they weren’t working, which was premature. What if the CLUP had upzoning that was contingent on premium requirements? We could get increased density with premiums defined by neighborhoods. Developers would be incentivized to build density on transit corridors with high premiums for affordable housing."
+          ],
+          [
+            "For the unhoused residents of Ann Arbor, the city must negotiate with the county about purchasing a hotel for temporary shelter. I’ve also had several discussions with housing justice activists about what the city can do for unhoused residents. They’ve told me that many unhoused residents do not have reliable access to transportation when they need to get to warming shelters during the winter. I will work with the AAATU to move towards free buses, and ensure there are proper routes. Moreover, I will pass an ordinance drafted in collaboration with housing justice movements that restricts unnecessary homeless encampment sweeps and prioritizes social work interventions."
+          ]
+        ],
+        "legacy": [
+          [
+            "Broadly speaking, there are two main ways to define what constitutes “affordable housing”: income-based and income-restricted. Income-based housing is based on a person’s individual income and assures that a tenant will not pay more than 30% of their income to rent. Income-restricted housing is not based on your actual income, but on the Area Median Income (AMI), which doesn’t have the same assurances. For a contrast, in the appendix to the Comprehensive Land Use Plan that city council recently approved, their definition of “affordable housing” is stated to include housing options for every income bracket, which, by their own definition, would include luxury high-rises!"
+          ],
+          [
+            "The Legacy Apartments are income-restricted, meaning that only specific income levels can access it. Since Area Median Income (AMI) is based on Washtenaw County’s high income averages, this is not actually affordable for most people. Income inequality is getting worse and worse in the city, so this isn’t always a useful metric for determining what’s affordable. Yet, income-restricted housing is the most common type of affordable housing built."
+          ],
+          [
+            "But if we shift to an income-based model we can avoid the problem of empty units because there is assurance that they can, at least, reasonably afford the rent. There are very few income-based housing options, especially for people on disability or seniors who have stopped working and are locked into their homes. Anyone can become disabled at any time. And many people work paycheck to paycheck so it's worth asking: can they pay the rent, utilities, food, insurance, debt? However, income-based housing has its own issues. Housing is considered affordable if the resident pays “no more than 30 percent of gross income for housing costs”. This is a better metric, but the 30% ratio was arbitrarily set during the Reagan administration for budgetary purposes, and housing advocates suggest it should be much lower, nearer the 20% ratio."
+          ],
+          [
+            "An improvement of the 30% ratio is the residual income metric. This metric gets us back to the whole worker approach I’ve been advocating for in my answers above.The residual income metric examines non-housing costs (food, debt, fuel, utilities, transportation, insurance, healthcare, childcare, eldercare, insurance premiums, etc) and subtracts that from a person’s total income. What remains is a person’s “residual”, or how much they have left to spend on housing without sacrificing the necessary payments they are making. This measures one’s ability to pay for housing. The Department of Veterans Affairs already uses a similar metric that we could use for housing."
+          ],
+          [
+            "The Legacy didn’t price in a broader perspective of what constitutes affordability, including cost of utilities, parking fees, and other non-housing costs, so the affordable units remained too expensive for people to rent them. Landmark Properties, which manages the building, also requires applicants to have income that’s twice the rent, which is another factor that prohibits people from being able to apply. In the agreement between the city and the developer, this should not have been permitted. When pricing in what constitutes affordability, a residual income metric should have been used for an agreement between Landmark and the city to ensure the Legacy actually had real affordable units and using such a metric in the future would help prevent units from sitting empty."
+          ]
+        ]
+      }
+    },
+    "teesha-montague": {
+      "submitted": "7/24/2026 15:14:52",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle is that we have not aligned our housing policy with the needs of the people who actually live and work here. There are patterns of planning for potential residents for 20-30 years from now but does that mean we neglect the folks are here now? For too long, the conversation has been framed as simply \"build more housing,\" when the real question is what kind of housing, where, and at what price? Too many of our teachers, nurses, first responders, city employees, seniors, young professionals, and families are being priced out of the community they help sustain year after year."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "Addressing affordability requires more than increasing supply. I’d propose a more balanced approach that preserves existing affordable housing, expands workforce housing, supports missing-middle housing such as duplexes, triplexes, townhomes, and accessory dwelling units where appropriate, and create more pathways to homeownership. We must also ensure new development includes meaningful affordability and is supported by the infrastructure, transportation, and public services residents rely on.",
+            "Another obstacle is trust. Many residents feel major land use and development decisions are made before they have a meaningful opportunity to provide input. I believe we need to improve communication, engage neighborhoods earlier in the process, and make decisions transparently so residents understand not only what is being proposed, but why.",
+            "Finally, affordability extends beyond housing. Transportation, childcare, utility costs, property taxes, and wages all affect whether people can afford to live in Ann Arbor. Solving this crisis requires a comprehensive strategy that supports working families, protects seniors, strengthens our neighborhoods, and ensures Ann Arbor remains a city where people from all walks of life can live, work, and thrive."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I believe every tenant deserves safe, healthy, and secure housing. I support empowering tenants by ensuring they understand their rights, have accessible ways to report housing concerns, and can work together to advocate for improvements. The City should consistently enforce housing standards, hold negligent landlords accountable, and strengthen partnerships with tenant organizations, legal aid, and property owners to resolve issues quickly. Safe, quality housing is essential to a strong community."
+          ]
+        ],
+        "supply": [
+          [
+            "The City should encourage the development of more affordable and workforce housing by supporting & streamlining approvals for projects that include meaningful affordability, supporting mixed-income developments, expanding missing-middle housing where appropriate, & preserve existing affordable units, and partner with nonprofit and public housing organizations like the Housing Commission and Avalon. We must increase housing options while ensuring growth benefits the people who live and work in Ann Arbor—not just the market or big developers. There also needs to be more oversight during the process and after the completion of the project to ensure objectives and outcomes are aligned."
+          ]
+        ],
+        "legacy": [
+          [
+            "Legacy shows that \"affordable\" on paper doesn't always mean affordable in real life. We need affordability levels that match the incomes of the people we're trying to serve. I support reviewing how affordability requirements are set, ensuring units are marketed effectively to eligible residents, and partnering with housing organizations to connect applicants with available homes. Going forward, the City should evaluate affordability based on local needs and outcomes & not just whether units meet an AMI formula, so that housing is truly affordable and is both accessible and occupied after construction."
+          ]
+        ]
+      }
+    },
+    "jenn-cornell": {
+      "submitted": "7/24/2026 15:57:19",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle to solving Ann Arbor's affordability crisis is lack of housing supply across all types and price points. For too long, Ann Arbor's zoning has limited our options to single family zoning only; currently, Ann Arbor's laws are almost exclusively single family, prohibiting opportunities for increased gentle density in our existing neighborhoods through the creation of duplexes, triplexes, and other smaller multi-family dwellings."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "I would encourage housing affordability by continuing the work that I already have been doing, by voting yes in support of housing. I have supported tenant protections and think these are key to protecting our heavy share of renters in this city, both student and otherwise, and I support different types of housing that make our city more accessible for all."
+          ],
+          [
+            "The Comprehensive Land Use Plan will bring down costs and make Ann Arbor more accessible for workers - our teachers, nurses, firefighters, etc - who have been pushed out of the community. It will address a gap in our current housing stock, allowing for more affordable housing, and put plainly, more housing. Our affordability crisis needs drastic action, and this plan takes that action."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I have supported tenant protections, including  co-sponsoring the recent resolution directing the City Attorney's office to bring a bill of rights to the Council table; I think these are key to protecting our heavy share of renters in this city, both student and otherwise. Our Green Rental Housing Ordinance helps improve the quality of life for our renters and lower utility costs, increasing energy efficiency of our rental units. Our rental inspections also ensure that tenants are not dealing with unlivable conditions, and obligating a rent to renew ensures that renters have the opportunity to remain in place without urgent pressure or unrealistic timelines. Finally, I was the lead sponsor on the resolution requiring carbon monoxide detectors in all rentals, filling a gap in tenant safety that hadn't been previously addressed."
+          ],
+          [
+            "We can’t speak about renting without addressing the reality: we must make housing more affordable for renters who wish to purchase in Ann Arbor. For years, I was priced out, despite working in the City. We must build more units and make housing in Ann Arbor more accessible so that our working class individuals and families, who provide for our downtown businesses and deliver so much for our community in the service industry, can afford to live here."
+          ]
+        ],
+        "supply": [
+          [
+            "The Ann Arbor Housing Commission plans to leverage the city's affordable housing millage to build ~150 units per year. I strongly support its goals to build/ acquire 1500 units by 2030, and am proud to have supported efforts since I joined Council to advance that goal. Currently, the A2 Housing Commission has 1200 units in its pipeline, thanks to the affordable housing millage."
+          ],
+          [
+            "I also support other organizations, such as the Community Land Trust, in its efforts to increase affordable options in the city. I repeatedly voted in support of CLT both at the council table and at the Washtenaw County Brownfield Authority."
+          ],
+          [
+            "I do want to note that affordable housing and public housing alone will not solve our affordability or housing crises. We need a variety of housing at a variety of price points to truly serve those who want to live in Ann Arbor. Publicly-owned housing is one piece of a bigger puzzle that, as a city leader, I will continue to work hard to bring together."
+          ]
+        ],
+        "legacy": [
+          [
+            "While I support all types of affordable housing, I think the best allocation of resources is taking payment from these developers and developments to put under the management of our experts at City Hall. Allowing our experts to allocate funding and build affordable housing at rates that are truly affordable to residents is key to resolving our housing crisis."
+          ]
+        ]
+      }
+    },
+    "ryan-bartholomew": {
+      "submitted": "7/24/2026 18:09:51",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle to solving Ann Arbor’s affordability crisis is the pervasive mentality pushed by Mayor Taylor and City Council that trickle-down housing will lead to housing becoming more affordable."
+          ],
+          [
+            "Folks who subscribe to this school of thought believe that we just need to flood the market with supply in order to meet the high demand, and they claim agnosticism when it comes to the type of supply. As long as supply is built, it doesn’t matter what it looks like, demand will rise to meet it. In practice, however, this has resulted in the prioritization of building predominantly luxury housing such as the Veridian and the upcoming development on Packard – housing that a working-class person or family could never afford."
+          ],
+          [
+            "Mayor Taylor has even said that this market-rate housing plan will result in housing becoming more affordable in 20 or 30 years, but teachers and nurses who are serving our community right now do not have 20 or 30 years to wait."
+          ],
+          [
+            "This supply-side absolutism also does not take into consideration specific variables. First, due to the passage of Proposal A in 1994, folks who had purchased their homes prior had their property taxes capped. Many seniors in town have told me that they would like to downsize, but they can’t because doing so would result in the uncapping of their property taxes. They would be paying more for smaller housing, which doesn’t make financial sense. Likewise, many folks locked in a 2% interest rate on their mortgage during COVID, which also makes it prohibitively expensive to move when seeing a 6% or 7% interest rate."
+          ],
+          [
+            "So this begs the question, if Ann Arborites who already live here are not going to move into the new housing being built and the new housing remains unaffordable for the working-class people who serve our community and would like to live here like teachers and nurses, who is it for?"
+          ],
+          [
+            "Secondly, we have seen a lot of “abundance”-coded policy decisions by the Mayor and Council like the massive embrace of public-private partnerships such as the Arbor South Development near Briarwood. The Mayor and City Council greenlit a $350 million tax giveaway to a corporate developer, which sees the majority of that funding going towards the construction of three parking decks. Yes, the development will have 1000 units of housing, with 209 slated to be affordable. However, the developer can pay $19 million back to the city and not build them. As a private entity that exists to maximize profits, that is precisely what they’ll do."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "I want to see a massive investment in permanently affordable, publicly-owned housing in the same vein as the many co-ops all over town and in the community land trust, really rein in short-term rentals, ensure that public land is used for public purposes, not sold to private developers, and guarantee that our municipal workers are fairly compensated for the work that they do."
+          ],
+          [
+            "By investing in these types of housing on publicly-owned land, we can ensure that the housing will be perpetually sold below market-rate whenever the owner goes to sell it. By investing in the types of housing that working-class people and families can actually afford, we will help to meet the growing need now, not in 20-30 years."
+          ],
+          [
+            "The city did pass a short-term rental ordinance, but the ordinance grandfathered in the 300-400 non-owner occupied units that existed at the time of its passage. I want to revisit this and require non-owner occupied short-term rentals to be declared the owner’s primary residence or be sold. We are in a housing crisis, so we must act like it."
+          ],
+          [
+            "We must also ensure that our public land is not sold to private developers. In the case of the Kline’s lot downtown, the city is attempting to sell it to a private developer who has declared their intention to build luxury condos on the site. Public land should be used for public purposes like building more permanently affordable, publicly-owned housing or even just continuing to provide some of the only accessible parking downtown."
+          ],
+          [
+            "Lastly, as a community, we must ensure that the people who make our community run are compensated fairly for the work that they do. Inflation and tariffs coupled with the fact that our municipal workers have not had a cost of living adjustment in two years, have resulted in our city’s workforce not being able to afford to live in our community, much less thrive. By guaranteeing that they are compensated fairly for the vital work that they do (like making sure our water is safe to drink), the city will be helping our workforce more readily live in the community that they serve."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "I fully support the Ann Arbor Tenants Union’s Tenants Bill of Rights and would work hand-in-hand with the AATU to pass it if elected. The Tenants Bill of Rights includes: the right to organize, the right to rent control, the right to eviction protection, the right to counsel, the right to truth in renting, the right to housing access, the right to repair and deduct, and the right to a fair lease."
+          ],
+          [
+            "Many of these provisions mirror a package of bills that were introduced into the Michigan Legislature that I helped to work in during the 23-24 term. Some of these provisions are currently preempted by the state like the right to rent control. My boss has introduced the bill to remove the preemption twice now, and will likely do so again in the next term. If elected, I would both serve as an elected official for the city and work as a legislative director for an Ann Arbor State Representative working on legislation in the State House. This would allow me to work on issues preempting us in Lansing and then work to solve them here at home."
+          ],
+          [
+            "I would also want to work on the issue of price fixing that is occurring here in Ann Arbor. Some corporate landlords are using algorithmic software to effectively collude with one another to artificially keep rent higher than market rate. I worked on a bill to ban this practice at the state-level, HB 4538, and I would work to ban the practice locally as well."
+          ],
+          [
+            "It is important that we center tenants in policymaking that affects them, and that is precisely what I will do on city council."
+          ]
+        ],
+        "supply": [
+          [
+            "I would like to see the city more aggressively invest in the supply of more low-cost housing by acting as a public developer through a public investment fund (PIF). A PIF allows the city to raise capital via the municipal bond market and loan that out to developers at a much lower interest rate than a private equity loan. This would ensure that the city would own part of the developments being built and that a large portion of the units built are permanently affordable. Rent from the public units helps to pay down the bond, and then at the end of the process you have permanently affordable, publicly-owned housing that remains that way in perpetuity."
+          ],
+          [
+            "I would also like to see a greater emphasis placed on community benefit agreements to ensure that developers actually give back to the community and seek the community’s buy-in for new projects. When a developer proposes a large development, a group of nearby residents would form a committee to work with a developer to ensure that there is something given back to the community like hiring local workers, investing in infrastructure, and even ensuring that a portion of the housing built is affordable. CBAs are in alignment with my goals of democratizing processes and ensuring that the community has a greater say in the developments that are being built around them."
+          ]
+        ],
+        "legacy": [
+          [
+            "As you noted, Landmark uses 60-80% of Washtenaw County’s area median income (AMI) in determining if a prospective tenant can rent an “affordable” unit. They also require that a prospective tenant’s monthly income is at least double their rent payment."
+          ],
+          [
+            "At a time of growing wealth and income inequality, this is becoming an increasingly harder bar to clear."
+          ],
+          [
+            "Instead of relying on AMI to determine what may or may not be affordable, I would want to see complexes adopt an income-based approach, which would take into consideration a tenant’s actual income and ensure that they do not pay more than 30% of that for housing."
+          ],
+          [
+            "The 30% metric is already problematic on its own, as it does not usually include things like utilities that are very much a part of housing. I’d like to see factors like utilities and parking included in the 30% to try and more fully encapsulate the amount that prospective tenants would pay for housing and lower the threshold to qualify for affordable units."
+          ]
+        ]
+      }
+    },
+    "cynthia-harrison": {
+      "submitted": "7/24/2026 20:43:58",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle to solving our affordability crisis is a lack of supply, and we need to use all tools at our disposal to address this crisis. Ending exclusionary zoning practices and ensuring that communities of color are advocated for is pivotal. Our housing crisis was built through deliberate policy. Black families were legally barred from entire neighborhoods. When Fair Housing laws finally came, Ann Arbor waited two more decades for local protections. That delay has a paper trail, and that's why I sponsored the Reparations Study Resolution. What we passed in June 2024 directs the city to fund a feasibility study and produce a documented harms report. You cannot repair what you won't name."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "Addressing Ann Arbor’s housing shortage, and thus increasing housing affordability, requires using all options at our disposal. Market-rate housing helps increase overall supply and reduce pressure on existing neighborhoods, especially when paired with zoning reforms to allow more varied housing. Public-private partnerships help Ann Arbor incentivize the creation of mixed-income and permanently affordable housing more quickly and efficiently, while also expanding our tax base (similar to market-rate). At the same time, investments in public housing are essential to ensure that low-income residents, seniors, and working families are not priced out of the community. We must continue to use all options available to end Ann Arbor’s housing shortage and increase housing affordability."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "Ann Arbor can better protect renters by continuing to strengthen enforcement of housing safety standards, increasing transparency in leasing and rental fees, expanding affordable housing options, and ensuring tenants have meaningful rights and support when dealing with landlords. This includes the work we are already doing in cracking down on hidden fees, improving inspections and compliance systems, and supporting our Renters Commission."
+          ]
+        ],
+        "supply": [
+          [
+            "The city should incentivize increasing the supply of more low cost housing by removing barriers and allocating funding through tools like our Affordable Housing Millage. With 1,200 units in the pipeline in Ann Arbor, just 6 years into the Affordable Housing Millage, and with the AAHC pioneering new public-private partnerships that maximize the number of units those dollars can support, the city’s capacity may be greater than initially estimated within the scope of the current millage. Still, the deficit is so great that whatever gets built is unlikely to meet the growing need. It will be important to set expectations for renewal of that millage and communicate the success AAHC is having with the current one."
+          ],
+          [
+            "We should also be eager to support projects like that of the new Ann Arbor District Library, which leverages air rights to create more housing, including affordable units, at no new cost to our taxpayers."
+          ]
+        ],
+        "legacy": [
+          [
+            "I would work with developers and our housing partners to identify and remove barriers to leasing, strengthen oversight of affordability requirements, require better reporting when units remain vacant, and ensure these units are truly affordable based on an income threshold. Going forward, we should prioritize affordability programs that are transparent, affordable, and serve the people who need them, whether through these projects or funding allocations to affordable City developments."
+          ]
+        ]
+      }
+    },
+    "yousef-rabhi": {
+      "submitted": "7/26/2026 13:27:07",
+      "answers": {
+        "obstacle": [
+          [
+            "The primary obstacle is a political and economic system that prioritizes private profit over the public good. In the past, the city has relied on “trickle-down housing” – something that advantages Wall Street developers and removes our community’s voice. These developers and consultants have benefited from public cash while families are priced out. We cannot build our way out of this crisis by building luxury condos only the ultra-wealthy can afford."
+          ],
+          [
+            "For one, the private market is not altruistic and seeks to maximize profits; the city cannot rely on it to solve a crisis it helped create. Housing is a human right. With over 800 people experiencing homelessness in Washtenaw County, that means we are violating the human rights of 800 people right here in our community. We need to turn to strategies that keep prices low and create permanently affordable housing options. From passing the Tenant’s Bill of Rights, expanding the Housing Commission, and building new shelter capacity, I have the plans prepared and readied to address this chronic issue as Ann Arbor’s next mayor. The obstacle is not a lack of solutions. It is a lack of political will to choose people over profit – that changes under my administration."
+          ]
+        ],
+        "four-year-agenda": [
+          [
+            "Ann Arbor cannot keep relying on luxury development and hoping the private market solves the crisis it created. As Mayor, I intend to take a fundamentally different approach: one that treats housing as essential public infrastructure and makes historic investments in publicly owned and permanently affordable housing without raising taxes. Ann Arbor should grow from its residents and community, not by profit-maximizing developers and speculative investors."
+          ],
+          [
+            "That means expanding the Housing Commission, building new cooperatives and community land trusts, and exploring social housing models that keep homes permanently affordable rather than returning to market rates after the compliance period ends. It means “democratizing density”: – giving residents the tools they need to add housing capacity from the ground up through accessory dwelling units, duplexes, and triplexes, while cutting unnecessary barriers that slow community growth."
+          ],
+          [
+            "Part of this is protecting the people who are already here. I will create an anti-displacement unit within city government, pass the Tenant’s Bill of Rights, establish a tenant advocate office, and pass a community benefits ordinance, ensuring that more developments are required to contribute to the public good. I will lower the overall cost of living by pursuing public power, a publicly-owned utility that keeps energy rates law and reinvests revenue back into the community. Housing affordability will not be undercut by the other costs of living."
+          ],
+          [
+            "After 16 years in office, I have the record to back this up. As a state legislator, I secured millions of dollars in funding to build and upgrade affordable housing in Ann Arbor. As Mayor, I will bring that same commitment to fight the affordability crisis our community is facing."
+          ]
+        ],
+        "tenant-power": [
+          [
+            "There are several key actions I plan to take to help tenants. Primarily, I will pass the Tenant’s Bill of Rights, establishing a clear and enforceable framework of tenant protections across Ann Arbor. I will also establish a tenant advocate office with the mandate to stand up for renters and help them resolve housing concerns in a timely manner."
+          ],
+          [
+            "I want everyone who wants to live in Ann Arbor to be able to stay in Ann Arbor. As Mayor, I will create an anti-displacement unit within our city government to reduce gentrification and proactively protect marginalized communities and businesses. When renters bring concerns about their buildings or living conditions to the city, they will have an advocate at city hall."
+          ],
+          [
+            "What groups like AATU have already accomplished proves that tenant organizing works when residents have the support and solidarity to demand better. As Mayor, I won’t treat tenant unions as constituents to manage, but rather equal and essential partners in governance. The people closest to the problem are in the best spot to identify solutions. When tenants are organizing, I will show up to support them, with the force of the Mayor’s Office behind me."
+          ]
+        ],
+        "supply": [
+          [
+            "If we want housing that is affordable, we need to build actual affordable housing. The trickle-down housing policies that this city has pushed have not resulted in more affordability, just the opposite. The current direction of subsidizing private profit and giving out tax breaks to well connected developers is not something I support at all. Public money should be used for public services and housing, not to line the pockets of the wealthy. Incentives and “public/private partnerships” as they have been working in the city have been designed with the purpose of socializing the risk but privatizing the reward. I support public investments where if the risk is socialized, so must be the reward."
+          ],
+          [
+            "Developers are not altruistic mission driven entities that just want to house people. They are here to make money, maximize rents and profits. In contrast, I believe that we must approach housing as core public infrastructure and create a right to housing and shelter. The people can take control of our housing needs and build the homes that workers, seniors, students and families can live in. Public land is a public asset that can be leveraged for housing, but when it’s sold to developers with profit in mind, it stops benefiting the public. I plan to leverage the city’s public lands and revenue bonding capacity to directly finance public housing, co-ops, and community land trusts, rather than subsidize private developers."
+          ],
+          [
+            "I support mixed-income, mixed-use, transit-oriented growth that reduces sprawl, protects farmland and natural areas, and creates walkable neighborhoods. Future development should include vibrant local businesses, expanded green space, preserved historic buildings, and well-designed housing that strengthens our community"
+          ]
+        ],
+        "legacy": [
+          [
+            "We need to fundamentally redefine what affordability means to account for the reality that most working people can not live in even the “affordable” units that are being built or proposed. Using income as a qualifier ignores the vast pressures that are placed on working people. Debt from college loans, car payments, above average utility rates, and exorbitant child care costs mean that what someone can afford varies from person to person."
+          ],
+          [
+            "For all the talk of “market forces” driving down the cost of housing in some fairytale future, The Legacy should be a telling example of how the private market falls short in the goal of housing people. Units still cost way more than what most working families can afford. This model needs to change. We need to end the over-reliance on outside, private developers to fix a public problem. My administration will focus on building and preserving housing that stays permanently affordable, expanding public and community-owned housing options."
+          ]
+        ]
+      }
+    }
+  }
+}

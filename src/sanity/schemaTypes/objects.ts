@@ -1,3 +1,5 @@
+import {required} from './validation'
+
 export const contentImage = {
   name: 'contentImage',
   title: 'Image',
@@ -6,13 +8,6 @@ export const contentImage = {
   fields: [
     {name: 'alt', title: 'Alternative text', type: 'string'},
     {name: 'caption', title: 'Caption', type: 'string'},
-    {
-      name: 'legacyPath',
-      title: 'Legacy file path',
-      description:
-        'Path under /public, used until the asset is uploaded to Sanity.',
-      type: 'string',
-    },
     {name: 'width', title: 'Intrinsic width', type: 'number'},
     {name: 'height', title: 'Intrinsic height', type: 'number'},
     {
@@ -29,23 +24,23 @@ export const contentImage = {
   ],
 }
 
-export const link = {
-  name: 'link',
-  title: 'Link',
-  type: 'object',
-  fields: [
-    {name: 'href', title: 'URL', type: 'string'},
-    {name: 'external', title: 'Open in a new tab', type: 'boolean'},
-  ],
-}
-
 export const navLink = {
   name: 'navLink',
   title: 'Navigation link',
   type: 'object',
   fields: [
-    {name: 'label', title: 'Label', type: 'string'},
-    {name: 'href', title: 'Destination', type: 'string'},
+    {
+      name: 'label',
+      title: 'Label',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'href',
+      title: 'Destination',
+      type: 'string',
+      validation: required,
+    },
     {name: 'external', title: 'External', type: 'boolean'},
   ],
   preview: {select: {title: 'label', subtitle: 'href'}},
@@ -56,8 +51,18 @@ export const navGroup = {
   title: 'Navigation entry',
   type: 'object',
   fields: [
-    {name: 'label', title: 'Label', type: 'string'},
-    {name: 'href', title: 'Destination', type: 'string'},
+    {
+      name: 'label',
+      title: 'Label',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'href',
+      title: 'Destination',
+      type: 'string',
+      validation: required,
+    },
     {
       name: 'links',
       title: 'Dropdown links',
@@ -73,12 +78,18 @@ export const navColumn = {
   title: 'Footer column',
   type: 'object',
   fields: [
-    {name: 'title', title: 'Title', type: 'string'},
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: required,
+    },
     {
       name: 'links',
       title: 'Links',
       type: 'array',
       of: [{type: 'navLink'}],
+      validation: required,
     },
   ],
   preview: {select: {title: 'title'}},
@@ -100,8 +111,14 @@ export const socialLink = {
           {title: 'Email', value: 'email'},
         ],
       },
+      validation: required,
     },
-    {name: 'href', title: 'Destination', type: 'string'},
+    {
+      name: 'href',
+      title: 'Destination',
+      type: 'string',
+      validation: required,
+    },
     {name: 'label', title: 'Accessible label', type: 'string'},
   ],
   preview: {select: {title: 'label', subtitle: 'href'}},
@@ -112,8 +129,18 @@ export const ctaAction = {
   title: 'Action',
   type: 'object',
   fields: [
-    {name: 'label', title: 'Label', type: 'string'},
-    {name: 'href', title: 'Destination', type: 'string'},
+    {
+      name: 'label',
+      title: 'Label',
+      type: 'string',
+      validation: required,
+    },
+    {
+      name: 'href',
+      title: 'Destination',
+      type: 'string',
+      validation: required,
+    },
     {
       name: 'variant',
       title: 'Variant',
@@ -163,12 +190,14 @@ export const leaseMilestone = {
       name: 'days',
       title: 'Days after the lease start',
       type: 'number',
+      validation: required,
     },
     {
       name: 'text',
       title: 'What happens on this date',
       type: 'text',
       rows: 3,
+      validation: required,
     },
   ],
   preview: {select: {title: 'text', subtitle: 'days'}},
@@ -179,8 +208,18 @@ export const footnote = {
   title: 'Footnote',
   type: 'object',
   fields: [
-    {name: 'number', title: 'Number', type: 'number'},
-    {name: 'body', title: 'Body', type: 'simpleBlockContent'},
+    {
+      name: 'number',
+      title: 'Number',
+      type: 'number',
+      validation: required,
+    },
+    {
+      name: 'body',
+      title: 'Body',
+      type: 'simpleBlockContent',
+      validation: required,
+    },
   ],
   preview: {select: {title: 'number'}},
 }

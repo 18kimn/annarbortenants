@@ -1,4 +1,7 @@
 import styles from './Layout.module.css'
+import {cx} from '@/utils/cx'
+
+export type ContainerWidth = 'narrow' | 'prose' | 'wide' | 'expanded'
 
 type SectionProps = {
   children: React.ReactNode
@@ -15,19 +18,19 @@ export function Section({
   className,
   id,
 }: SectionProps) {
-  const classes = [
-    styles.section,
-    size === 'tight' && styles.sectionTight,
-    size === 'spacious' && styles.sectionSpacious,
-    variant === 'muted' && styles.sectionMuted,
-    variant === 'elevated' && styles.sectionElevated,
-    variant === 'accent' && styles.sectionAccent,
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ')
   return (
-    <section className={classes} id={id}>
+    <section
+      id={id}
+      className={cx(
+        styles.section,
+        size === 'tight' && styles.sectionTight,
+        size === 'spacious' && styles.sectionSpacious,
+        variant === 'muted' && styles.sectionMuted,
+        variant === 'elevated' && styles.sectionElevated,
+        variant === 'accent' && styles.sectionAccent,
+        className,
+      )}
+    >
       {children}
     </section>
   )
@@ -35,7 +38,7 @@ export function Section({
 
 type ContainerProps = {
   children: React.ReactNode
-  width?: 'narrow' | 'prose' | 'wide'
+  width?: ContainerWidth
   className?: string
 }
 
@@ -44,74 +47,30 @@ export function Container({
   width = 'prose',
   className,
 }: ContainerProps) {
-  const classes = [
-    styles.container,
-    width === 'narrow' && styles.containerNarrow,
-    width === 'prose' && styles.containerProse,
-    width === 'wide' && styles.containerWide,
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ')
-  return <div className={classes}>{children}</div>
-}
-
-type ProseProps = {
-  children: React.ReactNode
-  width?: 'narrow' | 'prose' | 'wide'
-  className?: string
+  return (
+    <div
+      className={cx(
+        styles.container,
+        width === 'narrow' && styles.containerNarrow,
+        width === 'prose' && styles.containerProse,
+        width === 'wide' && styles.containerWide,
+        width === 'expanded' && styles.containerExpanded,
+        className,
+      )}
+    >
+      {children}
+    </div>
+  )
 }
 
 export function Prose({
   children,
   width = 'prose',
   className,
-}: ProseProps) {
+}: ContainerProps) {
   return (
-    <Container
-      width={width}
-      className={`${styles.prose} ${className ?? ''}`}
-    >
+    <Container width={width} className={cx(styles.prose, className)}>
       {children}
     </Container>
   )
-}
-
-type PageHeaderProps = {
-  eyebrow?: string
-  title: React.ReactNode
-  subtitle?: React.ReactNode
-}
-
-export function PageHeader({
-  eyebrow,
-  title,
-  subtitle,
-}: PageHeaderProps) {
-  return (
-    <header className={styles.pageHeader}>
-      <div className={styles.pageHeaderInner}>
-        {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
-        <h1>{title}</h1>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-      </div>
-    </header>
-  )
-}
-
-type CardProps = {
-  children: React.ReactNode
-  elevated?: boolean
-  className?: string
-}
-
-export function Card({children, elevated, className}: CardProps) {
-  const classes = [
-    styles.card,
-    elevated && styles.cardElevated,
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ')
-  return <div className={classes}>{children}</div>
 }

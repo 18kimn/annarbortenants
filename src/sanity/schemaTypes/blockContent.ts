@@ -1,3 +1,5 @@
+import {required} from './validation'
+
 const decorators = [
   {title: 'Strong', value: 'strong'},
   {title: 'Emphasis', value: 'em'},
@@ -14,6 +16,16 @@ const styles = [
   {title: 'Quote', value: 'blockquote'},
 ]
 
+const linkAnnotation = {
+  name: 'link',
+  title: 'Link',
+  type: 'object',
+  fields: [
+    {name: 'href', title: 'URL', type: 'string'},
+    {name: 'external', title: 'Open in a new tab', type: 'boolean'},
+  ],
+}
+
 const richTextBlock = {
   type: 'block',
   styles,
@@ -23,7 +35,7 @@ const richTextBlock = {
   ],
   marks: {
     decorators,
-    annotations: [{type: 'link'}],
+    annotations: [linkAnnotation],
   },
 }
 
@@ -54,33 +66,14 @@ export const callToAction = {
   type: 'object',
   fields: [
     {name: 'title', title: 'Heading', type: 'string'},
-    {name: 'label', title: 'Button label', type: 'string'},
-    {name: 'href', title: 'Destination', type: 'string'},
-    {name: 'external', title: 'Open in a new tab', type: 'boolean'},
     {
-      name: 'variant',
-      title: 'Variant',
-      type: 'string',
-      options: {
-        list: [
-          {title: 'Primary', value: 'primary'},
-          {title: 'Secondary', value: 'secondary'},
-        ],
-      },
-    },
-    {
-      name: 'size',
-      title: 'Size',
-      type: 'string',
-      options: {
-        list: [
-          {title: 'Default', value: 'default'},
-          {title: 'Large', value: 'large'},
-        ],
-      },
+      name: 'action',
+      title: 'Button',
+      type: 'ctaAction',
+      validation: required,
     },
   ],
-  preview: {select: {title: 'label', subtitle: 'href'}},
+  preview: {select: {title: 'action.label', subtitle: 'action.href'}},
 }
 
 export const testimonial = {
@@ -88,7 +81,13 @@ export const testimonial = {
   title: 'Testimonial',
   type: 'object',
   fields: [
-    {name: 'quote', title: 'Quote', type: 'text', rows: 4},
+    {
+      name: 'quote',
+      title: 'Quote',
+      type: 'text',
+      rows: 4,
+      validation: required,
+    },
     {name: 'attribution', title: 'Attribution', type: 'string'},
   ],
   preview: {select: {title: 'quote', subtitle: 'attribution'}},
@@ -99,7 +98,12 @@ export const embed = {
   title: 'Embedded frame',
   type: 'object',
   fields: [
-    {name: 'url', title: 'URL', type: 'url'},
+    {
+      name: 'url',
+      title: 'URL',
+      type: 'url',
+      validation: required,
+    },
     {name: 'title', title: 'Frame title', type: 'string'},
     {
       name: 'width',
@@ -125,6 +129,7 @@ export const donateButton = {
       name: 'hostedButtonId',
       title: 'Hosted button ID',
       type: 'string',
+      validation: required,
     },
     {name: 'imageSrc', title: 'Button image URL', type: 'url'},
     {
@@ -231,6 +236,13 @@ export const postList = {
   fields: [{name: 'limit', title: 'Maximum entries', type: 'number'}],
 }
 
+export const faqList = {
+  name: 'faqList',
+  title: 'FAQ list',
+  type: 'object',
+  fields: [{name: 'title', title: 'Title', type: 'string'}],
+}
+
 export const footnoteList = {
   name: 'footnoteList',
   title: 'Footnotes',
@@ -272,6 +284,7 @@ export const blockContent = {
     {type: 'resourceList'},
     {type: 'pressMentionList'},
     {type: 'postList'},
+    {type: 'faqList'},
     {type: 'footnoteList'},
     {type: 'divider'},
   ],

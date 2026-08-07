@@ -41,6 +41,21 @@
   box-shadow: var(--shadow-sm);
 }
 
+.figure {
+  margin: var(--space-5) 0;
+}
+
+.figure img {
+  margin: 0;
+}
+
+.caption {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  margin: var(--space-2) 0 0;
+  text-align: center;
+}
+
 .logos {
   display: flex;
   flex-direction: row;
@@ -233,17 +248,11 @@
 }
 
 .resource {
-  background: var(--surface-elevated);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: var(--space-5);
-  transition:
-    border-color 150ms ease,
-    box-shadow 150ms ease;
+  composes: card;
 }
 
 .resource:hover {
-  border-color: var(--border-strong);
+  transform: none;
   box-shadow: var(--shadow-sm);
 }
 

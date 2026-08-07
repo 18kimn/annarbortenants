@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import styles from './Button.module.css'
+import {cx} from '@/utils/cx'
 
 type Variant = 'primary' | 'secondary' | 'ghost' | 'onAccent'
 type Size = 'small' | 'default' | 'large'
@@ -22,15 +24,13 @@ type ButtonAsButtonProps = CommonProps &
 type ButtonProps = ButtonAsLinkProps | ButtonAsButtonProps
 
 function classFor(variant: Variant, size: Size, extra?: string) {
-  return [
+  return cx(
     styles.button,
     styles[variant],
     size === 'large' && styles.large,
     size === 'small' && styles.small,
     extra,
-  ]
-    .filter(Boolean)
-    .join(' ')
+  )
 }
 
 export function Button(props: ButtonProps) {
@@ -51,11 +51,28 @@ export function Button(props: ButtonProps) {
       children: _ch,
       ...rest
     } = props
-    const externalProps = external
-      ? {target: '_blank', rel: 'nofollow noopener'}
-      : {}
+    if (external) {
+      return (
+        <a
+          href={href}
+          className={cls}
+          target="_blank"
+          rel="nofollow noopener"
+          {...rest}
+        >
+          {children}
+        </a>
+      )
+    }
+    if (href.startsWith('/')) {
+      return (
+        <Link href={href} className={cls} {...rest}>
+          {children}
+        </Link>
+      )
+    }
     return (
-      <a href={href} className={cls} {...externalProps} {...rest}>
+      <a href={href} className={cls} {...rest}>
         {children}
       </a>
     )

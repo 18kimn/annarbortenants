@@ -52,6 +52,7 @@
   --container-narrow: 56ch;
   --container-prose: 68ch;
   --container-wide: 1120px;
+  --container-expanded: min(96vw, 1760px);
 
   --header-height: 72px;
 

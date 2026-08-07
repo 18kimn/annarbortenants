@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Footer.module.css'
 import {OutboundLink} from './OutboundLink'
-import SocialIcons from './SocialIcons'
+import {SocialIcons} from './SocialIcons'
 import {imageSrc} from '@/sanity/image'
 import type {SiteSettings} from '@/sanity/types'
 

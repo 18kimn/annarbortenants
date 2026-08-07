@@ -50,17 +50,6 @@
   text-transform: uppercase;
 }
 
-.brandTextSub {
-  display: block;
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.85;
-  margin-top: 2px;
-}
-
 .navDesktop {
   display: flex;
   align-items: center;
