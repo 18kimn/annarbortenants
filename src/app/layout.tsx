@@ -1,7 +1,4 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import './globals.css'
-import type {Metadata} from 'next'
 import {PT_Sans, Oswald} from 'next/font/google'
 
 const ptSans = PT_Sans({
@@ -19,12 +16,6 @@ const oswald = Oswald({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'Ann Arbor Tenants Union',
-  description:
-    'The Ann Arbor Tenants Union is a collective of tenants working together to improve rentership for all in the Ann Arbor area.',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -35,11 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${ptSans.variable} ${oswald.variable}`}
     >
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

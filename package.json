@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore ."
+    "format": "prettier --write --ignore-path .gitignore .",
+    "typecheck": "tsc --noEmit",
+    "content:migrate": "tsx scripts/migrate-content.ts",
+    "content:import": "sanity dataset import content/aatu-content.ndjson",
+    "content:upload-images": "tsx scripts/upload-images.ts",
+    "studio:dev": "sanity dev",
+    "studio:deploy": "sanity deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -16,26 +22,38 @@
     "@mui/material": "^5.15.0",
     "@mui/x-date-pickers": "^6.19.4",
     "@paypal/react-paypal-js": "^9.1.1",
-    "cheerio": "^1.2.0",
+    "@portabletext/react": "^3.2.4",
+    "@portabletext/types": "^4.0.2",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.22.0",
     "dayjs": "^1.11.10",
     "framer-motion": "^11.0.6",
-    "gray-matter": "^4.0.3",
+    "groq-js": "^1.30.3",
     "next": "15.5.18",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-markdown": "^10.1.0",
+    "next-sanity": "^11.6.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-use-measure": "^2.1.1",
-    "remark-gfm": "^4.0.1"
+    "sanity": "^4.22.0",
+    "styled-components": "^6.5.0"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.12.0",
-    "@types/node": "^20",
+    "@portabletext/block-tools": "^4.1.11",
+    "@portabletext/sanity-bridge": "^1.2.14",
+    "@sanity/schema": "^4.22.0",
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^20.19.43",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.5.18",
     "eslint-config-prettier": "^9.0.0",
-    "typescript": "^5"
+    "gray-matter": "^4.0.3",
+    "jsdom": "^30.0.1",
+    "marked": "^18.0.9",
+    "tsx": "^4.23.9",
+    "typescript": "^5.9.3"
   },
   "pnpm": {
     "overrides": {

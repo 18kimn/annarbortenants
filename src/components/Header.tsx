@@ -1,68 +1,52 @@
 'use client'
 import styles from './Header.module.css'
 import {useState} from 'react'
-
-import {OutboundLink} from './OutboundLink'
 import Link from 'next/link'
-import MailIcon from '@mui/icons-material/Mail'
-import InstagramIcon from '@mui/icons-material/Instagram'
-import FacebookIcon from '@mui/icons-material/Facebook'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import Image from 'next/image'
 import {Drawer, IconButton} from '@mui/material'
-import NavLinks, {aboutLinks, campaignLinks} from './NavLinks'
+import NavLinks from './NavLinks'
+import SocialIcons from './SocialIcons'
+import {imageSrc} from '@/sanity/image'
+import type {SiteSettings} from '@/sanity/types'
 
-const socials = [
-  {
-    href: 'https://www.instagram.com/aatenantsunion/',
-    Icon: InstagramIcon,
-    alt: 'AATU Instagram',
-  },
-  {
-    href: 'https://www.facebook.com/a2tenantsunion',
-    Icon: FacebookIcon,
-    alt: 'AATU Facebook',
-  },
-  {
-    href: 'mailto:annarbortenantsunion@gmail.com',
-    Icon: MailIcon,
-    alt: 'AATU email',
-  },
-]
-
-export default function Header() {
+export default function Header({
+  settings,
+}: {
+  settings: SiteSettings | null
+}) {
   const [drawerOpen, setDrawerOpen] = useState(false)
+
+  const socials = settings?.socials ?? []
+  const primaryNav = settings?.primaryNav ?? []
+  const mobileNav = settings?.mobileNav ?? primaryNav
+  const logo = imageSrc(settings?.logo, 176)
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/" className={styles.brand}>
-          <Image
-            className={styles.brandLogo}
-            alt="AATU logo"
-            src="/circle_logo.png"
-            height={88}
-            width={88}
-          />
-          <span className={styles.brandText}>
-            Ann Arbor Tenants Union
-          </span>
+          {logo && (
+            <Image
+              className={styles.brandLogo}
+              alt={settings?.logo?.alt ?? ''}
+              src={logo}
+              height={88}
+              width={88}
+            />
+          )}
+          <span className={styles.brandText}>{settings?.title}</span>
         </Link>
 
-        <NavLinks />
+        <NavLinks entries={primaryNav} />
 
         <div className={styles.socials}>
-          {socials.map(({href, Icon, alt}) => (
-            <OutboundLink
-              key={href}
-              href={href}
-              className={styles.socialLink}
-              aria-label={alt}
-            >
-              <Icon className={styles.socialIcon} />
-            </OutboundLink>
-          ))}
+          <SocialIcons
+            socials={socials}
+            linkClassName={styles.socialLink}
+            iconClassName={styles.socialIcon}
+          />
         </div>
 
         <button
@@ -91,77 +75,41 @@ export default function Header() {
             </IconButton>
           </div>
 
-          <Link
-            href="/"
-            className={styles.mobileLink}
-            onClick={() => setDrawerOpen(false)}
-          >
-            Home
-          </Link>
-
-          <div className={styles.mobileSection}>
-            <span className={styles.mobileSectionLabel}>About</span>
-            {aboutLinks.map((l) => (
+          {mobileNav.map((entry) =>
+            entry.links?.length ? (
+              <div key={entry.label} className={styles.mobileSection}>
+                <span className={styles.mobileSectionLabel}>
+                  {entry.label}
+                </span>
+                {entry.links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={styles.mobileSubLink}
+                    onClick={() => setDrawerOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ) : (
               <Link
-                key={l.href}
-                href={l.href}
-                className={styles.mobileSubLink}
+                key={entry.label}
+                href={entry.href}
+                className={styles.mobileLink}
                 onClick={() => setDrawerOpen(false)}
               >
-                {l.display}
+                {entry.label}
               </Link>
-            ))}
-          </div>
-
-          <Link
-            href="/membership"
-            className={styles.mobileLink}
-            onClick={() => setDrawerOpen(false)}
-          >
-            Membership
-          </Link>
-          <Link
-            href="/news"
-            className={styles.mobileLink}
-            onClick={() => setDrawerOpen(false)}
-          >
-            News
-          </Link>
-          <Link
-            href="/blog"
-            className={styles.mobileLink}
-            onClick={() => setDrawerOpen(false)}
-          >
-            Blog
-          </Link>
-
-          <div className={styles.mobileSection}>
-            <span className={styles.mobileSectionLabel}>
-              Campaigns
-            </span>
-            {campaignLinks.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={styles.mobileSubLink}
-                onClick={() => setDrawerOpen(false)}
-              >
-                {l.display}
-              </Link>
-            ))}
-          </div>
+            ),
+          )}
 
           <div className={styles.mobileSocials}>
-            {socials.map(({href, Icon, alt}) => (
-              <OutboundLink
-                key={href}
-                href={href}
-                className={styles.socialLink}
-                aria-label={alt}
-              >
-                <Icon className={styles.socialIcon} />
-              </OutboundLink>
-            ))}
+            <SocialIcons
+              socials={socials}
+              linkClassName={styles.socialLink}
+              iconClassName={styles.socialIcon}
+            />
           </div>
         </div>
       </Drawer>

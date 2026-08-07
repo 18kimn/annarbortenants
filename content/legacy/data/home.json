@@ -1,0 +1,24 @@
+{
+  "heroTitle": "The Ann Arbor Tenants Union",
+  "heroSubtitle": "A democratic collective of tenants in Ann Arbor fighting for stable, just, and affordable housing through wielding our shared burden, and power, as renters.",
+  "heroActions": [
+    {
+      "label": "Join the AATU",
+      "href": "#join",
+      "variant": "primary",
+      "size": "large"
+    },
+    {
+      "label": "Why join?",
+      "href": "/membership",
+      "variant": "secondary",
+      "size": "large"
+    }
+  ],
+  "aboutHtmlFile": "home-about.html",
+  "joinHeading": "Join your union",
+  "joinHtmlFile": "home-join.html",
+  "joinFormUrl": "https://bit.ly/JoinAATU",
+  "joinFormTitle": "AATU Membership Form",
+  "joinFormLinkLabel": "Click here to open in another window."
+}

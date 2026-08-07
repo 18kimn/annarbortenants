@@ -1,29 +1,25 @@
-"use client";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { useState, useRef } from "react";
-import Popper from "@mui/material/Popper";
-import ClickAwayListener from "@mui/material/ClickAwayListener";
-import Grow from "@mui/material/Grow";
-import Link from "next/link";
-import classes from "./Header.module.css";
+'use client'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
+import {useState, useRef} from 'react'
+import Popper from '@mui/material/Popper'
+import ClickAwayListener from '@mui/material/ClickAwayListener'
+import Grow from '@mui/material/Grow'
+import Link from 'next/link'
+import classes from './Header.module.css'
+import type {NavLink} from '@/sanity/types'
 
 export default function DropdownNav(props: {
-  name: string;
-  links: { display: string; href: string }[];
+  name: string
+  links: NavLink[]
 }) {
-  const [open, setOpen] = useState(false);
-  const anchorRef = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false)
+  const anchorRef = useRef<HTMLButtonElement>(null)
 
-  const handleToggle = () => setOpen((prev) => !prev);
+  const handleToggle = () => setOpen((prev) => !prev)
   const handleClose = (event: MouseEvent | TouchEvent) => {
-    if (
-      anchorRef.current &&
-      anchorRef.current.contains(event.target as Node)
-    ) {
-      return;
-    }
-    setOpen(false);
-  };
+    if (anchorRef.current?.contains(event.target as Node)) return
+    setOpen(false)
+  }
 
   return (
     <>
@@ -38,15 +34,18 @@ export default function DropdownNav(props: {
         <ArrowDropDownIcon fontSize="small" />
       </button>
       <Popper
-        sx={{ zIndex: 60 }}
+        sx={{zIndex: 60}}
         open={open}
         anchorEl={anchorRef.current}
         placement="bottom-start"
         transition
         disablePortal
       >
-        {({ TransitionProps }) => (
-          <Grow {...TransitionProps} style={{ transformOrigin: "top left" }}>
+        {({TransitionProps}) => (
+          <Grow
+            {...TransitionProps}
+            style={{transformOrigin: 'top left'}}
+          >
             <div className={classes.dropdownPaper}>
               <ClickAwayListener onClickAway={handleClose}>
                 <div role="menu">
@@ -58,7 +57,7 @@ export default function DropdownNav(props: {
                       className={classes.dropdownItem}
                       onClick={() => setOpen(false)}
                     >
-                      {link.display}
+                      {link.label}
                     </Link>
                   ))}
                 </div>
@@ -68,5 +67,5 @@ export default function DropdownNav(props: {
         )}
       </Popper>
     </>
-  );
+  )
 }

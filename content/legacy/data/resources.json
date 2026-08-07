@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {"title": "Tenant rights", "order": 1},
+    {"title": "Service centers and legal advice", "order": 2},
+    {"title": "Allied organizing groups", "order": 3}
+  ],
+  "resources": [
+    {
+      "title": "The Ann Arbor Renter's Commission",
+      "href": "https://www.a2gov.org/departments/city-clerk/Boards-and-Commissions/renters/Pages/default.aspx",
+      "description": "The Ann Arbor Renter's Commission was established in 2021 to advise the Ann Arbor City Council on renters' issues. Several members of the AATU Reboot Task Force hold seats on the Renters Commission.",
+      "category": "Tenant rights",
+      "order": 1
+    },
+    {
+      "title": "Homelessness Resource Map",
+      "href": "https://goo.gl/maps/QMhWCTWoNQsjZmpX6",
+      "description": "Resources for folks who are unhoused and need day-to-day assistance; curated by Yvonne Winer.",
+      "category": "Tenant rights",
+      "order": 2
+    },
+    {
+      "title": "Landlord tenant handbook",
+      "href": "https://www.legislature.mi.gov/publications/tenantlandlord.pdf",
+      "description": "",
+      "category": "Tenant rights",
+      "order": 3
+    },
+    {
+      "title": "Legal Services of South Central Michigan (LSSCM)",
+      "href": "https://lsscm.org",
+      "description": "LSSCM provides free legal advice and representation to low-income folks in South Central Michigan.",
+      "category": "Service centers and legal advice",
+      "order": 1
+    },
+    {
+      "title": "Fair Housing Center",
+      "href": "https://fhcmichigan.org",
+      "description": "Free and low-cost services for discrimination cases in Michigan.",
+      "category": "Service centers and legal advice",
+      "order": 2
+    },
+    {
+      "title": "Student Legal Services",
+      "href": "https://studentlegalservices.umich.edu/",
+      "description": "If you're a student, the best (and free) legal services for you could come from UMich SLS.",
+      "category": "Service centers and legal advice",
+      "order": 3
+    },
+    {
+      "title": "15th District Case Search",
+      "href": "https://micourt.courts.michigan.gov/case-search/court/D15",
+      "description": "",
+      "category": "Service centers and legal advice",
+      "order": 4
+    },
+    {
+      "title": "Veterans Affairs Office",
+      "href": "https://www.washtenaw.org/Directory.aspx?DID=52",
+      "description": "The VA office also helps with emergency assistance for veterans.",
+      "category": "Service centers and legal advice",
+      "order": 5
+    },
+    {
+      "title": "State Emergency Relief",
+      "href": "https://www.michigan.gov/mdhhs/assistance-programs/emergency-relief",
+      "description": "For low-income tenants to apply for financial assistance.",
+      "category": "Service centers and legal advice",
+      "order": 6
+    },
+    {
+      "title": "The Washtenaw Housing Alliance",
+      "href": "https://www.whalliance.org",
+      "description": "The Washtenaw Housing Alliance is a coalition of over 30 nonprofit and government entities dedicated to ending homelessness in the Washtenaw County area.",
+      "category": "Allied organizing groups",
+      "order": 1
+    },
+    {
+      "title": "The Huron Valley Worker Organizing and Research Center (HV-WORC)",
+      "href": "https://www.hvworc.org",
+      "description": "HV-WORC was established in 2021 by delegates of the Huron Valley Area Labor Federation and allied community partners, to provide research and education in support of worker efforts for collective action.",
+      "category": "Allied organizing groups",
+      "order": 2
+    },
+    {
+      "title": "GEO Housing Caucus",
+      "href": "https://www.geo3550.org",
+      "description": "The Graduate Employees' Organization at the University of Michigan has partnered with the AATU in previous years through their Housing Caucus to advocate for Just Cause eviction laws in Ann Arbor.",
+      "category": "Allied organizing groups",
+      "order": 3
+    },
+    {
+      "title": "Michigan Rent Is Too Damn High",
+      "href": "https://mirentistoodamnhigh.com",
+      "description": "The Rent Is Too Damn High coalition in Michigan is composed of 17 community organizations in Michigan fighting for rent control, social housing, and renters' rights at the state level.",
+      "category": "Allied organizing groups",
+      "order": 4
+    }
+  ]
+}
